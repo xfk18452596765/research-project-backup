@@ -1,0 +1,6 @@
+[t=0.001000] PACKET_ARRIVAL (priority=40)
+[t=0.003000] TX_START (priority=20)
+[t=0.005000] TX_END (priority=0)
+[t=0.005000] RX_SUCCESS (priority=10)
+Smoke test passed.
+{'created_packets': 1, 'delivered_packets': 1, 'average_delay': 0.004, 'delivery_ratio': 1.0}
