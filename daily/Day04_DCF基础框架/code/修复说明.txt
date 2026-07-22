@@ -1,0 +1,19 @@
+Day04 第二次接口修复说明
+
+问题：Day03 MetricsCollector 没有 delivery_ratio 属性，Day04 测试与主程序直接访问 metrics.delivery_ratio 导致 AttributeError。
+
+修复：
+1. 不修改 Day03 的 MetricsCollector；
+2. 在 test_dcf_single_hop.py 和 main_dcf_single_hop.py 中加入 get_delivery_ratio()；
+3. 优先兼容 delivery_ratio 属性或方法；
+4. 其次兼容 summary()/get_summary()/report() 返回的字典；
+5. 最后使用 delivered_packets / created_packets 计算送达率。
+
+替换位置：
+C:\research-project-backup-main\daily\Day04_DCF基础框架\code\
+
+替换文件：
+- test_dcf_single_hop.py
+- main_dcf_single_hop.py
+
+原 dcf_mac.py 保留上一次已修复版本。

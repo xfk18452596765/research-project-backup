@@ -1,0 +1,12 @@
+Day04 minimum single-hop DCF validation
+========================================
+Test command: python test_dcf_single_hop.py
+Result: All Day04 minimum single-hop DCF tests passed.
+
+Scope verified:
+- one sender, one receiver
+- one-hop route (0, 1)
+- idle channel
+- no collision
+- successful ACK
+- event chain and analytical delay consistency
