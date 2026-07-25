@@ -1,0 +1,22 @@
+{
+  "created_packets": 1,
+  "delivered_packets": 1,
+  "average_delay": 0.018423999999999982,
+  "delivery_ratio": 1.0,
+  "dropped_packets": 0,
+  "retransmissions": 0,
+  "successful_hops": 4,
+  "dropped_hops": 0,
+  "difs_starts": 4,
+  "competition_attempts": 4,
+  "backoff_starts": 4,
+  "backoff_resumes": 0,
+  "backoff_freezes": 0,
+  "selected_backoff_slots": 40,
+  "consumed_backoff_slots": 40,
+  "cumulative_backoff_time": 0.0008,
+  "ack_timeouts": 0,
+  "shared_collision_events": 0,
+  "collided_packet_attempts": 0,
+  "average_hop_delay": 0.0046059999999999955
+}

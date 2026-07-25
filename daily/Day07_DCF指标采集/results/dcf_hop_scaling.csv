@@ -1,0 +1,4 @@
+﻿hop_count,packet_status,end_to_end_delay,successful_hops,competition_attempts,difs_starts,cumulative_backoff_slots,cumulative_backoff_time,retransmissions,shared_collision_events
+2,DELIVERED,0.009212,2,2,2,20,0.0004,0,0
+4,DELIVERED,0.018423999999999982,4,4,4,40,0.0008,0,0
+6,DELIVERED,0.027635999999999966,6,6,6,60,0.0012000000000000001,0,0
