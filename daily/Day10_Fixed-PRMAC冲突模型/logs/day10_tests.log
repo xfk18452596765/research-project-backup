@@ -1,0 +1,28 @@
+[PASS] test_disjoint_overlapping_time_reservations_can_coexist
+[PASS] test_same_link_overlap_is_rejected
+[PASS] test_shared_node_overlap_is_rejected_without_same_link
+[PASS] test_non_overlapping_time_window_is_accepted_and_old_record_expires
+[t=0.000000] RESERVATION_START (priority=40)
+[t=0.000000] PR_REQ_TX (priority=20)
+[t=0.000289] PR_REQ_RX (priority=10)
+[t=0.000299] PR_REQ_TX (priority=20)
+[t=0.000588] PR_REQ_RX (priority=10)
+[t=0.000598] PR_ACK_TX (priority=20)
+[t=0.000791] PR_ACK_RX (priority=10)
+[t=0.000801] PR_ACK_TX (priority=20)
+[t=0.000994] PR_ACK_RX (priority=10)
+[t=0.000994] RESERVATION_START (priority=40)
+[t=0.000994] PR_REQ_TX (priority=20)
+[t=0.001283] PR_REQ_RX (priority=10)
+[t=0.001293] PR_REQ_TX (priority=20)
+[t=0.001582] PR_REQ_RX (priority=10)
+[t=0.001592] PR_NACK_TX (priority=20)
+[t=0.001785] PR_NACK_RX (priority=10)
+[t=0.001795] PR_NACK_TX (priority=20)
+[t=0.001988] PR_NACK_RX (priority=10)
+[PASS] test_pr_nack_returns_along_reverse_partial_path
+[PASS] test_rejected_request_does_not_pollute_existing_active_reservation
+[PASS] test_release_frees_resources_for_new_reservation
+[PASS] test_reverse_direction_uses_same_physical_link_resource
+
+All Day10 Fixed-PRMAC conflict tests passed.

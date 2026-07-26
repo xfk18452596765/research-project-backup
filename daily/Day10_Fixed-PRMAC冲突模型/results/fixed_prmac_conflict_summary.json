@@ -1,0 +1,86 @@
+{
+  "metrics": {
+    "reservation_requests": 2,
+    "successful_reservations": 1,
+    "released_reservations": 0,
+    "expired_reservations": 0,
+    "active_reservations": 1,
+    "control_frames_sent": 8,
+    "control_bytes_sent": 240,
+    "average_setup_delay": 0.000994,
+    "rejected_reservations": 1,
+    "link_conflicts": 0,
+    "node_conflicts": 1,
+    "pr_nack_frames_sent": 2
+  },
+  "reservations": [
+    {
+      "reservation_id": "existing-flow:packet-1100:segment-0:request-1",
+      "flow_id": "existing-flow",
+      "packet_id": 1100,
+      "path": [
+        2,
+        3,
+        4
+      ],
+      "segment_start_index": 0,
+      "requested_hops": 2,
+      "effective_hops": 2,
+      "reserved_links": [
+        {
+          "sender": 2,
+          "receiver": 3
+        },
+        {
+          "sender": 3,
+          "receiver": 4
+        }
+      ],
+      "initiator": 2,
+      "endpoint": 4,
+      "priority": 1,
+      "duration": 0.02,
+      "requested_at": 0.0,
+      "status": "ACTIVE",
+      "activated_at": 0.000994,
+      "expires_at": 0.020994,
+      "released_at": null,
+      "rejected_at": null,
+      "failure_reason": ""
+    },
+    {
+      "reservation_id": "conflicting-flow:packet-1101:segment-0:request-2",
+      "flow_id": "conflicting-flow",
+      "packet_id": 1101,
+      "path": [
+        0,
+        1,
+        2
+      ],
+      "segment_start_index": 0,
+      "requested_hops": 2,
+      "effective_hops": 2,
+      "reserved_links": [
+        {
+          "sender": 0,
+          "receiver": 1
+        },
+        {
+          "sender": 1,
+          "receiver": 2
+        }
+      ],
+      "initiator": 0,
+      "endpoint": 2,
+      "priority": 1,
+      "duration": 0.02,
+      "requested_at": 0.000994,
+      "status": "REJECTED",
+      "activated_at": null,
+      "expires_at": null,
+      "released_at": null,
+      "rejected_at": 0.001988,
+      "failure_reason": "NODE_CONFLICT: resource=node-2; existing=existing-flow:packet-1100:segment-0:request-1; candidate=[0.001582000,0.021582000); existing_window=[0.000994000,0.020994000)"
+    }
+  ]
+}
