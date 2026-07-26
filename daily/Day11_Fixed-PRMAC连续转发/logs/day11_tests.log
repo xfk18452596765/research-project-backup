@@ -1,0 +1,30 @@
+[PASS] test_day11_phy_defaults_match_existing_dcf_baseline
+[t=0.000000] RESERVATION_START (priority=40)
+[t=0.000000] PR_REQ_TX (priority=20)
+[t=0.000289] PR_REQ_RX (priority=10)
+[t=0.000299] PR_REQ_TX (priority=20)
+[t=0.000588] PR_REQ_RX (priority=10)
+[t=0.000598] PR_ACK_TX (priority=20)
+[t=0.000791] PR_ACK_RX (priority=10)
+[t=0.000801] PR_ACK_TX (priority=20)
+[t=0.000994] PR_ACK_RX (priority=10)
+[t=0.000994] SEGMENT_FORWARD_START (priority=40)
+[t=0.000994] DATA_TX (priority=20)
+[t=0.005227] DATA_RX (priority=10)
+[t=0.005237] H_ACK_TX (priority=20)
+[t=0.005350] H_ACK_RX (priority=10)
+[t=0.005360] DATA_TX (priority=20)
+[t=0.009593] DATA_RX (priority=10)
+[t=0.009603] H_ACK_TX (priority=20)
+[t=0.009716] H_ACK_RX (priority=10)
+[PASS] test_k2_active_reservation_forwards_two_data_and_two_h_ack
+[PASS] test_next_data_waits_for_previous_h_ack_reception
+[PASS] test_remaining_one_hop_uses_one_data_and_one_h_ack
+[PASS] test_long_route_stops_at_reserved_segment_endpoint
+[PASS] test_non_active_reservations_cannot_schedule_data
+[PASS] test_rejected_reservation_cannot_schedule_data
+[PASS] test_packet_must_match_reservation_identity_route_and_segment_start
+[PASS] test_forwarding_delay_and_byte_metrics_match_analytical_values
+[PASS] test_reservation_window_must_cover_complete_segment
+
+All Day11 Fixed-PRMAC continuous-forwarding tests passed.
