@@ -1,0 +1,189 @@
+{
+  "experiment_scope": {
+    "hop_counts": [
+      2,
+      4,
+      6
+    ],
+    "seeds": [
+      7,
+      17,
+      27
+    ],
+    "packets_per_run": 8,
+    "load_profiles": [
+      {
+        "name": "low",
+        "interarrival_time": 0.05
+      },
+      {
+        "name": "medium",
+        "interarrival_time": 0.02
+      },
+      {
+        "name": "high",
+        "interarrival_time": 0.008
+      }
+    ]
+  },
+  "aggregate_rows": [
+    {
+      "hop_count": 2,
+      "load_level": "high",
+      "interarrival_time": 0.008,
+      "seed_count": 3,
+      "mean_delivery_ratio": 1.0,
+      "mean_end_to_end_delay": 0.017751916666666666,
+      "std_end_to_end_delay": 0.0009341334330989933,
+      "mean_p95_end_to_end_delay": 0.02727133333333333,
+      "mean_throughput_bps": 847584.7976882491,
+      "mean_collision_events": 1.0,
+      "mean_retransmissions": 2.0,
+      "mean_queue_delay": 0.0019804166666666685,
+      "mean_access_delay": 0.0025395416666666643,
+      "max_decomposition_error": 0.0
+    },
+    {
+      "hop_count": 2,
+      "load_level": "low",
+      "interarrival_time": 0.05,
+      "seed_count": 3,
+      "mean_delivery_ratio": 1.0,
+      "mean_end_to_end_delay": 0.009108666666666786,
+      "std_end_to_end_delay": 3.556098048890522e-05,
+      "mean_p95_end_to_end_delay": 0.009304000000000168,
+      "mean_throughput_bps": 182545.44836890476,
+      "mean_collision_events": 0.0,
+      "mean_retransmissions": 0.0,
+      "mean_queue_delay": 0.0,
+      "mean_access_delay": 0.00019833333333338309,
+      "max_decomposition_error": 0.0
+    },
+    {
+      "hop_count": 2,
+      "load_level": "medium",
+      "interarrival_time": 0.02,
+      "seed_count": 3,
+      "mean_delivery_ratio": 1.0,
+      "mean_end_to_end_delay": 0.009108666666666683,
+      "std_end_to_end_delay": 3.556098048892144e-05,
+      "mean_p95_end_to_end_delay": 0.009304000000000047,
+      "mean_throughput_bps": 439803.759422396,
+      "mean_collision_events": 0.0,
+      "mean_retransmissions": 0.0,
+      "mean_queue_delay": 0.0,
+      "mean_access_delay": 0.00019833333333334232,
+      "max_decomposition_error": 0.0
+    },
+    {
+      "hop_count": 4,
+      "load_level": "high",
+      "interarrival_time": 0.008,
+      "seed_count": 3,
+      "mean_delivery_ratio": 1.0,
+      "mean_end_to_end_delay": 0.08135441666666679,
+      "std_end_to_end_delay": 0.0006975142172985024,
+      "mean_p95_end_to_end_delay": 0.1039590000000001,
+      "mean_throughput_bps": 416230.43567591504,
+      "mean_collision_events": 3.0,
+      "mean_retransmissions": 6.0,
+      "mean_queue_delay": 0.009022760416666687,
+      "mean_access_delay": 0.006959843750000013,
+      "max_decomposition_error": 0.0
+    },
+    {
+      "hop_count": 4,
+      "load_level": "low",
+      "interarrival_time": 0.05,
+      "seed_count": 3,
+      "mean_delivery_ratio": 1.0,
+      "mean_end_to_end_delay": 0.01819566666666687,
+      "std_end_to_end_delay": 6.597032161001358e-05,
+      "mean_p95_end_to_end_delay": 0.018415000000000313,
+      "mean_throughput_bps": 178085.06744953306,
+      "mean_collision_events": 0.0,
+      "mean_retransmissions": 0.0,
+      "mean_queue_delay": 0.0,
+      "mean_access_delay": 0.00019291666666670807,
+      "max_decomposition_error": 0.0
+    },
+    {
+      "hop_count": 4,
+      "load_level": "medium",
+      "interarrival_time": 0.02,
+      "seed_count": 3,
+      "mean_delivery_ratio": 1.0,
+      "mean_end_to_end_delay": 0.018195666666666686,
+      "std_end_to_end_delay": 6.597032161005641e-05,
+      "mean_p95_end_to_end_delay": 0.01841500000000006,
+      "mean_throughput_bps": 414774.8986465769,
+      "mean_collision_events": 0.0,
+      "mean_retransmissions": 0.0,
+      "mean_queue_delay": 0.0,
+      "mean_access_delay": 0.00019291666666667267,
+      "max_decomposition_error": 0.0
+    },
+    {
+      "hop_count": 6,
+      "load_level": "high",
+      "interarrival_time": 0.008,
+      "seed_count": 3,
+      "mean_delivery_ratio": 1.0,
+      "mean_end_to_end_delay": 0.15424995833333296,
+      "std_end_to_end_delay": 0.023794195151579437,
+      "mean_p95_end_to_end_delay": 0.186041966666666,
+      "mean_throughput_bps": 277296.3587188423,
+      "mean_collision_events": 4.666666666666667,
+      "mean_retransmissions": 9.333333333333334,
+      "mean_queue_delay": 0.012803284722222192,
+      "mean_access_delay": 0.008549041666666634,
+      "max_decomposition_error": 2.7755575615628914e-17
+    },
+    {
+      "hop_count": 6,
+      "load_level": "low",
+      "interarrival_time": 0.05,
+      "seed_count": 3,
+      "mean_delivery_ratio": 1.0,
+      "mean_end_to_end_delay": 0.027350166666666988,
+      "std_end_to_end_delay": 6.370504951204166e-05,
+      "mean_p95_end_to_end_delay": 0.027723000000000383,
+      "mean_throughput_bps": 173806.81788560608,
+      "mean_collision_events": 0.0,
+      "mean_retransmissions": 0.0,
+      "mean_queue_delay": 0.0,
+      "mean_access_delay": 0.00020236111111115494,
+      "max_decomposition_error": 0.0
+    },
+    {
+      "hop_count": 6,
+      "load_level": "medium",
+      "interarrival_time": 0.02,
+      "seed_count": 3,
+      "mean_delivery_ratio": 1.0,
+      "mean_end_to_end_delay": 0.08699624999999962,
+      "std_end_to_end_delay": 0.012155555572067586,
+      "mean_p95_end_to_end_delay": 0.11938163333333274,
+      "mean_throughput_bps": 285950.3749606847,
+      "mean_collision_events": 3.0,
+      "mean_retransmissions": 6.333333333333333,
+      "mean_queue_delay": 0.0026687499999999793,
+      "mean_access_delay": 0.00747462499999996,
+      "max_decomposition_error": 0.0
+    }
+  ],
+  "converging_collision_smoke": {
+    "created_packets": 2,
+    "delivered_packets": 2,
+    "dropped_packets": 0,
+    "successful_hops": 4,
+    "shared_collision_events": 1,
+    "collided_packet_attempts": 2,
+    "retransmissions": 2,
+    "backoff_freezes": 2,
+    "average_end_to_end_delay": 0.017633999999999997,
+    "maximum_decomposition_error": 0.0,
+    "queues_empty": 1,
+    "channel_idle": 1
+  }
+}

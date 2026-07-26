@@ -1,0 +1,14 @@
+{
+  "created_packets": 2,
+  "delivered_packets": 2,
+  "dropped_packets": 0,
+  "successful_hops": 4,
+  "shared_collision_events": 1,
+  "collided_packet_attempts": 2,
+  "retransmissions": 2,
+  "backoff_freezes": 2,
+  "average_end_to_end_delay": 0.017633999999999997,
+  "maximum_decomposition_error": 0.0,
+  "queues_empty": 1,
+  "channel_idle": 1
+}
