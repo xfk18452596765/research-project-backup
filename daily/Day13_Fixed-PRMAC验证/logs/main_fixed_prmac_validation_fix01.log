@@ -1,0 +1,163 @@
+[t=0.000000] END_TO_END_START (priority=40)
+[t=0.000330] SEGMENT_ACCESS_COMPLETE (priority=40)
+[t=0.000330] RETRY_SEQUENCE_START (priority=40)
+[t=0.000330] RESERVATION_START (priority=40)
+[t=0.000330] PR_REQ_TX (priority=20)
+[t=0.000619] PR_REQ_RX (priority=10)
+[t=0.000629] PR_REQ_TX (priority=20)
+[t=0.000918] PR_REQ_RX (priority=10)
+[t=0.000928] PR_ACK_TX (priority=20)
+[t=0.001121] PR_ACK_RX (priority=10)
+[t=0.001131] PR_ACK_TX (priority=20)
+[t=0.001324] PR_ACK_RX (priority=10)
+[t=0.001324] SEGMENT_FORWARD_START (priority=40)
+[t=0.001324] DATA_TX (priority=20)
+[t=0.005557] DATA_RX (priority=10)
+[t=0.005567] H_ACK_TX (priority=20)
+[t=0.005680] H_ACK_RX (priority=10)
+[t=0.005690] DATA_TX (priority=20)
+[t=0.009923] DATA_RX (priority=10)
+[t=0.009933] H_ACK_TX (priority=20)
+[t=0.010046] H_ACK_RX (priority=10)
+[t=0.010046] RELEASE_TX (priority=20)
+[t=0.010207] RELEASE_RX (priority=10)
+[t=0.010217] RELEASE_TX (priority=20)
+[t=0.010378] RELEASE_RX (priority=10)
+[t=0.010648] SEGMENT_ACCESS_COMPLETE (priority=40)
+[t=0.010648] RETRY_SEQUENCE_START (priority=40)
+[t=0.010648] RESERVATION_START (priority=40)
+[t=0.010648] PR_REQ_TX (priority=20)
+[t=0.010937] PR_REQ_RX (priority=10)
+[t=0.010947] PR_REQ_TX (priority=20)
+[t=0.011236] PR_REQ_RX (priority=10)
+[t=0.011246] PR_ACK_TX (priority=20)
+[t=0.011439] PR_ACK_RX (priority=10)
+[t=0.011449] PR_ACK_TX (priority=20)
+[t=0.011642] PR_ACK_RX (priority=10)
+[t=0.011642] SEGMENT_FORWARD_START (priority=40)
+[t=0.011642] DATA_TX (priority=20)
+[t=0.015875] DATA_RX (priority=10)
+[t=0.015885] H_ACK_TX (priority=20)
+[t=0.015998] H_ACK_RX (priority=10)
+[t=0.016008] DATA_TX (priority=20)
+[t=0.020241] DATA_RX (priority=10)
+[t=0.020251] H_ACK_TX (priority=20)
+[t=0.020364] H_ACK_RX (priority=10)
+[t=0.020364] RELEASE_TX (priority=20)
+[t=0.020525] RELEASE_RX (priority=10)
+[t=0.020535] RELEASE_TX (priority=20)
+[t=0.020696] RELEASE_RX (priority=10)
+[t=0.020946] SEGMENT_ACCESS_COMPLETE (priority=40)
+[t=0.020946] RETRY_SEQUENCE_START (priority=40)
+[t=0.020946] RESERVATION_START (priority=40)
+[t=0.020946] PR_REQ_TX (priority=20)
+[t=0.021235] PR_REQ_RX (priority=10)
+[t=0.021245] PR_REQ_TX (priority=20)
+[t=0.021534] PR_REQ_RX (priority=10)
+[t=0.021544] PR_ACK_TX (priority=20)
+[t=0.021737] PR_ACK_RX (priority=10)
+[t=0.021747] PR_ACK_TX (priority=20)
+[t=0.021940] PR_ACK_RX (priority=10)
+[t=0.021940] SEGMENT_FORWARD_START (priority=40)
+[t=0.021940] DATA_TX (priority=20)
+[t=0.026173] DATA_RX (priority=10)
+[t=0.026183] H_ACK_TX (priority=20)
+[t=0.026296] H_ACK_RX (priority=10)
+[t=0.026306] DATA_TX (priority=20)
+[t=0.030539] DATA_RX (priority=10)
+[t=0.030549] H_ACK_TX (priority=20)
+[t=0.030662] H_ACK_RX (priority=10)
+[t=0.030662] RELEASE_TX (priority=20)
+[t=0.030823] RELEASE_RX (priority=10)
+[t=0.030833] RELEASE_TX (priority=20)
+[t=0.030994] RELEASE_RX (priority=10)
+
+=== Day13 end-to-end orchestration trace ===
+0.000000000s | node=0 | END_TO_END_START             | packet=1700 | segment=0 |
+0.000000000s | node=0 | SEGMENT_QUEUE_ENQUEUE        | packet=1700 | segment=1 | segment_start_index=0, queue_length=1, queue_limit=200
+0.000000000s | node=0 | SEGMENT_ACCESS_BACKOFF       | packet=1700 | segment=1 | segment_start_index=0, queue_delay=0.000000000s, cw=15, backoff_slots=14, access_delay=0.000330000s
+0.000330000s | node=0 | SEGMENT_RESERVATION_START    | packet=1700 | segment=1 | retry_id=day13-six-hop-demo:packet-1700:segment-0:retry-sequence-1
+0.001324000s | node=0 | SEGMENT_RESERVATION_ACTIVE   | packet=1700 | segment=1 | reservation_id=day13-six-hop-demo:packet-1700:segment-0:request-1, effective_hops=2, retries_used=0
+0.010046000s | node=2 | SEGMENT_FORWARD_COMPLETE     | packet=1700 | segment=1 | reservation_id=day13-six-hop-demo:packet-1700:segment-0:request-1, packet_node=2, packet_status=FORWARDED
+0.010378000s | node=2 | SEGMENT_RELEASE_COMPLETE     | packet=1700 | segment=1 | reservation_id=day13-six-hop-demo:packet-1700:segment-0:request-1
+0.010378000s | node=2 | SEGMENT_QUEUE_ENQUEUE        | packet=1700 | segment=2 | segment_start_index=2, queue_length=1, queue_limit=200
+0.010378000s | node=2 | SEGMENT_ACCESS_BACKOFF       | packet=1700 | segment=2 | segment_start_index=2, queue_delay=0.000000000s, cw=15, backoff_slots=11, access_delay=0.000270000s
+0.010648000s | node=2 | SEGMENT_RESERVATION_START    | packet=1700 | segment=2 | retry_id=day13-six-hop-demo:packet-1700:segment-2:retry-sequence-2
+0.011642000s | node=2 | SEGMENT_RESERVATION_ACTIVE   | packet=1700 | segment=2 | reservation_id=day13-six-hop-demo:packet-1700:segment-2:request-2, effective_hops=2, retries_used=0
+0.020364000s | node=4 | SEGMENT_FORWARD_COMPLETE     | packet=1700 | segment=2 | reservation_id=day13-six-hop-demo:packet-1700:segment-2:request-2, packet_node=4, packet_status=FORWARDED
+0.020696000s | node=4 | SEGMENT_RELEASE_COMPLETE     | packet=1700 | segment=2 | reservation_id=day13-six-hop-demo:packet-1700:segment-2:request-2
+0.020696000s | node=4 | SEGMENT_QUEUE_ENQUEUE        | packet=1700 | segment=3 | segment_start_index=4, queue_length=1, queue_limit=200
+0.020696000s | node=4 | SEGMENT_ACCESS_BACKOFF       | packet=1700 | segment=3 | segment_start_index=4, queue_delay=0.000000000s, cw=15, backoff_slots=10, access_delay=0.000250000s
+0.020946000s | node=4 | SEGMENT_RESERVATION_START    | packet=1700 | segment=3 | retry_id=day13-six-hop-demo:packet-1700:segment-4:retry-sequence-3
+0.021940000s | node=4 | SEGMENT_RESERVATION_ACTIVE   | packet=1700 | segment=3 | reservation_id=day13-six-hop-demo:packet-1700:segment-4:request-3, effective_hops=2, retries_used=0
+0.030662000s | node=6 | END_TO_END_COMPLETE          | packet=1700 | segment=3 | segments=3, total_retries=0, end_to_end_delay=0.030662000s
+0.030662000s | node=6 | SEGMENT_FORWARD_COMPLETE     | packet=1700 | segment=3 | reservation_id=day13-six-hop-demo:packet-1700:segment-4:request-3, packet_node=6, packet_status=DELIVERED
+0.030994000s | node=6 | SEGMENT_RELEASE_COMPLETE     | packet=1700 | segment=3 | reservation_id=day13-six-hop-demo:packet-1700:segment-4:request-3
+
+=== End-to-end result ===
+session_status          : COMPLETED
+packet_status           : DELIVERED
+packet_current_node     : 6
+packet_current_hop_index: 6
+segment_count           : 3
+segment_effective_hops  : 2, 2, 2
+total_retries           : 0
+end_to_end_delay        : 0.030662000s
+
+=== Metrics ===
+reservation_requests                    : 3
+successful_reservations                 : 3
+released_reservations                   : 3
+expired_reservations                    : 0
+active_reservations                     : 0
+control_frames_sent                     : 18
+control_bytes_sent                      : 480
+average_setup_delay                     : 0.000993999999999999
+rejected_reservations                   : 0
+link_conflicts                          : 0
+node_conflicts                          : 0
+pr_nack_frames_sent                     : 0
+data_frames_sent                        : 6
+data_bytes_sent                         : 6348
+h_ack_frames_sent                       : 6
+h_ack_bytes_sent                        : 84
+forwarded_hops                          : 6
+completed_segments                      : 3
+blocked_segments                        : 0
+average_segment_forwarding_delay        : 0.008721999999999999
+total_frames_sent                       : 30
+total_bytes_sent                        : 6912
+retry_sequences_started                 : 3
+retry_attempts_scheduled                : 3
+reservation_retries_scheduled           : 0
+first_attempt_successes                 : 3
+retry_successes                         : 0
+retry_exhausted_failures                : 0
+total_retry_backoff_slots               : 0
+total_retry_backoff_delay               : 0
+average_retry_backoff_delay             : 0.0
+average_retries_per_sequence            : 0.0
+retry_sequence_success_rate             : 1.0
+average_retry_sequence_completion_delay : 0.000993999999999999
+end_to_end_sessions_started             : 1
+end_to_end_packets_delivered            : 1
+end_to_end_packets_dropped              : 0
+end_to_end_delivery_ratio               : 1.0
+end_to_end_segments_started             : 3
+segment_queue_entries                   : 3
+queue_overflow_drops                    : 0
+maximum_segment_queue_length            : 1
+total_segment_queue_delay               : 0.0
+average_segment_queue_delay             : 0.0
+maximum_segment_queue_delay             : 0.0
+initial_access_attempts                 : 3
+total_initial_access_backoff_slots      : 35
+total_initial_access_delay              : 0.0008500000000000001
+average_initial_access_delay            : 0.00028333333333333335
+average_end_to_end_delay                : 0.03066199999999999
+p95_end_to_end_delay                    : 0.03066199999999999
+p99_end_to_end_delay                    : 0.03066199999999999
+
+Saved:
+- /mnt/data/day13_fix_work/daily/Day13_Fixed-PRMAC验证/results/fixed_prmac_end_to_end_trace.csv
+- /mnt/data/day13_fix_work/daily/Day13_Fixed-PRMAC验证/results/fixed_prmac_end_to_end_summary.json
