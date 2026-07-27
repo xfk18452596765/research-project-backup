@@ -1,0 +1,21 @@
+﻿time,event,node_id,packet_id,session_id,segment_number,detail
+0.0,END_TO_END_START,0,1700,day13-six-hop-demo:packet-1700:end-to-end-1,0,
+0.0,SEGMENT_QUEUE_ENQUEUE,0,1700,day13-six-hop-demo:packet-1700:end-to-end-1,1,"segment_start_index=0, queue_length=1, queue_limit=200"
+0.0,SEGMENT_ACCESS_BACKOFF,0,1700,day13-six-hop-demo:packet-1700:end-to-end-1,1,"segment_start_index=0, queue_delay=0.000000000s, cw=15, backoff_slots=14, access_delay=0.000330000s"
+0.00033000000000000005,SEGMENT_RESERVATION_START,0,1700,day13-six-hop-demo:packet-1700:end-to-end-1,1,retry_id=day13-six-hop-demo:packet-1700:segment-0:retry-sequence-1
+0.0013240000000000003,SEGMENT_RESERVATION_ACTIVE,0,1700,day13-six-hop-demo:packet-1700:end-to-end-1,1,"reservation_id=day13-six-hop-demo:packet-1700:segment-0:request-1, effective_hops=2, retries_used=0"
+0.010046,SEGMENT_FORWARD_COMPLETE,2,1700,day13-six-hop-demo:packet-1700:end-to-end-1,1,"reservation_id=day13-six-hop-demo:packet-1700:segment-0:request-1, packet_node=2, packet_status=FORWARDED"
+0.010377999999999998,SEGMENT_RELEASE_COMPLETE,2,1700,day13-six-hop-demo:packet-1700:end-to-end-1,1,reservation_id=day13-six-hop-demo:packet-1700:segment-0:request-1
+0.010377999999999998,SEGMENT_QUEUE_ENQUEUE,2,1700,day13-six-hop-demo:packet-1700:end-to-end-1,2,"segment_start_index=2, queue_length=1, queue_limit=200"
+0.010377999999999998,SEGMENT_ACCESS_BACKOFF,2,1700,day13-six-hop-demo:packet-1700:end-to-end-1,2,"segment_start_index=2, queue_delay=0.000000000s, cw=15, backoff_slots=11, access_delay=0.000270000s"
+0.010647999999999998,SEGMENT_RESERVATION_START,2,1700,day13-six-hop-demo:packet-1700:end-to-end-1,2,retry_id=day13-six-hop-demo:packet-1700:segment-2:retry-sequence-2
+0.011641999999999996,SEGMENT_RESERVATION_ACTIVE,2,1700,day13-six-hop-demo:packet-1700:end-to-end-1,2,"reservation_id=day13-six-hop-demo:packet-1700:segment-2:request-2, effective_hops=2, retries_used=0"
+0.020363999999999993,SEGMENT_FORWARD_COMPLETE,4,1700,day13-six-hop-demo:packet-1700:end-to-end-1,2,"reservation_id=day13-six-hop-demo:packet-1700:segment-2:request-2, packet_node=4, packet_status=FORWARDED"
+0.020695999999999996,SEGMENT_RELEASE_COMPLETE,4,1700,day13-six-hop-demo:packet-1700:end-to-end-1,2,reservation_id=day13-six-hop-demo:packet-1700:segment-2:request-2
+0.020695999999999996,SEGMENT_QUEUE_ENQUEUE,4,1700,day13-six-hop-demo:packet-1700:end-to-end-1,3,"segment_start_index=4, queue_length=1, queue_limit=200"
+0.020695999999999996,SEGMENT_ACCESS_BACKOFF,4,1700,day13-six-hop-demo:packet-1700:end-to-end-1,3,"segment_start_index=4, queue_delay=0.000000000s, cw=15, backoff_slots=10, access_delay=0.000250000s"
+0.020945999999999996,SEGMENT_RESERVATION_START,4,1700,day13-six-hop-demo:packet-1700:end-to-end-1,3,retry_id=day13-six-hop-demo:packet-1700:segment-4:retry-sequence-3
+0.021939999999999994,SEGMENT_RESERVATION_ACTIVE,4,1700,day13-six-hop-demo:packet-1700:end-to-end-1,3,"reservation_id=day13-six-hop-demo:packet-1700:segment-4:request-3, effective_hops=2, retries_used=0"
+0.03066199999999999,END_TO_END_COMPLETE,6,1700,day13-six-hop-demo:packet-1700:end-to-end-1,3,"segments=3, total_retries=0, end_to_end_delay=0.030662000s"
+0.03066199999999999,SEGMENT_FORWARD_COMPLETE,6,1700,day13-six-hop-demo:packet-1700:end-to-end-1,3,"reservation_id=day13-six-hop-demo:packet-1700:segment-4:request-3, packet_node=6, packet_status=DELIVERED"
+0.030993999999999994,SEGMENT_RELEASE_COMPLETE,6,1700,day13-six-hop-demo:packet-1700:end-to-end-1,3,reservation_id=day13-six-hop-demo:packet-1700:segment-4:request-3

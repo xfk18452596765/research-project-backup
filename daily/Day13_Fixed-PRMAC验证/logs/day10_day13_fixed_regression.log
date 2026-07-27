@@ -1,0 +1,86 @@
+[PASS] test_disjoint_overlapping_time_reservations_can_coexist
+[PASS] test_same_link_overlap_is_rejected
+[PASS] test_shared_node_overlap_is_rejected_without_same_link
+[PASS] test_non_overlapping_time_window_is_accepted_and_old_record_expires
+[t=0.000000] RESERVATION_START (priority=40)
+[t=0.000000] PR_REQ_TX (priority=20)
+[t=0.000289] PR_REQ_RX (priority=10)
+[t=0.000299] PR_REQ_TX (priority=20)
+[t=0.000588] PR_REQ_RX (priority=10)
+[t=0.000598] PR_ACK_TX (priority=20)
+[t=0.000791] PR_ACK_RX (priority=10)
+[t=0.000801] PR_ACK_TX (priority=20)
+[t=0.000994] PR_ACK_RX (priority=10)
+[t=0.000994] RESERVATION_START (priority=40)
+[t=0.000994] PR_REQ_TX (priority=20)
+[t=0.001283] PR_REQ_RX (priority=10)
+[t=0.001293] PR_REQ_TX (priority=20)
+[t=0.001582] PR_REQ_RX (priority=10)
+[t=0.001592] PR_NACK_TX (priority=20)
+[t=0.001785] PR_NACK_RX (priority=10)
+[t=0.001795] PR_NACK_TX (priority=20)
+[t=0.001988] PR_NACK_RX (priority=10)
+[PASS] test_pr_nack_returns_along_reverse_partial_path
+[PASS] test_rejected_request_does_not_pollute_existing_active_reservation
+[PASS] test_release_frees_resources_for_new_reservation
+[PASS] test_reverse_direction_uses_same_physical_link_resource
+
+All Day10 Fixed-PRMAC conflict tests passed.
+[PASS] test_day11_phy_defaults_match_existing_dcf_baseline
+[t=0.000000] RESERVATION_START (priority=40)
+[t=0.000000] PR_REQ_TX (priority=20)
+[t=0.000289] PR_REQ_RX (priority=10)
+[t=0.000299] PR_REQ_TX (priority=20)
+[t=0.000588] PR_REQ_RX (priority=10)
+[t=0.000598] PR_ACK_TX (priority=20)
+[t=0.000791] PR_ACK_RX (priority=10)
+[t=0.000801] PR_ACK_TX (priority=20)
+[t=0.000994] PR_ACK_RX (priority=10)
+[t=0.000994] SEGMENT_FORWARD_START (priority=40)
+[t=0.000994] DATA_TX (priority=20)
+[t=0.005227] DATA_RX (priority=10)
+[t=0.005237] H_ACK_TX (priority=20)
+[t=0.005350] H_ACK_RX (priority=10)
+[t=0.005360] DATA_TX (priority=20)
+[t=0.009593] DATA_RX (priority=10)
+[t=0.009603] H_ACK_TX (priority=20)
+[t=0.009716] H_ACK_RX (priority=10)
+[PASS] test_k2_active_reservation_forwards_two_data_and_two_h_ack
+[PASS] test_next_data_waits_for_previous_h_ack_reception
+[PASS] test_remaining_one_hop_uses_one_data_and_one_h_ack
+[PASS] test_long_route_stops_at_reserved_segment_endpoint
+[PASS] test_non_active_reservations_cannot_schedule_data
+[PASS] test_rejected_reservation_cannot_schedule_data
+[PASS] test_packet_must_match_reservation_identity_route_and_segment_start
+[PASS] test_forwarding_delay_and_byte_metrics_match_analytical_values
+[PASS] test_reservation_window_must_cover_complete_segment
+
+All Day11 Fixed-PRMAC continuous-forwarding tests passed.
+[PASS] test_day12_retry_defaults_match_existing_dcf_baseline
+[PASS] test_no_conflict_succeeds_on_first_attempt_without_backoff
+[PASS] test_pr_nack_triggers_seeded_beb_and_first_retry_succeeds_after_release
+[PASS] test_each_retry_uses_a_fresh_reservation_id_and_preserves_history
+[PASS] test_retry_event_order_is_rejection_then_backoff_then_new_attempt
+[PASS] test_persistent_conflict_exhausts_limit_and_marks_final_attempt_failed
+[PASS] test_binary_exponential_window_growth_is_capped
+[PASS] test_retry_random_seed_is_reproducible
+[PASS] test_plain_day10_rejection_does_not_enable_automatic_retry
+[PASS] test_successful_retry_can_use_inherited_day11_data_h_ack_forwarding
+[PASS] test_retry_metrics_include_all_attempts_backoff_and_control_overhead
+
+All Day12 Fixed-PRMAC failure-and-retry tests passed.
+[PASS] test_day13_defaults_preserve_fixed_design_and_dcf_fairness
+[PASS] test_two_hop_route_delivers_in_one_segment
+[PASS] test_four_hop_route_uses_two_ordered_segments
+[PASS] test_six_hop_route_uses_three_segments_and_exact_frame_counts
+[PASS] test_odd_route_truncates_last_segment_to_one_hop
+[PASS] test_final_delivery_boundary_is_last_h_ack_reception
+[PASS] test_release_completes_before_next_segment_access
+[PASS] test_conflict_then_release_allows_segment_retry_and_delivery
+[PASS] test_persistent_conflict_exhausts_segment_and_fails_end_to_end
+[PASS] test_periodic_fixed_case_is_seed_reproducible_and_terminal
+[PASS] test_stop_loss_scope_remains_2_4_6_three_loads_three_seeds
+[PASS] test_stop_loss_evaluator_never_passes_unfair_or_worse_evidence
+[PASS] test_stop_loss_evaluator_can_pass_consistent_fair_evidence_without_percent_threshold
+
+All Day13 Fixed-PRMAC validation and stop-loss tests passed.
