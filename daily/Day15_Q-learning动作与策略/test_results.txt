@@ -1,0 +1,41 @@
+=== Day14 compatibility tests ===
+[PASS] test_observation_rejects_invalid_values
+[PASS] test_remaining_hops_bins
+[PASS] test_queue_length_bins
+[PASS] test_reservation_outcome_bins
+[PASS] test_retry_intensity_bins
+[PASS] test_priority_bins
+[PASS] test_channel_busy_bins_and_unknown
+[PASS] test_encoding_is_deterministic_and_hashable
+[PASS] test_state_space_size_is_bounded
+[PASS] test_observation_contains_only_declared_local_fields
+[PASS] test_state_tuple_order_is_stable
+
+All Day14 Q-learning state-design tests passed.
+
+=== Day15 action-and-policy tests ===
+[PASS] test_design_version_is_frozen
+[PASS] test_default_action_order_matches_original_six_action_design
+[PASS] test_fixed_baseline_action_is_preserved
+[PASS] test_state_action_upper_bound_is_9216_per_node
+[PASS] test_action_index_round_trip_is_stable
+[PASS] test_legal_mask_counts_follow_remaining_hops
+[PASS] test_illegal_k_is_rejected_instead_of_truncated
+[PASS] test_invalid_action_space_parameters_are_rejected
+[PASS] test_beb_starts_from_action_selected_initial_cw_and_caps
+[PASS] test_backoff_sampling_is_reproducible_and_bounded
+[PASS] test_access_delay_matches_existing_slot_and_difs_defaults
+[PASS] test_sparse_q_table_defaults_to_zero
+[PASS] test_sparse_q_table_rejects_invalid_values_and_indices
+[PASS] test_greedy_policy_selects_highest_legal_q_value
+[PASS] test_illegal_high_q_action_is_masked
+[PASS] test_exploration_never_selects_an_illegal_action
+[PASS] test_exploration_is_reproducible_with_same_seed
+[PASS] test_equal_q_tie_breaking_is_reproducible
+[PASS] test_different_nodes_keep_independent_local_q_tables
+[PASS] test_policy_rejects_another_nodes_q_table
+[PASS] test_decision_holds_one_action_across_the_retry_sequence
+[PASS] test_decision_serialization_is_auditable
+[PASS] test_day15_exposes_no_reward_update_or_training_api
+
+All Day15 Q-learning action-and-policy tests passed.
