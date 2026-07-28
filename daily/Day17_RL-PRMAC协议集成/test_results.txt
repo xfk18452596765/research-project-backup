@@ -1,0 +1,5 @@
+Day17 validation closure
+All Day17 protocol-controller tests passed.
+Day17 main validation JSON is UTF-8 and parseable.
+All Day03-Day17 regression tests passed.
+Day17 validation closure completed.
