@@ -1,0 +1,90 @@
+{
+  "day": "Day15",
+  "task": "Q-learning动作与策略",
+  "design_version": "Day15-Final-action-policy-v1",
+  "decision_scope": "distributed_per_segment_start_node",
+  "decision_time": "before_initial_difs_and_backoff",
+  "action_scope": "one_segment_retry_sequence",
+  "action_space": [
+    [
+      1,
+      15
+    ],
+    [
+      1,
+      31
+    ],
+    [
+      2,
+      15
+    ],
+    [
+      2,
+      31
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      3,
+      31
+    ]
+  ],
+  "action_space_size": 6,
+  "fixed_baseline_action": [
+    2,
+    15
+  ],
+  "state_space_size": 1536,
+  "state_action_upper_bound_per_node": 9216,
+  "legal_action_count_by_remaining_hops": {
+    "1": 2,
+    "2": 4,
+    "3": 6,
+    "6": 6
+  },
+  "decision": {
+    "decision_id": "node-2:decision-1",
+    "node_id": 2,
+    "state": [
+      2,
+      2,
+      2,
+      2,
+      1,
+      0
+    ],
+    "remaining_hops": 4,
+    "action": [
+      3,
+      31
+    ],
+    "action_index": 5,
+    "selected_at": 1.0,
+    "selection_mode": "exploit",
+    "epsilon": 0.0,
+    "legal_action_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "action_scope": "one_segment_retry_sequence"
+  },
+  "retry_contention_windows": {
+    "retry_0": 31,
+    "retry_1": 63,
+    "retry_2": 127
+  },
+  "illegal_k_is_masked_not_truncated": true,
+  "redecision_on_each_pr_nack": false,
+  "local_q_table_only": true,
+  "fixed_baseline_controller_modified": false,
+  "reward_implemented": false,
+  "q_update_implemented": false,
+  "training_started": false,
+  "central_controller_used": false
+}
