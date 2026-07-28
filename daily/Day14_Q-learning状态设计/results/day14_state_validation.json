@@ -1,0 +1,32 @@
+﻿{
+  "day": "Day14",
+  "task": "Q-learning状态设计",
+  "decision_scope": "distributed_per_segment_start_node",
+  "raw_observation": {
+    "node_id": 2,
+    "packet_id": 101,
+    "flow_id": "alarm-flow-0-6",
+    "remaining_hops": 4,
+    "local_queue_length": 4,
+    "queue_limit": 200,
+    "priority": 1,
+    "last_reservation_succeeded": false,
+    "recent_mean_retries": 1.5,
+    "channel_busy_ratio": null
+  },
+  "encoded_state": [
+    2,
+    2,
+    2,
+    2,
+    1,
+    0
+  ],
+  "state_space_size": 1536,
+  "local_observable_only": true,
+  "unknown_channel_busy_is_explicit": true,
+  "action_policy_implemented": false,
+  "reward_update_implemented": false,
+  "training_started": false,
+  "central_controller_used": false
+}
