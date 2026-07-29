@@ -1,0 +1,19 @@
+PreDay18 decision: FAIL
+Base: 635a7dc38bc135c989baa86f2f856cfd669acca0
+Python core: 720/720 complete
+Python sensitivity: 360 complete; control_loss NOT_RUN; hidden_terminal NOT_VALID
+ns-3 version: 3.43
+ns-3 implementation: application-level Fixed-PRMAC shim over AdhocWifiMac/DCF
+ns-3 core: 360/360 complete
+ns-3 sensitivity: 160/160 complete
+PreDay18 focused Python tests: PASS
+PreDay18 ns-3 result checks: PASS (520 runs)
+Day03-Day17 regression: PASS
+Finite results: PASS
+Active reservations after run: 0
+Python core gate: PASS
+Python robustness gate: FAIL
+ns-3 core gate: FAIL
+Cross-platform trend gate: FAIL
+Hard fail: Fixed ns-3 delivery loss exceeds 2 percentage points in core cells
+Day18 status: LOCKED

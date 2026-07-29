@@ -1,0 +1,12 @@
+[
+  {
+    "scenario": "control_loss",
+    "status": "NOT_RUN",
+    "reason": "Frozen Day08/Day13 APIs expose no frame-loss hook; injecting at receive callbacks without new timeouts can deadlock and would change protocol semantics."
+  },
+  {
+    "scenario": "hidden_terminal",
+    "status": "NOT_VALID",
+    "reason": "Frozen Python CollisionChannel is global and has no separate carrier-sense/interference matrices; a claimed hidden-terminal result would be fabricated."
+  }
+]

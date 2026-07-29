@@ -1,0 +1,9 @@
+{
+  "protocols": ["DCF", "Fixed-PRMAC"],
+  "hops": [2, 4, 6],
+  "loads": {"low": 0.05, "medium": 0.02, "high": 0.008},
+  "traffic": ["periodic", "poisson"],
+  "seeds": [7,17,27,37,47,57,67,77,87,97,107,117,127,137,147,157,167,177,187,197],
+  "packets_per_run": 200,
+  "expected_runs": 720
+}

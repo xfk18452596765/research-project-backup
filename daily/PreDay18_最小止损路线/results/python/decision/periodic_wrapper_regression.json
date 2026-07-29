@@ -1,0 +1,380 @@
+[
+  {
+    "protocol": "DCF",
+    "hops": 2,
+    "load": "low",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 2,
+    "load": "low",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 2,
+    "load": "low",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 2,
+    "load": "low",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 2,
+    "load": "low",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 2,
+    "load": "low",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 2,
+    "load": "medium",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 2,
+    "load": "medium",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 2,
+    "load": "medium",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 2,
+    "load": "medium",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 2,
+    "load": "medium",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 2,
+    "load": "medium",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 2,
+    "load": "high",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 2,
+    "load": "high",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 2,
+    "load": "high",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 2,
+    "load": "high",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 2,
+    "load": "high",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 2,
+    "load": "high",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 4,
+    "load": "low",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 4,
+    "load": "low",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 4,
+    "load": "low",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 4,
+    "load": "low",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 4,
+    "load": "low",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 4,
+    "load": "low",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 4,
+    "load": "medium",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 4,
+    "load": "medium",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 4,
+    "load": "medium",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 4,
+    "load": "medium",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 4,
+    "load": "medium",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 4,
+    "load": "medium",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 4,
+    "load": "high",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 4,
+    "load": "high",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 4,
+    "load": "high",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 4,
+    "load": "high",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 4,
+    "load": "high",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 4,
+    "load": "high",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 6,
+    "load": "low",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 6,
+    "load": "low",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 6,
+    "load": "low",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 6,
+    "load": "low",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 6,
+    "load": "low",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 6,
+    "load": "low",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 6,
+    "load": "medium",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 6,
+    "load": "medium",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 6,
+    "load": "medium",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 6,
+    "load": "medium",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 6,
+    "load": "medium",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 6,
+    "load": "medium",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 6,
+    "load": "high",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 6,
+    "load": "high",
+    "seed": 7,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 6,
+    "load": "high",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 6,
+    "load": "high",
+    "seed": 17,
+    "match": true
+  },
+  {
+    "protocol": "DCF",
+    "hops": 6,
+    "load": "high",
+    "seed": 27,
+    "match": true
+  },
+  {
+    "protocol": "Fixed-PRMAC",
+    "hops": 6,
+    "load": "high",
+    "seed": 27,
+    "match": true
+  }
+]

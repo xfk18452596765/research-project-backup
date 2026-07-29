@@ -1,0 +1,9 @@
+traffic_type,hop_count,load_level,python_direction,ns3_direction,consistent,python_delta_delay,ns3_delta_delay,interpretation
+periodic,4,medium,worse,worse,True,0.0037443404999988696,0.22481843768946877,trend-only; ns-3 is an application shim over AdhocWifiMac
+periodic,4,high,better,better,True,-1.1694530150262203,-0.0751489369299867,trend-only; ns-3 is an application shim over AdhocWifiMac
+periodic,6,medium,better,worse,False,-1.6988257051935391,0.2940078262865791,trend-only; ns-3 is an application shim over AdhocWifiMac
+periodic,6,high,better,worse,False,-2.771778714940267,0.125653474315896,trend-only; ns-3 is an application shim over AdhocWifiMac
+poisson,4,medium,better,worse,False,-0.18388542302458502,0.21476313332939417,trend-only; ns-3 is an application shim over AdhocWifiMac
+poisson,4,high,better,better,True,-1.1971727227668976,-0.1412407517092053,trend-only; ns-3 is an application shim over AdhocWifiMac
+poisson,6,medium,better,worse,False,-1.5870559214960474,0.1179451384294689,trend-only; ns-3 is an application shim over AdhocWifiMac
+poisson,6,high,better,worse,False,-2.5740917765763887,0.08431597282911017,trend-only; ns-3 is an application shim over AdhocWifiMac

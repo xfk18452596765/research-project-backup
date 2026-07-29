@@ -1,0 +1,8 @@
+{
+  "burst": {"cells": ["4-medium","4-high","6-medium","6-high"], "seeds": 20, "packets": 200},
+  "multiflow": {"scenarios": ["M1","M2","M3"], "loads": ["medium","high"], "seeds": 10, "packets_per_flow": 100},
+  "spatial_reuse": {"seeds": 20, "packets_per_flow": 100},
+  "control_loss": {"probabilities": [0.0,0.01,0.05], "hops": 6, "load": "high", "traffic": "poisson", "seeds": 20, "packets": 200},
+  "hidden_terminal": {"seeds": 20, "packets": 200},
+  "eight_hop": {"traffic": ["periodic","poisson"], "load": "high", "seeds": 10, "packets": 200}
+}

@@ -1,0 +1,932 @@
+traffic model tests passed
+PreDay18 focused tests passed
+PreDay18 Python checks passed
+PreDay18 ns-3 result checks passed: 520 runs
+{
+  "decision": "FAIL",
+  "counts": {
+    "python_core": 720,
+    "python_sensitivity": 360,
+    "ns3_core": 360,
+    "ns3_sensitivity": 160
+  },
+  "criteria": {
+    "hard_integrity": true,
+    "python_core": true,
+    "python_robustness": false,
+    "ns3_core": false,
+    "cross_platform_trend": false,
+    "finite": true,
+    "active_reservations_zero": true,
+    "ns3_delivery_hard_fail": true,
+    "ns3_persistent_worse": true
+  },
+  "capability_gaps": [
+    {
+      "scenario": "control_loss",
+      "status": "NOT_RUN",
+      "reason": "Frozen Day08/Day13 APIs expose no frame-loss hook; injecting at receive callbacks without new timeouts can deadlock and would change protocol semantics."
+    },
+    {
+      "scenario": "hidden_terminal",
+      "status": "NOT_VALID",
+      "reason": "Frozen Python CollisionChannel is global and has no separate carrier-sense/interference matrices; a claimed hidden-terminal result would be fabricated."
+    }
+  ],
+  "day18_status": "LOCKED"
+}
+
+=== Running Day03_仿真架构与事件设计\code\test_core_components.py ===
+[PASS] test_event_priority_order
+[PASS] test_same_priority_insertion_order
+[PASS] test_invalid_event_time
+[PASS] test_node_queue_limit
+[PASS] test_channel_busy_protection
+[PASS] test_packet_properties
+[PASS] test_metrics_collector
+
+All Day03 core component tests passed.
+
+=== Running Day04_DCF基础框架\code\test_dcf_single_hop.py ===
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000250] BACKOFF_EXPIRE (priority=30)
+[t=0.000250] TX_START (priority=20)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000250] BACKOFF_EXPIRE (priority=30)
+[t=0.000250] TX_START (priority=20)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000250] BACKOFF_EXPIRE (priority=30)
+[t=0.000250] TX_START (priority=20)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000250] BACKOFF_EXPIRE (priority=30)
+[t=0.000250] TX_START (priority=20)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000250] BACKOFF_EXPIRE (priority=30)
+[t=0.000250] TX_START (priority=20)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+All Day04 minimum single-hop DCF tests passed.
+
+=== Running Day05_DCF信道忙与退避冻结\code\test_dcf_busy_freeze.py ===
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000130] BACKOFF_TICK (priority=30)
+[t=0.000150] BACKOFF_TICK (priority=30)
+[t=0.000170] BACKOFF_TICK (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000250] TX_START (priority=20)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[PASS] test_no_busy_remains_compatible_with_day04_delay
+[t=0.000000] GENERIC (priority=50)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000100] GENERIC (priority=50)
+[t=0.000150] DIFS_END (priority=30)
+[t=0.000170] BACKOFF_TICK (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000270] BACKOFF_TICK (priority=30)
+[t=0.000290] BACKOFF_TICK (priority=30)
+[t=0.000310] BACKOFF_TICK (priority=30)
+[t=0.000330] BACKOFF_TICK (priority=30)
+[t=0.000350] BACKOFF_TICK (priority=30)
+[t=0.000350] TX_START (priority=20)
+[t=0.004583] TX_END (priority=0)
+[t=0.004706] ACK (priority=10)
+[PASS] test_busy_at_arrival_defers_until_idle_then_difs
+[t=0.000000] GENERIC (priority=50)
+[t=0.000020] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000120] GENERIC (priority=50)
+[t=0.000170] DIFS_END (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000270] BACKOFF_TICK (priority=30)
+[t=0.000290] BACKOFF_TICK (priority=30)
+[t=0.000310] BACKOFF_TICK (priority=30)
+[t=0.000330] BACKOFF_TICK (priority=30)
+[t=0.000350] BACKOFF_TICK (priority=30)
+[t=0.000370] BACKOFF_TICK (priority=30)
+[t=0.000370] TX_START (priority=20)
+[t=0.004603] TX_END (priority=0)
+[t=0.004726] ACK (priority=10)
+[PASS] test_busy_during_difs_restarts_full_difs
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000100] GENERIC (priority=50)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000200] GENERIC (priority=50)
+[t=0.000250] DIFS_END (priority=30)
+[t=0.000270] BACKOFF_TICK (priority=30)
+[t=0.000290] BACKOFF_TICK (priority=30)
+[t=0.000310] BACKOFF_TICK (priority=30)
+[t=0.000330] BACKOFF_TICK (priority=30)
+[t=0.000350] BACKOFF_TICK (priority=30)
+[t=0.000370] BACKOFF_TICK (priority=30)
+[t=0.000390] BACKOFF_TICK (priority=30)
+[t=0.000410] BACKOFF_TICK (priority=30)
+[t=0.000410] TX_START (priority=20)
+[t=0.004643] TX_END (priority=0)
+[t=0.004766] ACK (priority=10)
+[PASS] test_busy_during_backoff_freezes_and_resumes_remaining_slots
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000100] GENERIC (priority=50)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000200] GENERIC (priority=50)
+[t=0.000250] DIFS_END (priority=30)
+[t=0.000270] BACKOFF_TICK (priority=30)
+[t=0.000290] BACKOFF_TICK (priority=30)
+[t=0.000310] BACKOFF_TICK (priority=30)
+[t=0.000330] BACKOFF_TICK (priority=30)
+[t=0.000350] BACKOFF_TICK (priority=30)
+[t=0.000370] BACKOFF_TICK (priority=30)
+[t=0.000390] BACKOFF_TICK (priority=30)
+[t=0.000410] BACKOFF_TICK (priority=30)
+[t=0.000410] TX_START (priority=20)
+[t=0.004643] TX_END (priority=0)
+[t=0.004766] ACK (priority=10)
+[PASS] test_day05_does_not_increment_retry_or_cw
+
+All Day05 DCF busy-channel and backoff-freeze tests passed.
+
+=== Running Day06_DCF碰撞与重传\code\test_dcf_collision_retry.py ===
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000130] BACKOFF_TICK (priority=30)
+[t=0.000150] BACKOFF_TICK (priority=30)
+[t=0.000170] BACKOFF_TICK (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000250] GENERIC (priority=50)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[PASS] test_single_station_keeps_day04_success_delay
+[t=0.000000] GENERIC (priority=50)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] GENERIC (priority=50)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] COLLISION_END (priority=5)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004456] DIFS_END (priority=30)
+[t=0.004456] DIFS_END (priority=30)
+[t=0.004456] GENERIC (priority=50)
+[t=0.004476] BACKOFF_TICK (priority=30)
+[t=0.008689] TX_END (priority=0)
+[t=0.008812] ACK (priority=10)
+[t=0.008862] DIFS_END (priority=30)
+[t=0.008882] BACKOFF_TICK (priority=30)
+[t=0.008882] GENERIC (priority=50)
+[t=0.013115] TX_END (priority=0)
+[t=0.013238] ACK (priority=10)
+[PASS] test_same_slot_attempts_create_one_collision
+[t=0.000000] GENERIC (priority=50)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] GENERIC (priority=50)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] COLLISION_END (priority=5)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004456] DIFS_END (priority=30)
+[t=0.004456] DIFS_END (priority=30)
+[t=0.004456] GENERIC (priority=50)
+[t=0.004476] BACKOFF_TICK (priority=30)
+[t=0.008689] TX_END (priority=0)
+[t=0.008812] ACK (priority=10)
+[t=0.008862] DIFS_END (priority=30)
+[t=0.008882] BACKOFF_TICK (priority=30)
+[t=0.008882] GENERIC (priority=50)
+[t=0.013115] TX_END (priority=0)
+[t=0.013238] ACK (priority=10)
+[PASS] test_collision_causes_ack_timeout_retry_and_beb
+[t=0.000000] GENERIC (priority=50)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] GENERIC (priority=50)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] COLLISION_END (priority=5)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004456] DIFS_END (priority=30)
+[t=0.004456] DIFS_END (priority=30)
+[t=0.004456] GENERIC (priority=50)
+[t=0.004476] BACKOFF_TICK (priority=30)
+[t=0.008689] TX_END (priority=0)
+[t=0.008812] ACK (priority=10)
+[t=0.008862] DIFS_END (priority=30)
+[t=0.008882] BACKOFF_TICK (priority=30)
+[t=0.008882] GENERIC (priority=50)
+[t=0.013115] TX_END (priority=0)
+[t=0.013238] ACK (priority=10)
+[PASS] test_two_stations_eventually_deliver_after_different_retry_backoffs
+[t=0.000000] GENERIC (priority=50)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] GENERIC (priority=50)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] COLLISION_END (priority=5)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[PASS] test_retry_limit_zero_drops_both_collided_packets
+
+All Day06 DCF collision and retransmission tests passed.
+
+=== Running Day07_DCF指标采集\code\test_dcf_multihop_metrics.py ===
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000130] BACKOFF_TICK (priority=30)
+[t=0.000150] BACKOFF_TICK (priority=30)
+[t=0.000170] BACKOFF_TICK (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000250] GENERIC (priority=50)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.004606] GENERIC (priority=50)
+[t=0.004656] DIFS_END (priority=30)
+[t=0.004676] BACKOFF_TICK (priority=30)
+[t=0.004696] BACKOFF_TICK (priority=30)
+[t=0.004716] BACKOFF_TICK (priority=30)
+[t=0.004736] BACKOFF_TICK (priority=30)
+[t=0.004756] BACKOFF_TICK (priority=30)
+[t=0.004776] BACKOFF_TICK (priority=30)
+[t=0.004796] BACKOFF_TICK (priority=30)
+[t=0.004816] BACKOFF_TICK (priority=30)
+[t=0.004836] BACKOFF_TICK (priority=30)
+[t=0.004856] BACKOFF_TICK (priority=30)
+[t=0.004856] GENERIC (priority=50)
+[t=0.009089] TX_END (priority=0)
+[t=0.009212] ACK (priority=10)
+[PASS] test_two_hop_packet_is_forwarded_and_delivered
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000130] BACKOFF_TICK (priority=30)
+[t=0.000150] BACKOFF_TICK (priority=30)
+[t=0.000170] BACKOFF_TICK (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000250] GENERIC (priority=50)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.004606] GENERIC (priority=50)
+[t=0.004656] DIFS_END (priority=30)
+[t=0.004676] BACKOFF_TICK (priority=30)
+[t=0.004696] BACKOFF_TICK (priority=30)
+[t=0.004716] BACKOFF_TICK (priority=30)
+[t=0.004736] BACKOFF_TICK (priority=30)
+[t=0.004756] BACKOFF_TICK (priority=30)
+[t=0.004776] BACKOFF_TICK (priority=30)
+[t=0.004796] BACKOFF_TICK (priority=30)
+[t=0.004816] BACKOFF_TICK (priority=30)
+[t=0.004836] BACKOFF_TICK (priority=30)
+[t=0.004856] BACKOFF_TICK (priority=30)
+[t=0.004856] GENERIC (priority=50)
+[t=0.009089] TX_END (priority=0)
+[t=0.009212] ACK (priority=10)
+[PASS] test_relay_starts_a_fresh_dcf_cycle
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000130] BACKOFF_TICK (priority=30)
+[t=0.000150] BACKOFF_TICK (priority=30)
+[t=0.000170] BACKOFF_TICK (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000250] GENERIC (priority=50)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.004606] GENERIC (priority=50)
+[t=0.004656] DIFS_END (priority=30)
+[t=0.004676] BACKOFF_TICK (priority=30)
+[t=0.004696] BACKOFF_TICK (priority=30)
+[t=0.004716] BACKOFF_TICK (priority=30)
+[t=0.004736] BACKOFF_TICK (priority=30)
+[t=0.004756] BACKOFF_TICK (priority=30)
+[t=0.004776] BACKOFF_TICK (priority=30)
+[t=0.004796] BACKOFF_TICK (priority=30)
+[t=0.004816] BACKOFF_TICK (priority=30)
+[t=0.004836] BACKOFF_TICK (priority=30)
+[t=0.004856] BACKOFF_TICK (priority=30)
+[t=0.004856] GENERIC (priority=50)
+[t=0.009089] TX_END (priority=0)
+[t=0.009212] ACK (priority=10)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000130] BACKOFF_TICK (priority=30)
+[t=0.000150] BACKOFF_TICK (priority=30)
+[t=0.000170] BACKOFF_TICK (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000250] GENERIC (priority=50)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.004606] GENERIC (priority=50)
+[t=0.004656] DIFS_END (priority=30)
+[t=0.004676] BACKOFF_TICK (priority=30)
+[t=0.004696] BACKOFF_TICK (priority=30)
+[t=0.004716] BACKOFF_TICK (priority=30)
+[t=0.004736] BACKOFF_TICK (priority=30)
+[t=0.004756] BACKOFF_TICK (priority=30)
+[t=0.004776] BACKOFF_TICK (priority=30)
+[t=0.004796] BACKOFF_TICK (priority=30)
+[t=0.004816] BACKOFF_TICK (priority=30)
+[t=0.004836] BACKOFF_TICK (priority=30)
+[t=0.004856] BACKOFF_TICK (priority=30)
+[t=0.004856] GENERIC (priority=50)
+[t=0.009089] TX_END (priority=0)
+[t=0.009212] ACK (priority=10)
+[t=0.009212] GENERIC (priority=50)
+[t=0.009262] DIFS_END (priority=30)
+[t=0.009282] BACKOFF_TICK (priority=30)
+[t=0.009302] BACKOFF_TICK (priority=30)
+[t=0.009322] BACKOFF_TICK (priority=30)
+[t=0.009342] BACKOFF_TICK (priority=30)
+[t=0.009362] BACKOFF_TICK (priority=30)
+[t=0.009382] BACKOFF_TICK (priority=30)
+[t=0.009402] BACKOFF_TICK (priority=30)
+[t=0.009422] BACKOFF_TICK (priority=30)
+[t=0.009442] BACKOFF_TICK (priority=30)
+[t=0.009462] BACKOFF_TICK (priority=30)
+[t=0.009462] GENERIC (priority=50)
+[t=0.013695] TX_END (priority=0)
+[t=0.013818] ACK (priority=10)
+[t=0.013818] GENERIC (priority=50)
+[t=0.013868] DIFS_END (priority=30)
+[t=0.013888] BACKOFF_TICK (priority=30)
+[t=0.013908] BACKOFF_TICK (priority=30)
+[t=0.013928] BACKOFF_TICK (priority=30)
+[t=0.013948] BACKOFF_TICK (priority=30)
+[t=0.013968] BACKOFF_TICK (priority=30)
+[t=0.013988] BACKOFF_TICK (priority=30)
+[t=0.014008] BACKOFF_TICK (priority=30)
+[t=0.014028] BACKOFF_TICK (priority=30)
+[t=0.014048] BACKOFF_TICK (priority=30)
+[t=0.014068] BACKOFF_TICK (priority=30)
+[t=0.014068] GENERIC (priority=50)
+[t=0.018301] TX_END (priority=0)
+[t=0.018424] ACK (priority=10)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000130] BACKOFF_TICK (priority=30)
+[t=0.000150] BACKOFF_TICK (priority=30)
+[t=0.000170] BACKOFF_TICK (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000250] GENERIC (priority=50)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.004606] GENERIC (priority=50)
+[t=0.004656] DIFS_END (priority=30)
+[t=0.004676] BACKOFF_TICK (priority=30)
+[t=0.004696] BACKOFF_TICK (priority=30)
+[t=0.004716] BACKOFF_TICK (priority=30)
+[t=0.004736] BACKOFF_TICK (priority=30)
+[t=0.004756] BACKOFF_TICK (priority=30)
+[t=0.004776] BACKOFF_TICK (priority=30)
+[t=0.004796] BACKOFF_TICK (priority=30)
+[t=0.004816] BACKOFF_TICK (priority=30)
+[t=0.004836] BACKOFF_TICK (priority=30)
+[t=0.004856] BACKOFF_TICK (priority=30)
+[t=0.004856] GENERIC (priority=50)
+[t=0.009089] TX_END (priority=0)
+[t=0.009212] ACK (priority=10)
+[t=0.009212] GENERIC (priority=50)
+[t=0.009262] DIFS_END (priority=30)
+[t=0.009282] BACKOFF_TICK (priority=30)
+[t=0.009302] BACKOFF_TICK (priority=30)
+[t=0.009322] BACKOFF_TICK (priority=30)
+[t=0.009342] BACKOFF_TICK (priority=30)
+[t=0.009362] BACKOFF_TICK (priority=30)
+[t=0.009382] BACKOFF_TICK (priority=30)
+[t=0.009402] BACKOFF_TICK (priority=30)
+[t=0.009422] BACKOFF_TICK (priority=30)
+[t=0.009442] BACKOFF_TICK (priority=30)
+[t=0.009462] BACKOFF_TICK (priority=30)
+[t=0.009462] GENERIC (priority=50)
+[t=0.013695] TX_END (priority=0)
+[t=0.013818] ACK (priority=10)
+[t=0.013818] GENERIC (priority=50)
+[t=0.013868] DIFS_END (priority=30)
+[t=0.013888] BACKOFF_TICK (priority=30)
+[t=0.013908] BACKOFF_TICK (priority=30)
+[t=0.013928] BACKOFF_TICK (priority=30)
+[t=0.013948] BACKOFF_TICK (priority=30)
+[t=0.013968] BACKOFF_TICK (priority=30)
+[t=0.013988] BACKOFF_TICK (priority=30)
+[t=0.014008] BACKOFF_TICK (priority=30)
+[t=0.014028] BACKOFF_TICK (priority=30)
+[t=0.014048] BACKOFF_TICK (priority=30)
+[t=0.014068] BACKOFF_TICK (priority=30)
+[t=0.014068] GENERIC (priority=50)
+[t=0.018301] TX_END (priority=0)
+[t=0.018424] ACK (priority=10)
+[t=0.018424] GENERIC (priority=50)
+[t=0.018474] DIFS_END (priority=30)
+[t=0.018494] BACKOFF_TICK (priority=30)
+[t=0.018514] BACKOFF_TICK (priority=30)
+[t=0.018534] BACKOFF_TICK (priority=30)
+[t=0.018554] BACKOFF_TICK (priority=30)
+[t=0.018574] BACKOFF_TICK (priority=30)
+[t=0.018594] BACKOFF_TICK (priority=30)
+[t=0.018614] BACKOFF_TICK (priority=30)
+[t=0.018634] BACKOFF_TICK (priority=30)
+[t=0.018654] BACKOFF_TICK (priority=30)
+[t=0.018674] BACKOFF_TICK (priority=30)
+[t=0.018674] GENERIC (priority=50)
+[t=0.022907] TX_END (priority=0)
+[t=0.023030] ACK (priority=10)
+[t=0.023030] GENERIC (priority=50)
+[t=0.023080] DIFS_END (priority=30)
+[t=0.023100] BACKOFF_TICK (priority=30)
+[t=0.023120] BACKOFF_TICK (priority=30)
+[t=0.023140] BACKOFF_TICK (priority=30)
+[t=0.023160] BACKOFF_TICK (priority=30)
+[t=0.023180] BACKOFF_TICK (priority=30)
+[t=0.023200] BACKOFF_TICK (priority=30)
+[t=0.023220] BACKOFF_TICK (priority=30)
+[t=0.023240] BACKOFF_TICK (priority=30)
+[t=0.023260] BACKOFF_TICK (priority=30)
+[t=0.023280] BACKOFF_TICK (priority=30)
+[t=0.023280] GENERIC (priority=50)
+[t=0.027513] TX_END (priority=0)
+[t=0.027636] ACK (priority=10)
+[PASS] test_two_four_six_hop_delay_accumulates
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000130] BACKOFF_TICK (priority=30)
+[t=0.000150] BACKOFF_TICK (priority=30)
+[t=0.000170] BACKOFF_TICK (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000250] GENERIC (priority=50)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.004606] GENERIC (priority=50)
+[t=0.004656] DIFS_END (priority=30)
+[t=0.004676] BACKOFF_TICK (priority=30)
+[t=0.004696] BACKOFF_TICK (priority=30)
+[t=0.004716] BACKOFF_TICK (priority=30)
+[t=0.004736] BACKOFF_TICK (priority=30)
+[t=0.004756] BACKOFF_TICK (priority=30)
+[t=0.004776] BACKOFF_TICK (priority=30)
+[t=0.004796] BACKOFF_TICK (priority=30)
+[t=0.004816] BACKOFF_TICK (priority=30)
+[t=0.004836] BACKOFF_TICK (priority=30)
+[t=0.004856] BACKOFF_TICK (priority=30)
+[t=0.004856] GENERIC (priority=50)
+[t=0.009089] TX_END (priority=0)
+[t=0.009212] ACK (priority=10)
+[t=0.009212] GENERIC (priority=50)
+[t=0.009262] DIFS_END (priority=30)
+[t=0.009282] BACKOFF_TICK (priority=30)
+[t=0.009302] BACKOFF_TICK (priority=30)
+[t=0.009322] BACKOFF_TICK (priority=30)
+[t=0.009342] BACKOFF_TICK (priority=30)
+[t=0.009362] BACKOFF_TICK (priority=30)
+[t=0.009382] BACKOFF_TICK (priority=30)
+[t=0.009402] BACKOFF_TICK (priority=30)
+[t=0.009422] BACKOFF_TICK (priority=30)
+[t=0.009442] BACKOFF_TICK (priority=30)
+[t=0.009462] BACKOFF_TICK (priority=30)
+[t=0.009462] GENERIC (priority=50)
+[t=0.013695] TX_END (priority=0)
+[t=0.013818] ACK (priority=10)
+[t=0.013818] GENERIC (priority=50)
+[t=0.013868] DIFS_END (priority=30)
+[t=0.013888] BACKOFF_TICK (priority=30)
+[t=0.013908] BACKOFF_TICK (priority=30)
+[t=0.013928] BACKOFF_TICK (priority=30)
+[t=0.013948] BACKOFF_TICK (priority=30)
+[t=0.013968] BACKOFF_TICK (priority=30)
+[t=0.013988] BACKOFF_TICK (priority=30)
+[t=0.014008] BACKOFF_TICK (priority=30)
+[t=0.014028] BACKOFF_TICK (priority=30)
+[t=0.014048] BACKOFF_TICK (priority=30)
+[t=0.014068] BACKOFF_TICK (priority=30)
+[t=0.014068] GENERIC (priority=50)
+[t=0.018301] TX_END (priority=0)
+[t=0.018424] ACK (priority=10)
+[PASS] test_metric_counts_match_hop_count_without_contention
+[t=0.000000] GENERIC (priority=50)
+[t=0.000000] GENERIC (priority=50)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] GENERIC (priority=50)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] COLLISION_END (priority=5)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004456] DIFS_END (priority=30)
+[t=0.004456] DIFS_END (priority=30)
+[t=0.004456] GENERIC (priority=50)
+[t=0.004476] BACKOFF_TICK (priority=30)
+[t=0.008689] TX_END (priority=0)
+[t=0.008812] ACK (priority=10)
+[t=0.008862] DIFS_END (priority=30)
+[t=0.008882] BACKOFF_TICK (priority=30)
+[t=0.008882] GENERIC (priority=50)
+[t=0.013115] TX_END (priority=0)
+[t=0.013238] ACK (priority=10)
+[PASS] test_collision_retry_metrics_remain_available
+[PASS] test_invalid_route_edge_is_rejected
+
+All Day07 multi-hop DCF and metric-collection tests passed.
+
+=== Running Day08_DCF验证与调试\code\test_dcf_validation.py ===
+[t=0.000000] PACKET_ARRIVAL (priority=40)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000070] BACKOFF_TICK (priority=30)
+[t=0.000090] BACKOFF_TICK (priority=30)
+[t=0.000110] BACKOFF_TICK (priority=30)
+[t=0.000130] BACKOFF_TICK (priority=30)
+[t=0.000150] BACKOFF_TICK (priority=30)
+[t=0.000170] BACKOFF_TICK (priority=30)
+[t=0.000190] BACKOFF_TICK (priority=30)
+[t=0.000210] BACKOFF_TICK (priority=30)
+[t=0.000230] BACKOFF_TICK (priority=30)
+[t=0.000250] BACKOFF_TICK (priority=30)
+[t=0.000250] TX_SLOT_RESOLVE (priority=35)
+[t=0.004483] TX_END (priority=0)
+[t=0.004606] ACK (priority=10)
+[t=0.004606] FORWARD_ARRIVAL (priority=40)
+[t=0.004656] DIFS_END (priority=30)
+[t=0.004676] BACKOFF_TICK (priority=30)
+[t=0.004696] BACKOFF_TICK (priority=30)
+[t=0.004716] BACKOFF_TICK (priority=30)
+[t=0.004736] BACKOFF_TICK (priority=30)
+[t=0.004756] BACKOFF_TICK (priority=30)
+[t=0.004776] BACKOFF_TICK (priority=30)
+[t=0.004796] BACKOFF_TICK (priority=30)
+[t=0.004816] BACKOFF_TICK (priority=30)
+[t=0.004836] BACKOFF_TICK (priority=30)
+[t=0.004856] BACKOFF_TICK (priority=30)
+[t=0.004876] BACKOFF_TICK (priority=30)
+[t=0.004876] TX_SLOT_RESOLVE (priority=35)
+[t=0.009109] TX_END (priority=0)
+[t=0.009232] ACK (priority=10)
+[t=0.020000] PACKET_ARRIVAL (priority=40)
+[t=0.020050] DIFS_END (priority=30)
+[t=0.020070] BACKOFF_TICK (priority=30)
+[t=0.020090] BACKOFF_TICK (priority=30)
+[t=0.020110] BACKOFF_TICK (priority=30)
+[t=0.020130] BACKOFF_TICK (priority=30)
+[t=0.020130] TX_SLOT_RESOLVE (priority=35)
+[t=0.024363] TX_END (priority=0)
+[t=0.024486] ACK (priority=10)
+[t=0.024486] FORWARD_ARRIVAL (priority=40)
+[t=0.024536] DIFS_END (priority=30)
+[t=0.024556] BACKOFF_TICK (priority=30)
+[t=0.024576] BACKOFF_TICK (priority=30)
+[t=0.024596] BACKOFF_TICK (priority=30)
+[t=0.024616] BACKOFF_TICK (priority=30)
+[t=0.024636] BACKOFF_TICK (priority=30)
+[t=0.024656] BACKOFF_TICK (priority=30)
+[t=0.024676] BACKOFF_TICK (priority=30)
+[t=0.024696] BACKOFF_TICK (priority=30)
+[t=0.024716] BACKOFF_TICK (priority=30)
+[t=0.024736] BACKOFF_TICK (priority=30)
+[t=0.024756] BACKOFF_TICK (priority=30)
+[t=0.024776] BACKOFF_TICK (priority=30)
+[t=0.024776] TX_SLOT_RESOLVE (priority=35)
+[t=0.029009] TX_END (priority=0)
+[t=0.029132] ACK (priority=10)
+[PASS] test_schedule_at_event_names_are_not_generic
+[PASS] test_same_seed_is_reproducible
+[PASS] test_different_seed_changes_randomized_result
+[PASS] test_delay_decomposition_and_queue_boundary
+[PASS] test_high_load_increases_queueing_delay
+[t=0.000000] PACKET_ARRIVAL (priority=40)
+[t=0.000000] PACKET_ARRIVAL (priority=40)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] DIFS_END (priority=30)
+[t=0.000050] TX_SLOT_RESOLVE (priority=35)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] TX_END (priority=0)
+[t=0.004283] COLLISION_END (priority=5)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004406] ACK_TIMEOUT (priority=10)
+[t=0.004456] DIFS_END (priority=30)
+[t=0.004456] DIFS_END (priority=30)
+[t=0.004456] TX_SLOT_RESOLVE (priority=35)
+[t=0.004476] BACKOFF_TICK (priority=30)
+[t=0.008689] TX_END (priority=0)
+[t=0.008812] ACK (priority=10)
+[t=0.008812] FORWARD_ARRIVAL (priority=40)
+[t=0.008862] DIFS_END (priority=30)
+[t=0.008862] DIFS_END (priority=30)
+[t=0.008862] TX_SLOT_RESOLVE (priority=35)
+[t=0.008882] BACKOFF_TICK (priority=30)
+[t=0.013095] TX_END (priority=0)
+[t=0.013218] ACK (priority=10)
+[t=0.013268] DIFS_END (priority=30)
+[t=0.013288] BACKOFF_TICK (priority=30)
+[t=0.013288] TX_SLOT_RESOLVE (priority=35)
+[t=0.017521] TX_END (priority=0)
+[t=0.017644] ACK (priority=10)
+[t=0.017644] FORWARD_ARRIVAL (priority=40)
+[t=0.017694] DIFS_END (priority=30)
+[t=0.017694] TX_SLOT_RESOLVE (priority=35)
+[t=0.021927] TX_END (priority=0)
+[t=0.022050] ACK (priority=10)
+[PASS] test_converging_collision_smoke_preserves_day06_and_day07
+
+All Day08 DCF validation and debugging tests passed.
+
+=== Running Day09_Fixed-PRMAC报文与预约\code\test_fixed_prmac_reservation.py ===
+[PASS] test_fixed_baseline_parameters_are_frozen
+[t=0.000000] RESERVATION_START (priority=40)
+[t=0.000000] PR_REQ_TX (priority=20)
+[t=0.000289] PR_REQ_RX (priority=10)
+[t=0.000299] PR_REQ_TX (priority=20)
+[t=0.000588] PR_REQ_RX (priority=10)
+[t=0.000598] PR_ACK_TX (priority=20)
+[t=0.000791] PR_ACK_RX (priority=10)
+[t=0.000801] PR_ACK_TX (priority=20)
+[t=0.000994] PR_ACK_RX (priority=10)
+[PASS] test_k2_pr_req_and_reverse_pr_ack_activate_reservation
+[PASS] test_remaining_one_hop_truncates_effective_k
+[PASS] test_control_frames_preserve_required_fields_and_overhead
+[PASS] test_release_propagates_and_clears_active_record
+[PASS] test_active_reservation_expires_at_duration_boundary
+[PASS] test_invalid_route_edge_is_rejected_before_events_are_scheduled
+[PASS] test_day09_intentionally_has_no_conflict_rejection
+
+All Day09 Fixed-PRMAC message and reservation tests passed.
+
+=== Running Day10_Fixed-PRMAC冲突模型\code\test_fixed_prmac_conflict.py ===
+[PASS] test_disjoint_overlapping_time_reservations_can_coexist
+[PASS] test_same_link_overlap_is_rejected
+[PASS] test_shared_node_overlap_is_rejected_without_same_link
+[PASS] test_non_overlapping_time_window_is_accepted_and_old_record_expires
+[t=0.000000] RESERVATION_START (priority=40)
+[t=0.000000] PR_REQ_TX (priority=20)
+[t=0.000289] PR_REQ_RX (priority=10)
+[t=0.000299] PR_REQ_TX (priority=20)
+[t=0.000588] PR_REQ_RX (priority=10)
+[t=0.000598] PR_ACK_TX (priority=20)
+[t=0.000791] PR_ACK_RX (priority=10)
+[t=0.000801] PR_ACK_TX (priority=20)
+[t=0.000994] PR_ACK_RX (priority=10)
+[t=0.000994] RESERVATION_START (priority=40)
+[t=0.000994] PR_REQ_TX (priority=20)
+[t=0.001283] PR_REQ_RX (priority=10)
+[t=0.001293] PR_REQ_TX (priority=20)
+[t=0.001582] PR_REQ_RX (priority=10)
+[t=0.001592] PR_NACK_TX (priority=20)
+[t=0.001785] PR_NACK_RX (priority=10)
+[t=0.001795] PR_NACK_TX (priority=20)
+[t=0.001988] PR_NACK_RX (priority=10)
+[PASS] test_pr_nack_returns_along_reverse_partial_path
+[PASS] test_rejected_request_does_not_pollute_existing_active_reservation
+[PASS] test_release_frees_resources_for_new_reservation
+[PASS] test_reverse_direction_uses_same_physical_link_resource
+
+All Day10 Fixed-PRMAC conflict tests passed.
+
+=== Running Day11_Fixed-PRMAC连续转发\code\test_fixed_prmac_forwarding.py ===
+[PASS] test_day11_phy_defaults_match_existing_dcf_baseline
+[t=0.000000] RESERVATION_START (priority=40)
+[t=0.000000] PR_REQ_TX (priority=20)
+[t=0.000289] PR_REQ_RX (priority=10)
+[t=0.000299] PR_REQ_TX (priority=20)
+[t=0.000588] PR_REQ_RX (priority=10)
+[t=0.000598] PR_ACK_TX (priority=20)
+[t=0.000791] PR_ACK_RX (priority=10)
+[t=0.000801] PR_ACK_TX (priority=20)
+[t=0.000994] PR_ACK_RX (priority=10)
+[t=0.000994] SEGMENT_FORWARD_START (priority=40)
+[t=0.000994] DATA_TX (priority=20)
+[t=0.005227] DATA_RX (priority=10)
+[t=0.005237] H_ACK_TX (priority=20)
+[t=0.005350] H_ACK_RX (priority=10)
+[t=0.005360] DATA_TX (priority=20)
+[t=0.009593] DATA_RX (priority=10)
+[t=0.009603] H_ACK_TX (priority=20)
+[t=0.009716] H_ACK_RX (priority=10)
+[PASS] test_k2_active_reservation_forwards_two_data_and_two_h_ack
+[PASS] test_next_data_waits_for_previous_h_ack_reception
+[PASS] test_remaining_one_hop_uses_one_data_and_one_h_ack
+[PASS] test_long_route_stops_at_reserved_segment_endpoint
+[PASS] test_non_active_reservations_cannot_schedule_data
+[PASS] test_rejected_reservation_cannot_schedule_data
+[PASS] test_packet_must_match_reservation_identity_route_and_segment_start
+[PASS] test_forwarding_delay_and_byte_metrics_match_analytical_values
+[PASS] test_reservation_window_must_cover_complete_segment
+
+All Day11 Fixed-PRMAC continuous-forwarding tests passed.
+
+=== Running Day12_Fixed-PRMAC失败与重传\code\test_fixed_prmac_retry.py ===
+[PASS] test_day12_retry_defaults_match_existing_dcf_baseline
+[PASS] test_no_conflict_succeeds_on_first_attempt_without_backoff
+[PASS] test_pr_nack_triggers_seeded_beb_and_first_retry_succeeds_after_release
+[PASS] test_each_retry_uses_a_fresh_reservation_id_and_preserves_history
+[PASS] test_retry_event_order_is_rejection_then_backoff_then_new_attempt
+[PASS] test_persistent_conflict_exhausts_limit_and_marks_final_attempt_failed
+[PASS] test_binary_exponential_window_growth_is_capped
+[PASS] test_retry_random_seed_is_reproducible
+[PASS] test_plain_day10_rejection_does_not_enable_automatic_retry
+[PASS] test_successful_retry_can_use_inherited_day11_data_h_ack_forwarding
+[PASS] test_retry_metrics_include_all_attempts_backoff_and_control_overhead
+
+All Day12 Fixed-PRMAC failure-and-retry tests passed.
+
+=== Running Day13_Fixed-PRMAC验证\code\test_fixed_prmac_validation.py ===
+[PASS] test_day13_defaults_preserve_fixed_design_and_dcf_fairness
+[PASS] test_two_hop_route_delivers_in_one_segment
+[PASS] test_four_hop_route_uses_two_ordered_segments
+[PASS] test_six_hop_route_uses_three_segments_and_exact_frame_counts
+[PASS] test_odd_route_truncates_last_segment_to_one_hop
+[PASS] test_final_delivery_boundary_is_last_h_ack_reception
+[PASS] test_release_completes_before_next_segment_access
+[PASS] test_conflict_then_release_allows_segment_retry_and_delivery
+[PASS] test_persistent_conflict_exhausts_segment_and_fails_end_to_end
+[PASS] test_periodic_fixed_case_is_seed_reproducible_and_terminal
+[PASS] test_same_node_high_load_waits_in_fifo_without_local_pr_nack
+[PASS] test_segment_queue_delay_is_included_without_counting_as_retry
+[PASS] test_queue_limit_counts_active_head_and_drops_only_excess_packet
+[PASS] test_stop_loss_scope_remains_2_4_6_three_loads_three_seeds
+[PASS] test_stop_loss_evaluator_never_passes_unfair_or_worse_evidence
+[PASS] test_stop_loss_evaluator_can_pass_consistent_fair_evidence_without_percent_threshold
+[PASS] test_stop_loss_gate_matches_declared_long_congested_target_not_global_majority
+[PASS] test_stop_loss_requires_no_delivery_loss_across_all_nine_cells
+
+All Day13 Fixed-PRMAC validation and stop-loss tests passed.
+
+=== Running Day14_Q-learning状态设计\code\test_rl_prmac_state.py ===
+[PASS] test_observation_rejects_invalid_values
+[PASS] test_remaining_hops_bins
+[PASS] test_queue_length_bins
+[PASS] test_reservation_outcome_bins
+[PASS] test_retry_intensity_bins
+[PASS] test_priority_bins
+[PASS] test_channel_busy_bins_and_unknown
+[PASS] test_encoding_is_deterministic_and_hashable
+[PASS] test_state_space_size_is_bounded
+[PASS] test_observation_contains_only_declared_local_fields
+[PASS] test_state_tuple_order_is_stable
+
+All Day14 Q-learning state-design tests passed.
+
+=== Running Day15_Q-learning动作与策略\code\test_rl_prmac_action_policy.py ===
+[PASS] test_design_version_is_frozen
+[PASS] test_default_action_order_matches_original_six_action_design
+[PASS] test_fixed_baseline_action_is_preserved
+[PASS] test_state_action_upper_bound_is_9216_per_node
+[PASS] test_action_index_round_trip_is_stable
+[PASS] test_legal_mask_counts_follow_remaining_hops
+[PASS] test_illegal_k_is_rejected_instead_of_truncated
+[PASS] test_invalid_action_space_parameters_are_rejected
+[PASS] test_beb_starts_from_action_selected_initial_cw_and_caps
+[PASS] test_backoff_sampling_is_reproducible_and_bounded
+[PASS] test_access_delay_matches_existing_slot_and_difs_defaults
+[PASS] test_sparse_q_table_defaults_to_zero
+[PASS] test_sparse_q_table_rejects_invalid_values_and_indices
+[PASS] test_greedy_policy_selects_highest_legal_q_value
+[PASS] test_illegal_high_q_action_is_masked
+[PASS] test_exploration_never_selects_an_illegal_action
+[PASS] test_exploration_is_reproducible_with_same_seed
+[PASS] test_equal_q_tie_breaking_is_reproducible
+[PASS] test_different_nodes_keep_independent_local_q_tables
+[PASS] test_policy_rejects_another_nodes_q_table
+[PASS] test_decision_holds_one_action_across_the_retry_sequence
+[PASS] test_decision_serialization_is_auditable
+[PASS] test_day15_exposes_no_reward_update_or_training_api
+
+All Day15 Q-learning action-and-policy tests passed.
+
+=== Running Day16_奖励函数与更新机制\code\test_rl_prmac_reward_update.py ===
+[PASS] test_design_versions_and_scopes_are_frozen
+[PASS] test_reward_input_exposes_no_future_end_to_end_delay_field
+[PASS] test_successful_segment_has_positive_reward
+[PASS] test_failed_segment_has_negative_reward
+[PASS] test_final_delivery_adds_local_terminal_delivery_bonus
+[PASS] test_longer_successful_progress_is_rewarded_without_forcing_k
+[PASS] test_more_retries_reduce_reward
+[PASS] test_more_control_overhead_reduces_reward
+[PASS] test_longer_service_delay_reduces_reward
+[PASS] test_longer_local_queue_delay_reduces_reward
+[PASS] test_high_priority_delay_is_penalized_more_strongly
+[PASS] test_priority_does_not_create_artificial_bonus_without_delay
+[PASS] test_reward_is_clipped_to_declared_bounds
+[PASS] test_failed_segment_cannot_claim_forwarded_hops
+[PASS] test_delivery_must_consume_all_locally_known_remaining_hops
+[PASS] test_normalized_components_stay_within_zero_and_one
+[PASS] test_transition_assembler_pairs_same_node_next_decision
+[PASS] test_transition_assembler_rejects_second_pending_segment_per_node
+[PASS] test_transition_assembler_rejects_unknown_node_completion
+[PASS] test_terminal_transition_has_no_bootstrap_state
+[PASS] test_nonterminal_transition_requires_next_state_and_hops
+[PASS] test_learning_parameter_boundaries_are_checked
+[PASS] test_q_update_matches_bellman_formula
+[PASS] test_terminal_update_uses_zero_bootstrap
+[PASS] test_illegal_next_action_is_excluded_from_max_q
+[PASS] test_illegal_current_action_is_rejected_not_truncated
+[PASS] test_learner_rejects_another_nodes_q_table
+[PASS] test_learner_rejects_another_nodes_transition
+[PASS] test_different_nodes_update_independent_q_tables
+
+All Day16 reward/update tests passed. (29 tests)
+
+=== Running Day17_RL-PRMAC协议集成\code\test_rl_prmac_protocol_controller.py ===
+[PASS] test_frozen_versions_and_scopes
+[PASS] test_default_action_catalog_is_unchanged
+[PASS] test_each_node_owns_an_independent_q_table_and_policy
+[PASS] test_decision_is_made_before_initial_access_and_applies_selected_cw
+[PASS] test_selected_k_is_applied_exactly_without_silent_truncation
+[PASS] test_illegal_large_k_is_masked_at_one_remaining_hop
+[PASS] test_default_channel_busy_state_remains_unknown_not_low
+[PASS] test_local_busy_provider_is_encoded_without_global_state
+[PASS] test_success_reward_is_settled_only_after_release
+[PASS] test_final_delivery_creates_immediate_terminal_update
+[PASS] test_nonfinal_segment_waits_for_same_node_next_decision
+[PASS] test_another_nodes_decision_never_bootstraps_the_first_nodes_q_table
+[PASS] test_same_node_next_fifo_head_completes_bootstrapped_update
+[PASS] test_explicit_episode_end_flushes_only_remaining_local_pending_items
+[PASS] test_high_priority_is_present_in_state_and_reward_input
+[PASS] test_local_outcome_history_updates_after_segment_settlement
+[PASS] test_persistent_conflict_holds_action_and_uses_action_rooted_beb
+[PASS] test_retry_exhaustion_settles_negative_terminal_reward
+[PASS] test_reward_control_bytes_are_segment_local_and_positive
+[PASS] test_queue_limit_drop_before_decision_does_not_create_fake_rl_action
+[PASS] test_metrics_preserve_day13_delivery_and_add_day17_learning_counts
+[PASS] test_rl_snapshot_is_auditable_and_contains_no_global_q_table
+[PASS] test_exported_rl_json_is_utf8_parseable
+[PASS] test_seeded_controller_is_reproducible
+[PASS] test_controller_exposes_no_complete_training_or_central_schedule_api
+[PASS] test_fixed_prmac_baseline_configuration_is_not_mutated_by_rl_action
+All Day17 protocol-controller tests passed. (26 tests)
+
+All Day03-Day17 regression tests passed.

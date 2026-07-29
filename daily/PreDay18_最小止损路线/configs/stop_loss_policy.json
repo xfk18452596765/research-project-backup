@@ -1,0 +1,10 @@
+{
+  "frozen_before_runs": true,
+  "core_target_cells": ["4-high", "6-medium", "6-high"],
+  "key_cells": ["4-medium", "4-high", "6-medium", "6-high"],
+  "python_periodic": {"all_targets_fixed_mean_lower": true, "key_cells_lower_min": 3, "paired_seed_wins_min": 14, "negative_ci_targets_min": 2},
+  "python_poisson": {"negative_ci_targets_min": 2, "all_targets_nonpositive_mean": true, "max_delivery_loss_pp": 1},
+  "robustness": {"max_multiflow_delivery_loss_pp": 1, "max_jain_loss": 0.05, "max_spatial_throughput_loss_fraction": 0.05, "max_control_loss_1pct_delivery_loss_pp": 2},
+  "ns3": {"target_cells_fixed_lower_min": 2, "max_delivery_loss_pp": 2},
+  "hard": ["complete","parseable","finite","terminating","no_active_reservations","no_deadlock","paired_inputs","old_days_unchanged","day18_unchanged","no_rl"]
+}
