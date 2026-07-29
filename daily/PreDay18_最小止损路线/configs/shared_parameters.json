@@ -1,0 +1,22 @@
+{
+  "k": 2,
+  "cw_initial": 15,
+  "cw_max": 1023,
+  "retry_limit": 7,
+  "slot_time_us": 20,
+  "sifs_us": 10,
+  "difs_us": 50,
+  "propagation_delay_us": 1,
+  "data_rate_bps": 2000000,
+  "basic_rate_bps": 1000000,
+  "mac_header_bytes": 34,
+  "ack_bytes": 14,
+  "pr_req_bytes": 36,
+  "pr_ack_bytes": 24,
+  "pr_nack_bytes": 24,
+  "release_bytes": 20,
+  "h_ack_bytes": 14,
+  "payload_bytes": 1024,
+  "queue_limit": 200,
+  "reservation_duration_ms": 20
+}
