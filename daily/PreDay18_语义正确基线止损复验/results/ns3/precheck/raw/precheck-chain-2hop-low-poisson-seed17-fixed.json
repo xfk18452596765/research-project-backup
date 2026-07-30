@@ -1,0 +1,155 @@
+{
+  "platform": "ns-3.43",
+  "protocol": "fixed",
+  "scenario_id": "precheck-chain-2hop-low-poisson-seed17",
+  "traffic": "poisson",
+  "topology": "chain",
+  "hop_count": 2,
+  "load": "low",
+  "seed": 17,
+  "packet_count": 10,
+  "flow_count": 1,
+  "created_packets": 10,
+  "delivered_packets": 10,
+  "delivery_ratio": 1.0,
+  "average_e2e_delay": 0.081568,
+  "p50_e2e_delay": 0.0862415,
+  "p95_e2e_delay": 0.10888339999999996,
+  "p99_e2e_delay": 0.11626628,
+  "maximum_e2e_delay": 0.118112,
+  "throughput_bps": 146270.04249544692,
+  "queue_overflow": 0,
+  "maximum_queue_length": 10,
+  "mac_retries": 0,
+  "phy_drops": 45,
+  "mac_drops": 0,
+  "control_timeouts": 0,
+  "reservation_retries": 0,
+  "control_frames": 160,
+  "control_bytes": 5040,
+  "data_frames": 40,
+  "data_bytes": 41280,
+  "control_airtime": 0.04032,
+  "data_airtime": 0.16512,
+  "simulation_end_time": 11.547297,
+  "wall_clock_runtime": 0.3686120999918785,
+  "active_reservations_after_run": 0,
+  "unknown_loss_count": 0,
+  "final_loss_count": 0,
+  "source_sha": "feb05e33d6d3a34fa3016e7ceb02ea3bb9ad0c5d8e037c39df652b23e9690067",
+  "patch_sha": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+  "experiment_source_sha": "dc336b2e7d629d529cf564c2ea46db6384b79b1031e624b5d2f21ba759bac757",
+  "config_sha": "64bb64f39fe59d1b624646774055c0db83a691db949fcf0a5c8fffe27e9cf151",
+  "traffic_schedule_sha": "60d6b3f7284e3cfe20bd0283cc7f193aa59a8285a73f057998222392aa4b3eee",
+  "topology_sha": "01cdf3c903f8aba4a1270e257b3ebcea5157a72bb2ddc80a8b090041576ed23e",
+  "per_flow": [
+    {
+      "flow_id": 0,
+      "created": 10,
+      "delivered": 10,
+      "delivery_ratio": 1.0
+    }
+  ],
+  "jain_fairness": 1.0,
+  "concurrent_transmission_evidence_count": 53,
+  "terminal_counts": {
+    "DELIVERED": 10,
+    "QUEUE_OVERFLOW": 0,
+    "APP_SEND_REJECTED": 0,
+    "MAC_QUEUE_DROP": 0,
+    "MAC_RETRY_EXHAUSTED": 0,
+    "PHY_RX_DROP": 0,
+    "CONTROL_TIMEOUT": 0,
+    "RESERVATION_RETRY_EXHAUSTED": 0,
+    "SEGMENT_DATA_TIMEOUT": 0,
+    "SIMULATION_STOP_TIMEOUT": 0,
+    "DUPLICATE_SUPPRESSED": 0,
+    "UNKNOWN_LOSS": 0
+  },
+  "packets_detail": [
+    {
+      "flow_id": 0,
+      "packet_id": 0,
+      "terminal": "DELIVERED",
+      "last_node": 2,
+      "segments_completed": 1
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 1,
+      "terminal": "DELIVERED",
+      "last_node": 2,
+      "segments_completed": 1
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 2,
+      "terminal": "DELIVERED",
+      "last_node": 2,
+      "segments_completed": 1
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 3,
+      "terminal": "DELIVERED",
+      "last_node": 2,
+      "segments_completed": 1
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 4,
+      "terminal": "DELIVERED",
+      "last_node": 2,
+      "segments_completed": 1
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 5,
+      "terminal": "DELIVERED",
+      "last_node": 2,
+      "segments_completed": 1
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 6,
+      "terminal": "DELIVERED",
+      "last_node": 2,
+      "segments_completed": 1
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 7,
+      "terminal": "DELIVERED",
+      "last_node": 2,
+      "segments_completed": 1
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 8,
+      "terminal": "DELIVERED",
+      "last_node": 2,
+      "segments_completed": 1
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 9,
+      "terminal": "DELIVERED",
+      "last_node": 2,
+      "segments_completed": 1
+    }
+  ],
+  "frozen_parameters": {
+    "K": 2,
+    "CWmin": 15,
+    "CWmax": 1023,
+    "retry_limit": 7,
+    "slot_us": 20,
+    "SIFS_us": 10,
+    "DIFS_us": 50,
+    "data_rate": "DsssRate2Mbps",
+    "control_rate": "DsssRate1Mbps",
+    "payload_bytes": 1024
+  },
+  "actual_load_interval_s": 0.05,
+  "control_loss_probability": 0.0
+}

@@ -1,0 +1,17 @@
+decision: FAIL
+baseline input verification: PASS
+historical evidence immutable: PASS
+policy SHA frozen: PASS
+precheck: 36/36 passed
+broad core: 360/360 completed
+confirmatory: 320/320 completed
+sensitivity: 200/200 completed
+missing runs: 0
+failed runs: 0
+ns-3 full build: PASS
+ns-3 official tests: 768/768 passed
+stage unit tests: 8/8 passed
+semantic baseline tests: 11/11 passed
+Day03-Day17 regression: PASS
+RL started: NO
+Day18 status: LOCKED

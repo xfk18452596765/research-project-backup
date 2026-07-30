@@ -1,0 +1,5 @@
+{
+  "cells": ["4-medium-periodic", "4-high-periodic", "6-medium-periodic", "6-high-periodic", "4-medium-poisson", "4-high-poisson", "6-medium-poisson", "6-high-poisson"],
+  "minimum_consistent_delay_directions": 6,
+  "forbid_python_improves_ns3_worsens_fraction": 0.10
+}

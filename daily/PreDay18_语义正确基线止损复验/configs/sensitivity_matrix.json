@@ -1,0 +1,8 @@
+{
+  "burst": {"protocols": ["dcf", "fixed"], "hops": [4, 6], "load": "high", "traffic": "burst", "seeds": [7, 17, 27, 37, 47, 57, 67, 77, 87, 97], "packets": 100, "burst_size": 5, "intra_burst_gap_s": 0.001, "expected_runs": 40},
+  "multiflow": {"protocols": ["dcf", "fixed"], "topologies": ["m1", "m2", "m3"], "loads": ["medium", "high"], "seeds": [7, 17, 27, 37, 47], "packets_per_flow": 50, "expected_runs": 60},
+  "spatial_reuse": {"protocols": ["dcf", "fixed"], "seeds": [7, 17, 27, 37, 47, 57, 67, 77, 87, 97], "total_packets": 100, "expected_runs": 20},
+  "control_loss": {"protocols": ["dcf", "fixed"], "hops": 6, "load": "high", "traffic": "poisson", "loss_probabilities": [0.01, 0.05], "seeds": [7, 17, 27, 37, 47, 57, 67, 77, 87, 97], "packets": 100, "expected_runs": 40},
+  "hidden_terminal": {"protocols": ["dcf", "fixed"], "loads": ["medium", "high"], "seeds": [7, 17, 27, 37, 47, 57, 67, 77, 87, 97], "packets": 100, "expected_runs": 40},
+  "expected_runs": 200
+}

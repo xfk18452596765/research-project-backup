@@ -1,0 +1,16 @@
+{
+  "policy_version": 1,
+  "frozen_before_formal_runs": true,
+  "integrity": {"missing_runs": 0, "failed_runs": 0, "nan_or_infinity": 0, "unknown_loss": 0, "active_reservations": 0, "require_unique_terminal_state": true, "require_exact_loss_accounting": true, "require_paired_input_hashes": true, "require_historical_evidence_immutable": true, "require_no_rl": true},
+  "core_delay": {"mean_delay_better_cells_min": 6, "cells_total": 8, "six_hop_high_must_not_worsen": true, "ci_upper_below_zero_cells_min": 4, "six_hop_high_ci_upper_below_zero_cells_min": 1, "cells_with_fixed_wins_at_least_14_of_20_min": 6},
+  "p95": {"six_hop_high_must_not_worsen": true, "other_cells_max_relative_worsening": 0.05},
+  "delivery": {"max_mean_loss_percentage_points": 1.0, "max_single_seed_loss_percentage_points": 5.0},
+  "throughput": {"max_relative_loss": 0.02},
+  "control_overhead": {"max_logical_control_bytes_per_delivered_payload_byte": 0.35, "control_airtime_less_than_data_airtime": true},
+  "burst": {"six_hop_high_delay_or_p95_better": true, "max_delivery_loss_percentage_points": 2.0},
+  "multiflow": {"max_delivery_loss_percentage_points": 2.0, "max_jain_drop": 0.05, "starvation_delivery_below": 0.80, "other_flow_delivery_at_least": 0.95},
+  "spatial_reuse": {"max_throughput_loss": 0.05, "require_concurrency_evidence": true, "forbid_global_mutex": true},
+  "control_loss": {"one_percent_max_delivery_loss_percentage_points": 3.0, "require_no_deadlock_or_leak": true, "five_percent_require_all_terminate": true},
+  "hidden_terminal": {"max_delivery_loss_percentage_points": 5.0, "require_no_deadlock_or_leak": true, "require_one_of_delay_p95_retries_better": true},
+  "cross_platform": {"minimum_consistent_delay_directions": 6, "forbid_opposite_change_over_fraction": 0.10}
+}

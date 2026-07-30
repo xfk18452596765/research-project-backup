@@ -1,0 +1,46 @@
+{
+  "decision": "FAIL",
+  "thresholds": {
+    "hard_integrity": true,
+    "core_delay": false,
+    "p95": false,
+    "delivery": false,
+    "throughput": false,
+    "control_overhead": false,
+    "burst": false,
+    "multiflow": false,
+    "spatial_reuse": false,
+    "control_loss": true,
+    "hidden_terminal": false,
+    "cross_platform": false
+  },
+  "failed_thresholds": [
+    "core_delay",
+    "p95",
+    "delivery",
+    "throughput",
+    "control_overhead",
+    "burst",
+    "multiflow",
+    "spatial_reuse",
+    "hidden_terminal",
+    "cross_platform"
+  ],
+  "core_counts": {
+    "delay_better_cells": 0,
+    "ci_better_cells": 0,
+    "seed_win_cells": 0
+  },
+  "Day18_status": "LOCKED",
+  "RL_started": false,
+  "base_commit": "38cd5b7aa05556f00aaa6169aa34d805bccc1a3a",
+  "policy_sha256": "8a66d1694f2200902e2f04ac7dfbc4fcea71b96d9b7b4866dc124e3f0329c069",
+  "actual_runs": {
+    "precheck": 36,
+    "broad_core": 360,
+    "confirmatory": 320,
+    "sensitivity": 200
+  },
+  "missing_runs": 0,
+  "failed_runs": 0
+}

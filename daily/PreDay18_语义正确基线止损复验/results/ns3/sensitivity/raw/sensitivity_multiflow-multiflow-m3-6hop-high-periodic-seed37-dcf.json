@@ -1,0 +1,791 @@
+{
+  "platform": "ns-3.43",
+  "protocol": "dcf",
+  "scenario_id": "sensitivity_multiflow-multiflow-m3-6hop-high-periodic-seed37",
+  "traffic": "periodic",
+  "topology": "multiflow-m3",
+  "hop_count": 6,
+  "load": "high",
+  "seed": 37,
+  "packet_count": 100,
+  "flow_count": 2,
+  "created_packets": 100,
+  "delivered_packets": 72,
+  "delivery_ratio": 0.72,
+  "average_e2e_delay": 0.34113797222222225,
+  "p50_e2e_delay": 0.29831399999999997,
+  "p95_e2e_delay": 0.7449490000000001,
+  "p99_e2e_delay": 0.76689827,
+  "maximum_e2e_delay": 0.768079,
+  "throughput_bps": 542698.254382446,
+  "queue_overflow": 0,
+  "maximum_queue_length": 72,
+  "mac_retries": 0,
+  "phy_drops": 225,
+  "mac_drops": 0,
+  "control_timeouts": 0,
+  "reservation_retries": 0,
+  "control_frames": 0,
+  "control_bytes": 0,
+  "data_frames": 636,
+  "data_bytes": 656352,
+  "control_airtime": 0.0,
+  "data_airtime": 2.625408,
+  "simulation_end_time": 31.4,
+  "wall_clock_runtime": 0.6874431000032928,
+  "active_reservations_after_run": 0,
+  "unknown_loss_count": 0,
+  "final_loss_count": 28,
+  "source_sha": "feb05e33d6d3a34fa3016e7ceb02ea3bb9ad0c5d8e037c39df652b23e9690067",
+  "patch_sha": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+  "experiment_source_sha": "dc336b2e7d629d529cf564c2ea46db6384b79b1031e624b5d2f21ba759bac757",
+  "config_sha": "83c1e6f63c1bcddb7ed6aeed5593c64335a296ba2049c8c7a4d39b2a93916ec2",
+  "traffic_schedule_sha": "d45ae9aa2a51cb287119a56879e760804090e8350a7e0214a50569abbc0bdb3b",
+  "topology_sha": "917eaf8309bb0e768dc0a1a0ebd9c3b0f142926da3056181941c3ca83d38bdaa",
+  "per_flow": [
+    {
+      "flow_id": 0,
+      "created": 50,
+      "delivered": 22,
+      "delivery_ratio": 0.44
+    },
+    {
+      "flow_id": 1,
+      "created": 50,
+      "delivered": 50,
+      "delivery_ratio": 1.0
+    }
+  ],
+  "jain_fairness": 0.8686327077747988,
+  "concurrent_transmission_evidence_count": 177,
+  "terminal_counts": {
+    "DELIVERED": 72,
+    "QUEUE_OVERFLOW": 0,
+    "APP_SEND_REJECTED": 0,
+    "MAC_QUEUE_DROP": 0,
+    "MAC_RETRY_EXHAUSTED": 0,
+    "PHY_RX_DROP": 0,
+    "CONTROL_TIMEOUT": 0,
+    "RESERVATION_RETRY_EXHAUSTED": 0,
+    "SEGMENT_DATA_TIMEOUT": 0,
+    "SIMULATION_STOP_TIMEOUT": 28,
+    "DUPLICATE_SUPPRESSED": 0,
+    "UNKNOWN_LOSS": 0
+  },
+  "packets_detail": [
+    {
+      "flow_id": 0,
+      "packet_id": 0,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 1,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 2,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 1,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 3,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 4,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 5,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 6,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 7,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 8,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 1,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 9,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 10,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 11,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 12,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 13,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 14,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 15,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 16,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 17,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 18,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 19,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 20,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 21,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 22,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 23,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 24,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 25,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 26,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 27,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 28,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 29,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 30,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 31,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 32,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 33,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 34,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 35,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 36,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 37,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 38,
+      "terminal": "SIMULATION_STOP_TIMEOUT",
+      "last_node": 0,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 39,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 40,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 41,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 42,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 43,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 44,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 45,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 46,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 47,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 48,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 0,
+      "packet_id": 49,
+      "terminal": "DELIVERED",
+      "last_node": 4,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 0,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 1,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 2,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 3,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 4,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 5,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 6,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 7,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 8,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 9,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 10,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 11,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 12,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 13,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 14,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 15,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 16,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 17,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 18,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 19,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 20,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 21,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 22,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 23,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 24,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 25,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 26,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 27,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 28,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 29,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 30,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 31,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 32,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 33,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 34,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 35,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 36,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 37,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 38,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 39,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 40,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 41,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 42,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 43,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 44,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 45,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 46,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 47,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 48,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    },
+    {
+      "flow_id": 1,
+      "packet_id": 49,
+      "terminal": "DELIVERED",
+      "last_node": 6,
+      "segments_completed": 0
+    }
+  ],
+  "frozen_parameters": {
+    "K": 2,
+    "CWmin": 15,
+    "CWmax": 1023,
+    "retry_limit": 7,
+    "slot_us": 20,
+    "SIFS_us": 10,
+    "DIFS_us": 50,
+    "data_rate": "DsssRate2Mbps",
+    "control_rate": "DsssRate1Mbps",
+    "payload_bytes": 1024
+  },
+  "actual_load_interval_s": 0.008,
+  "control_loss_probability": 0.0
+}

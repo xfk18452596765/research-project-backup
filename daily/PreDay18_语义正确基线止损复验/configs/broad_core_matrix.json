@@ -1,0 +1,9 @@
+{
+  "protocols": ["dcf", "fixed"],
+  "hops": [2, 4, 6],
+  "loads": ["low", "medium", "high"],
+  "traffic": ["periodic", "poisson"],
+  "seeds": [7, 17, 27, 37, 47, 57, 67, 77, 87, 97],
+  "packets_per_run": 100,
+  "expected_runs": 360
+}

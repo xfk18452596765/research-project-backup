@@ -1,0 +1,27 @@
+{
+  "K": 2,
+  "CWmin": 15,
+  "CWmax": 1023,
+  "retry_limit": 7,
+  "queue_limit_packets": 200,
+  "slot_time_us": 20,
+  "SIFS_us": 10,
+  "DIFS_us": 50,
+  "data_rate": "DsssRate2Mbps",
+  "basic_control_rate": "DsssRate1Mbps",
+  "payload_bytes": 1024,
+  "logical_frame_bytes": {
+    "PR_REQ": 36,
+    "PR_ACK": 24,
+    "PR_NACK": 24,
+    "H_ACK": 14,
+    "RELEASE": 20
+  },
+  "load_intervals_s": {
+    "low": 0.05,
+    "medium": 0.02,
+    "high": 0.008
+  },
+  "bootstrap_resamples": 10000,
+  "analysis_seed": 20260730
+}

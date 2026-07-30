@@ -1,0 +1,13 @@
+{
+  "protocols": ["dcf", "fixed"],
+  "cells": [
+    {"hops": 4, "load": "medium"},
+    {"hops": 4, "load": "high"},
+    {"hops": 6, "load": "medium"},
+    {"hops": 6, "load": "high"}
+  ],
+  "traffic": ["periodic", "poisson"],
+  "seeds": [7, 17, 27, 37, 47, 57, 67, 77, 87, 97, 107, 117, 127, 137, 147, 157, 167, 177, 187, 197],
+  "packets_per_run": 200,
+  "expected_runs": 320
+}
