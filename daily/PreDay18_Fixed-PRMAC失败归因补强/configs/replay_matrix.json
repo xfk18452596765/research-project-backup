@@ -1,0 +1,7 @@
+{
+  "protocols": ["dcf", "fixed"],
+  "seeds": [7,17,27,37,47,57,67,77,87,97],
+  "core": [[4,"high","periodic"],[4,"high","poisson"],[6,"medium","periodic"],[6,"medium","poisson"],[6,"high","periodic"],[6,"high","poisson"]],
+  "packets_per_core_run": 200,
+  "forbidden": ["C1","C2","C3","RL","Day18"]
+}
