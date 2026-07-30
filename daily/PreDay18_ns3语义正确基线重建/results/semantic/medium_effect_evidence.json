@@ -1,0 +1,66 @@
+{
+  "issues": [],
+  "spatial_reuse_pairs": [
+    {
+      "node_a": 1,
+      "time_a_us": 1209498,
+      "node_b": 4,
+      "time_b_us": 1210306
+    },
+    {
+      "node_a": 1,
+      "time_a_us": 1209499,
+      "node_b": 4,
+      "time_b_us": 1210306
+    },
+    {
+      "node_a": 1,
+      "time_a_us": 1209499,
+      "node_b": 4,
+      "time_b_us": 1210306
+    },
+    {
+      "node_a": 6,
+      "time_a_us": 1218505,
+      "node_b": 2,
+      "time_b_us": 1219042
+    },
+    {
+      "node_a": 2,
+      "time_a_us": 1219042,
+      "node_b": 6,
+      "time_b_us": 1219266
+    },
+    {
+      "node_a": 2,
+      "time_a_us": 1219042,
+      "node_b": 6,
+      "time_b_us": 1219266
+    },
+    {
+      "node_a": 2,
+      "time_a_us": 1219043,
+      "node_b": 6,
+      "time_b_us": 1219266
+    },
+    {
+      "node_a": 6,
+      "time_a_us": 1388317,
+      "node_b": 1,
+      "time_b_us": 1388866
+    },
+    {
+      "node_a": 1,
+      "time_a_us": 1388866,
+      "node_b": 6,
+      "time_b_us": 1389297
+    },
+    {
+      "node_a": 1,
+      "time_a_us": 1388866,
+      "node_b": 6,
+      "time_b_us": 1389297
+    }
+  ],
+  "interpretation": "per-node Txop grants/blocks; no global channel lock"
+}

@@ -1,0 +1,259 @@
+[0/2] Re-checking globbed directories...
+[1/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-fr-no-op-algorithm.cc.o
+[2/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-fr-hard-algorithm.cc.o
+[3/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ffr-soft-algorithm.cc.o
+[4/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-fr-soft-algorithm.cc.o
+[5/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-handover-algorithm.cc.o
+[6/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ffr-enhanced-algorithm.cc.o
+[7/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-handover-management-sap.cc.o
+[8/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ffr-distributed-algorithm.cc.o
+[9/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-harq-phy.cc.o
+[10/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-mac-sap.cc.o
+[11/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-fr-strict-algorithm.cc.o
+[12/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-pdcp-header.cc.o
+[13/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-interference.cc.o
+[14/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-pdcp-sap.cc.o
+[15/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-mi-error-model.cc.o
+[16/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-pdcp-tag.cc.o
+[17/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-phy-tag.cc.o
+[18/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-net-device.cc.o
+[19/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-enb-mac.cc.o
+[20/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-radio-bearer-tag.cc.o
+[21/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-enb-phy.cc.o
+[22/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-radio-bearer-info.cc.o
+[23/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rlc-am-header.cc.o
+[24/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-phy.cc.o
+[25/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rlc-header.cc.o
+[26/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-pdcp.cc.o
+[27/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rlc-sequence-number.cc.o
+[28/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rlc-sap.cc.o
+[29/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rlc-sdu-status-tag.cc.o
+[30/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rlc-tag.cc.o
+[31/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/fdtbfq-ff-mac-scheduler.cc.o
+[32/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rlc-tm.cc.o
+[33/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/fdbet-ff-mac-scheduler.cc.o
+[34/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rrc-sap.cc.o
+[35/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ue-ccm-rrc-sap.cc.o
+[36/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-spectrum-signal-parameters.cc.o
+[37/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-spectrum-value-helper.cc.o
+[38/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rlc.cc.o
+[39/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ue-cmac-sap.cc.o
+[40/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rlc-um.cc.o
+[41/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ue-cphy-sap.cc.o
+[42/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ue-component-carrier-manager.cc.o
+[43/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ue-phy-sap.cc.o
+[44/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rrc-header.cc.o
+[45/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rrc-protocol-real.cc.o
+[46/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-vendor-specific-parameters.cc.o
+[47/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rrc-protocol-ideal.cc.o
+[48/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-rlc-am.cc.o
+[49/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ue-power-control.cc.o
+[50/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ue-net-device.cc.o
+[51/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/no-op-handover-algorithm.cc.o
+[52/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ue-mac.cc.o
+[53/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/rem-spectrum-phy.cc.o
+[54/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-spectrum-phy.cc.o
+[55/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/no-op-component-carrier-manager.cc.o
+[56/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/simple-ue-component-carrier-manager.cc.o
+[57/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-enb-rrc.cc.o
+[58/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-point-to-point-default.so
+[59/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-propagation-default.so
+[60/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-buildings-default.so
+[61/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-spectrum-default.so
+[62/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-lr-wpan-default.so
+[63/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-topology-read-default.so
+[64/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ue-phy.cc.o
+[65/337] Building CXX object src/traffic-control/CMakeFiles/traffic-control.dir/model/packet-filter.cc.o
+[66/337] Building CXX object src/traffic-control/CMakeFiles/traffic-control.dir/model/mq-queue-disc.cc.o
+[67/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/tdmt-ff-mac-scheduler.cc.o
+[68/337] Building CXX object src/traffic-control/CMakeFiles/traffic-control.dir/model/pfifo-fast-queue-disc.cc.o
+[69/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/tdbet-ff-mac-scheduler.cc.o
+[70/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/pf-ff-mac-scheduler.cc.o
+[71/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/rr-ff-mac-scheduler.cc.o
+[72/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/pss-ff-mac-scheduler.cc.o
+[73/337] Building CXX object src/traffic-control/CMakeFiles/traffic-control.dir/model/pie-queue-disc.cc.o
+[74/337] Building CXX object src/traffic-control/CMakeFiles/traffic-control.dir/model/prio-queue-disc.cc.o
+[75/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/tta-ff-mac-scheduler.cc.o
+[76/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/tdtbfq-ff-mac-scheduler.cc.o
+[77/337] Building CXX object src/uan/CMakeFiles/uan.dir/helper/acoustic-modem-energy-model-helper.cc.o
+[78/337] Building CXX object src/traffic-control/CMakeFiles/traffic-control.dir/model/tbf-queue-disc.cc.o
+[79/337] Building CXX object src/lte/CMakeFiles/lte.dir/model/lte-ue-rrc.cc.o
+[80/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-header-common.cc.o
+[81/337] Building CXX object src/uan/CMakeFiles/uan.dir/helper/uan-helper.cc.o
+[82/337] Building CXX object src/traffic-control/CMakeFiles/traffic-control.dir/model/red-queue-disc.cc.o
+[83/337] Building CXX object src/traffic-control/CMakeFiles/traffic-control.dir/model/traffic-control-layer.cc.o
+[84/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/acoustic-modem-energy-model.cc.o
+[85/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-header-rc.cc.o
+[86/337] Building CXX object src/traffic-control/CMakeFiles/traffic-control.dir/model/queue-disc.cc.o
+[87/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-channel.cc.o
+[88/337] Building CXX object src/netanim/CMakeFiles/netanim.dir/model/animation-interface.cc.o
+[89/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-noise-model-default.cc.o
+[90/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-traffic-control-default.so
+[91/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-mac.cc.o
+[92/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-mac-aloha.cc.o
+[93/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-noise-model.cc.o
+[94/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-prop-model-ideal.cc.o
+[95/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-mac-cw.cc.o
+[96/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-prop-model-thorp.cc.o
+[97/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-internet-default.so
+[98/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-phy.cc.o
+[99/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-prop-model.cc.o
+[100/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-transducer.cc.o
+[101/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-applications-default.so
+[102/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-net-device.cc.o
+[103/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-csma-layout-default.so
+[104/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-nix-vector-routing-default.so
+[105/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-flow-monitor-default.so
+[106/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-olsr-default.so
+[107/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-internet-apps-default.so
+[108/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-point-to-point-layout-default.so
+[109/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-sixlowpan-default.so
+[110/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-tap-bridge-default.so
+[111/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-phy-dual.cc.o
+[112/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-tx-mode.cc.o
+[113/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-transducer-hd.cc.o
+[114/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-mac-rc-gw.cc.o
+[115/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-mac-rc.cc.o
+[116/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/addba-extension.cc.o
+[117/337] Building CXX object src/virtual-net-device/CMakeFiles/virtual-net-device.dir/model/virtual-net-device.cc.o
+[118/337] Building CXX object src/uan/CMakeFiles/uan.dir/model/uan-phy-gen.cc.o
+[119/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-virtual-net-device-default.so
+[120/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-uan-default.so
+[121/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ampdu-subframe-header.cc.o
+[122/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/adhoc-wifi-mac.cc.o
+[123/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/helper/yans-wifi-helper.cc.o
+[124/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/helper/wifi-radio-energy-model-helper.cc.o
+[125/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ampdu-tag.cc.o
+[126/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/helper/athstats-helper.cc.o
+[127/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/amsdu-subframe-header.cc.o
+[128/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/block-ack-type.cc.o
+[129/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/helper/wifi-mac-helper.cc.o
+[130/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/block-ack-agreement.cc.o
+[131/337] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-lte-default.so
+[132/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/block-ack-window.cc.o
+[133/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/capability-information.cc.o
+[134/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/helper/spectrum-wifi-helper.cc.o
+[135/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/edca-parameter-set.cc.o
+[136/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/default-ap-emlsr-manager.cc.o
+[137/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ctrl-headers.cc.o
+[138/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/ap-emlsr-manager.cc.o
+[139/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/advanced-ap-emlsr-manager.cc.o
+[140/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/eht-capabilities.cc.o
+[141/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/block-ack-manager.cc.o
+[142/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/eht-operation.cc.o
+[143/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/channel-access-manager.cc.o
+[144/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/tid-to-link-mapping-element.cc.o
+[145/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/advanced-emlsr-manager.cc.o
+[146/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/eht-configuration.cc.o
+[147/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/eht-ppdu.cc.o
+[148/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/default-emlsr-manager.cc.o
+[149/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/error-rate-model.cc.o
+[150/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/extended-capabilities.cc.o
+[151/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/helper/wifi-phy-rx-trace-helper.cc.o
+[152/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/frame-capture-model.cc.o
+[153/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/he-6ghz-band-capabilities.cc.o
+[154/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/helper/wifi-helper.cc.o
+[155/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/eht-phy.cc.o
+[156/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/he-capabilities.cc.o
+[157/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/he-operation.cc.o
+[158/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/multi-link-element.cc.o
+[159/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/he-configuration.cc.o
+[160/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/constant-obss-pd-algorithm.cc.o
+[161/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/fcfs-wifi-queue-scheduler.cc.o
+[162/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/mu-edca-parameter-set.cc.o
+[163/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/emlsr-manager.cc.o
+[164/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/eht/eht-frame-exchange-manager.cc.o
+[165/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/mu-snr-tag.cc.o
+[166/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/he-ru.cc.o
+[167/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ht/ht-capabilities.cc.o
+[168/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ht/ht-configuration.cc.o
+[169/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/he-ppdu.cc.o
+[170/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/obss-pd-algorithm.cc.o
+[171/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ht/ht-operation.cc.o
+[172/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ap-wifi-mac.cc.o
+[173/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/multi-user-scheduler.cc.o
+[174/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/mac-tx-middle.cc.o
+[175/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ht/ht-ppdu.cc.o
+[176/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/mac-rx-middle.cc.o
+[177/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/frame-exchange-manager.cc.o
+[178/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/he-phy.cc.o
+[179/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/rr-multi-user-scheduler.cc.o
+[180/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/non-ht/dsss-error-rate-model.cc.o
+[181/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/mgt-action-headers.cc.o
+[182/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/interference-helper.cc.o
+[183/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/mpdu-aggregator.cc.o
+[184/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/nist-error-rate-model.cc.o
+[185/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/non-ht/dsss-parameter-set.cc.o
+[186/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/he/he-frame-exchange-manager.cc.o
+[187/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/non-ht/erp-information.cc.o
+[188/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ht/ht-phy.cc.o
+[189/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/non-ht/erp-ofdm-ppdu.cc.o
+[190/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/non-ht/dsss-ppdu.cc.o
+[191/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/msdu-aggregator.cc.o
+[192/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/non-inheritance.cc.o
+[193/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/originator-block-ack-agreement.cc.o
+[194/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/preamble-detection-model.cc.o
+[195/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/non-ht/ofdm-ppdu.cc.o
+[196/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/non-ht/erp-ofdm-phy.cc.o
+[197/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ht/ht-frame-exchange-manager.cc.o
+[198/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/mgt-headers.cc.o
+[199/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/qos-utils.cc.o
+[200/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/non-ht/ofdm-phy.cc.o
+[201/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/non-ht/dsss-phy.cc.o
+[202/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/aarfcd-wifi-manager.cc.o
+[203/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/aarf-wifi-manager.cc.o
+[204/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/arf-wifi-manager.cc.o
+[205/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/constant-rate-wifi-manager.cc.o
+[206/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/cara-wifi-manager.cc.o
+[207/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/aparf-wifi-manager.cc.o
+[208/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/amrr-wifi-manager.cc.o
+[209/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/phy-entity.cc.o
+[210/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/onoe-wifi-manager.cc.o
+[211/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/recipient-block-ack-agreement.cc.o
+[212/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/parf-wifi-manager.cc.o
+[213/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/qos-frame-exchange-manager.cc.o
+[214/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/reference/error-rate-tables.cc.o
+[215/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/ideal-wifi-manager.cc.o
+[216/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/ssid.cc.o
+[217/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/simple-frame-capture-model.cc.o
+[218/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/snr-tag.cc.o
+[219/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/qos-txop.cc.o
+[220/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/reduced-neighbor-report.cc.o
+[221/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/status-code.cc.o
+[222/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/rraa-wifi-manager.cc.o
+[223/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/minstrel-ht-wifi-manager.cc.o
+[224/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/minstrel-wifi-manager.cc.o
+[225/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/threshold-preamble-detection-model.cc.o
+[226/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/tim.cc.o
+[227/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/supported-rates.cc.o
+[228/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/vht/vht-capabilities.cc.o
+[229/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/rrpaa-wifi-manager.cc.o
+[230/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/rate-control/thompson-sampling-wifi-manager.cc.o
+[231/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/table-based-error-rate-model.cc.o
+[232/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/vht/vht-operation.cc.o
+[233/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/vht/vht-configuration.cc.o
+[234/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/vht/vht-frame-exchange-manager.cc.o
+[235/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/txop.cc.o
+FAILED: src/wifi/CMakeFiles/wifi.dir/model/txop.cc.o
+/usr/bin/c++ -DNS3_ASSERT_ENABLE -DNS3_BUILD_PROFILE_DEBUG -DNS3_LOG_ENABLE -DPROJECT_SOURCE_PATH=\"/home/xfk/workspace/ns-3.43-fixed-prmac-baseline\" -D__LINUX__ -Dwifi_EXPORTS -I/home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/include -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gtk-3.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -Os -g -DNDEBUG -std=c++20 -fPIC   -fno-semantic-interposition -fdiagnostics-color=always -Wall -Wpedantic -MD -MT src/wifi/CMakeFiles/wifi.dir/model/txop.cc.o -MF src/wifi/CMakeFiles/wifi.dir/model/txop.cc.o.d -o src/wifi/CMakeFiles/wifi.dir/model/txop.cc.o -c /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/src/wifi/model/txop.cc
+/home/xfk/workspace/ns-3.43-fixed-prmac-baseline/src/wifi/model/txop.cc: In member function ‘void ns3::Txop::StartAccessAfterEvent(uint8_t, bool, bool)’:
+/home/xfk/workspace/ns-3.43-fixed-prmac-baseline/src/wifi/model/txop.cc:733:39: error: ‘ns3::EventId ns3::Txop::LinkEntity::<unnamed class>::event’ is private within this context
+  733 |         GetLink(linkId).accessRequest.event =
+      |                                       ^~~~~
+In file included from /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/src/wifi/model/txop.cc:9:
+/home/xfk/workspace/ns-3.43-fixed-prmac-baseline/src/wifi/model/txop.h:561:21: note: declared private here
+  561 |             EventId event;
+      |                     ^~~~~
+[236/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/vht/vht-ppdu.cc.o
+[237/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-bandwidth-filter.cc.o
+[238/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-ack-manager.cc.o
+[239/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/spectrum-wifi-phy.cc.o
+[240/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-acknowledgment.cc.o
+[241/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-default-assoc-manager.cc.o
+[242/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/vht/vht-phy.cc.o
+[243/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-assoc-manager.cc.o
+[244/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-default-ack-manager.cc.o
+[245/337] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/sta-wifi-mac.cc.o
+ninja: build stopped: subcommand failed.
+Finished executing the following commands:
+/usr/bin/cmake --build /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/cmake-cache -j 11 --target scratch_preday18-semantic-baseline

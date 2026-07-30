@@ -1,0 +1,25 @@
+{
+  "chain": {
+    "positions": "node i = (i * spacing_m, 0, 0)",
+    "spacing_m": 20.0,
+    "propagation_delay": "ns3::ConstantSpeedPropagationDelayModel",
+    "propagation_loss": "ns3::LogDistancePropagationLossModel",
+    "path_loss_exponent": 4.0,
+    "reference_distance_m": 1.0,
+    "reference_loss_db": 46.6777,
+    "tx_power_dbm": 22.0,
+    "rx_sensitivity_dbm": -85.0,
+    "cca_ed_threshold_dbm": -93.0,
+    "rx_noise_figure_db": 7.0,
+    "expected_adjacent_rss_dbm": -76.7189,
+    "expected_two_hop_rss_dbm": -88.7601
+  },
+  "hidden_terminal": {
+    "positions_m": {
+      "A": [0.0, 0.0, 0.0],
+      "B": [30.0, 0.0, 0.0],
+      "C": [60.0, 0.0, 0.0]
+    },
+    "intent": "A and C below one another's CCA threshold; both can reach B"
+  }
+}

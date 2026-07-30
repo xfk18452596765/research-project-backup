@@ -1,0 +1,34 @@
+{
+  "platform": "ns-3.43 PacketSocket AdhocWifiMac",
+  "protocol": "dcf",
+  "scenario": "chain",
+  "hops": 1,
+  "flows": 1,
+  "packets_per_flow": 1,
+  "seed": 7,
+  "created": 1,
+  "delivered": 1,
+  "unknown_loss": 0,
+  "active_reservations_after_run": 0,
+  "frozen_parameters": {"K": 2, "CWmin": 15, "CWmax": 1023, "retry_limit": 7, "slot_us": 20, "SIFS_us": 10, "DIFS_us": 50, "data_rate": "DsssRate2Mbps", "control_rate": "DsssRate1Mbps", "payload_bytes": 1024},
+  "topology": {"spacing_m": 20, "tx_power_dbm": 22, "rx_sensitivity_dbm": -85, "cca_ed_threshold_dbm": -93, "path_loss_exponent": 4},
+  "boundary_counters": {"mac_tx": 1, "mac_tx_drop": 0, "mac_rx": 1, "mac_rx_drop": 0, "phy_tx_begin": 1, "phy_tx_end": 1, "phy_rx_begin": 1, "phy_rx_end": 1, "phy_rx_drop": 0},
+  "medium_effect": {"reserved_access_events": 0, "local_block_events": 0},
+  "terminal_counts": {
+    "DELIVERED": 1,
+    "QUEUE_OVERFLOW": 0,
+    "APP_SEND_REJECTED": 0,
+    "MAC_QUEUE_DROP": 0,
+    "MAC_RETRY_EXHAUSTED": 0,
+    "PHY_RX_DROP": 0,
+    "CONTROL_TIMEOUT": 0,
+    "RESERVATION_RETRY_EXHAUSTED": 0,
+    "SEGMENT_DATA_TIMEOUT": 0,
+    "SIMULATION_STOP_TIMEOUT": 0,
+    "DUPLICATE_SUPPRESSED": 0,
+    "UNKNOWN_LOSS": 0
+  },
+  "packets_detail": [
+    {"flow_id": 0, "packet_id": 0, "terminal": "DELIVERED", "last_node": 1, "segments_completed": 0}
+  ]
+}

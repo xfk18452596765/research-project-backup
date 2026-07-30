@@ -1,0 +1,305 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "file": "calibration-dcf-6hop-1pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=0 terminal_sum=0"
+    },
+    {
+      "file": "chain-dcf-1hop-1pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=1 terminal_sum=1"
+    },
+    {
+      "file": "chain-dcf-2hop-10pkt-low-periodic-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-2hop-10pkt-low-periodic-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-2hop-10pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-2hop-10pkt-low-poisson-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-2hop-10pkt-low-poisson-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-2hop-10pkt-low-poisson-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-2hop-1pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=1 terminal_sum=1"
+    },
+    {
+      "file": "chain-dcf-4hop-10pkt-low-periodic-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-4hop-10pkt-low-periodic-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-4hop-10pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-4hop-10pkt-low-poisson-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-4hop-10pkt-low-poisson-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-4hop-10pkt-low-poisson-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-4hop-1pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=1 terminal_sum=1"
+    },
+    {
+      "file": "chain-dcf-6hop-100pkt-high-periodic-seed17.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-dcf-6hop-100pkt-high-periodic-seed27.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-dcf-6hop-100pkt-high-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-dcf-6hop-100pkt-high-poisson-seed17.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-dcf-6hop-100pkt-high-poisson-seed27.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-dcf-6hop-100pkt-high-poisson-seed7.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-dcf-6hop-10pkt-low-periodic-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-6hop-10pkt-low-periodic-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-6hop-10pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-6hop-10pkt-low-poisson-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-6hop-10pkt-low-poisson-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-6hop-10pkt-low-poisson-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-dcf-6hop-1pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=1 terminal_sum=1"
+    },
+    {
+      "file": "chain-fixed-2hop-10pkt-low-periodic-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-2hop-10pkt-low-periodic-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-2hop-10pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-2hop-10pkt-low-poisson-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-2hop-10pkt-low-poisson-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-2hop-10pkt-low-poisson-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-2hop-1pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=1 terminal_sum=1"
+    },
+    {
+      "file": "chain-fixed-4hop-10pkt-low-periodic-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-4hop-10pkt-low-periodic-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-4hop-10pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-4hop-10pkt-low-poisson-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-4hop-10pkt-low-poisson-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-4hop-10pkt-low-poisson-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-4hop-1pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=1 terminal_sum=1"
+    },
+    {
+      "file": "chain-fixed-6hop-100pkt-high-periodic-seed17.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-fixed-6hop-100pkt-high-periodic-seed27.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-fixed-6hop-100pkt-high-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-fixed-6hop-100pkt-high-poisson-seed17.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-fixed-6hop-100pkt-high-poisson-seed27.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-fixed-6hop-100pkt-high-poisson-seed7.json",
+      "passed": true,
+      "detail": "created=100 terminal_sum=100"
+    },
+    {
+      "file": "chain-fixed-6hop-10pkt-low-periodic-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-6hop-10pkt-low-periodic-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-6hop-10pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-6hop-10pkt-low-poisson-seed17.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-6hop-10pkt-low-poisson-seed27.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-6hop-10pkt-low-poisson-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "chain-fixed-6hop-1pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=1 terminal_sum=1"
+    },
+    {
+      "file": "hidden-fixed-1hop-5pkt-high-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "multiflow-m1-fixed-6hop-5pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "multiflow-m2-fixed-6hop-5pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=10 terminal_sum=10"
+    },
+    {
+      "file": "reservation-conflict-fixed-2hop-1pkt-low-periodic-seed7.json",
+      "passed": true,
+      "detail": "created=1 terminal_sum=1"
+    }
+  ]
+}

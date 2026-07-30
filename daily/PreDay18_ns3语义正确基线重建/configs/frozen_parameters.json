@@ -1,0 +1,21 @@
+{
+  "K": 2,
+  "CWmin": 15,
+  "CWmax": 1023,
+  "retry_limit": 7,
+  "queue_limit_packets": 200,
+  "slot_time_us": 20,
+  "SIFS_us": 10,
+  "DIFS_us": 50,
+  "data_rate": "DsssRate2Mbps",
+  "basic_control_rate": "DsssRate1Mbps",
+  "payload_bytes": 1024,
+  "logical_frame_bytes": {
+    "PR_REQ": 36,
+    "PR_ACK": 24,
+    "PR_NACK": 24,
+    "H_ACK": 14,
+    "RELEASE": 20
+  },
+  "seeds": [7, 17, 27]
+}

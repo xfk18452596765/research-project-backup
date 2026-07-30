@@ -1,0 +1,16 @@
+﻿HEAD is now at 7538174 Update VERSION and documentation tags for ns-3.43 release
+patch apply / already-applied detection / reverse roundtrip passed
+    --protocol:  dcf|fixed [dcf]
+    --scenario:  chain|multiflow-m1|multiflow-m2|hidden|calibration|reservation-conflict [chain]
+    --hops:      1|2|4|6 [2]
+    --packets:   packets per flow [1]
+    --flows:     number of active flows [1]
+    --traffic:   periodic|poisson [periodic]
+    --load:      low|high [low]
+    --seed:      RNG seed [7]
+    --trace:     JSONL trace path [semantic-trace.jsonl]
+    --output:    JSON result path [semantic-result.json]
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
