@@ -1,0 +1,42 @@
+{
+  "decision": "ATTRIBUTION_HOLD",
+  "reason": "TRACE_SCHEMA_INCOMPLETE",
+  "trace_rows": 2638903,
+  "missing_fields": [
+    "backoff_slots",
+    "channel_state",
+    "cw",
+    "frame_bytes",
+    "logical_control_bytes",
+    "phy_airtime_ns",
+    "receiver",
+    "reservation_state",
+    "sender",
+    "time_ns"
+  ],
+  "missing_events": [
+    "SOURCE_QUEUE_ENQUEUE",
+    "SOURCE_QUEUE_HEAD",
+    "SOURCE_SERVICE_START",
+    "SEGMENT_START",
+    "SEGMENT_END",
+    "RELAY_QUEUE_ENQUEUE",
+    "RELAY_QUEUE_HEAD",
+    "RELAY_SERVICE_START",
+    "DESTINATION_DELIVER",
+    "PACKET_FINAL_LOSS",
+    "SIMULATION_END_UNFINISHED"
+  ],
+  "packet_time_closure": 0.0,
+  "scenario_time_closure": 0.0,
+  "unknown_losses": 0,
+  "delivery_loss_closure": 0.0,
+  "terminal_counts": {
+    "DELIVERED": 12395,
+    "CREATED": 11971
+  },
+  "top_cause": null,
+  "second_cause": null,
+  "Day18_status": "LOCKED",
+  "RL_started": false
+}

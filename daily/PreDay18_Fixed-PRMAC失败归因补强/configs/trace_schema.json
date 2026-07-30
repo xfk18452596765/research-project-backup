@@ -1,0 +1,5 @@
+{
+  "schema_version": "1.0", "required": ["time_ns","node_id","flow_id","packet_id","segment_id","reservation_id","attempt","hop_index","frame_type","event","reason","queue_length","cw","backoff_slots","channel_state","reservation_state","sender","receiver","frame_bytes","logical_control_bytes","phy_airtime_ns"],
+  "packet_events": ["PACKET_CREATED","SOURCE_QUEUE_ENQUEUE","SOURCE_QUEUE_HEAD","SOURCE_SERVICE_START","SEGMENT_START","SEGMENT_END","RELAY_QUEUE_ENQUEUE","RELAY_QUEUE_HEAD","RELAY_SERVICE_START","DESTINATION_DELIVER","PACKET_FINAL_LOSS","SIMULATION_END_UNFINISHED"],
+  "terminal_states": ["DELIVERED","QUEUE_OVERFLOW","MAC_QUEUE_DROP","MAC_RETRY_EXHAUSTED","PHY_RX_DROP","CONTROL_TIMEOUT","RESERVATION_RETRY_EXHAUSTED","SEGMENT_DATA_TIMEOUT","SIMULATION_END_SOURCE_QUEUE","SIMULATION_END_RELAY_QUEUE","SIMULATION_END_RESERVATION_PENDING","SIMULATION_END_DATA_IN_FLIGHT","DUPLICATE_SUPPRESSED","UNKNOWN_LOSS"]
+}

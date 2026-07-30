@@ -1,0 +1,13 @@
+historical evidence audit: PASS
+semantic baseline decision: BASELINE_READY
+stop-loss retest decision: FAIL
+redesign decision: REDESIGN_HOLD
+single-packet calibration: 6/6 replayed
+low-load calibration: 36/36 replayed
+core replay: 120/120 replayed
+trace schema: FAIL (legacy trace missing required fields/events)
+attribution decision: ATTRIBUTION_HOLD
+Day18: LOCKED
+RL started: NO
+syntax check: PASS
+git diff --check: PASS
