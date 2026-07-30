@@ -1,0 +1,218 @@
+{
+  "single_expected": 6,
+  "single_completed": 6,
+  "low_expected": 36,
+  "low_completed": 36,
+  "runs": [
+    {
+      "id": "single-dcf-2-periodic-7",
+      "ok": true,
+      "trace": "single-dcf-2-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "single-dcf-4-periodic-7",
+      "ok": true,
+      "trace": "single-dcf-4-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "single-dcf-6-periodic-7",
+      "ok": true,
+      "trace": "single-dcf-6-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "single-fixed-2-periodic-7",
+      "ok": true,
+      "trace": "single-fixed-2-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "single-fixed-4-periodic-7",
+      "ok": true,
+      "trace": "single-fixed-4-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "single-fixed-6-periodic-7",
+      "ok": true,
+      "trace": "single-fixed-6-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-2-periodic-7",
+      "ok": true,
+      "trace": "low-dcf-2-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-2-periodic-17",
+      "ok": true,
+      "trace": "low-dcf-2-periodic-17-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-2-periodic-27",
+      "ok": true,
+      "trace": "low-dcf-2-periodic-27-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-2-poisson-7",
+      "ok": true,
+      "trace": "low-dcf-2-poisson-7-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-2-poisson-17",
+      "ok": true,
+      "trace": "low-dcf-2-poisson-17-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-2-poisson-27",
+      "ok": true,
+      "trace": "low-dcf-2-poisson-27-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-4-periodic-7",
+      "ok": true,
+      "trace": "low-dcf-4-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-4-periodic-17",
+      "ok": true,
+      "trace": "low-dcf-4-periodic-17-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-4-periodic-27",
+      "ok": true,
+      "trace": "low-dcf-4-periodic-27-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-4-poisson-7",
+      "ok": true,
+      "trace": "low-dcf-4-poisson-7-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-4-poisson-17",
+      "ok": true,
+      "trace": "low-dcf-4-poisson-17-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-4-poisson-27",
+      "ok": true,
+      "trace": "low-dcf-4-poisson-27-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-6-periodic-7",
+      "ok": true,
+      "trace": "low-dcf-6-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-6-periodic-17",
+      "ok": true,
+      "trace": "low-dcf-6-periodic-17-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-6-periodic-27",
+      "ok": true,
+      "trace": "low-dcf-6-periodic-27-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-6-poisson-7",
+      "ok": true,
+      "trace": "low-dcf-6-poisson-7-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-6-poisson-17",
+      "ok": true,
+      "trace": "low-dcf-6-poisson-17-enabled.jsonl"
+    },
+    {
+      "id": "low-dcf-6-poisson-27",
+      "ok": true,
+      "trace": "low-dcf-6-poisson-27-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-2-periodic-7",
+      "ok": true,
+      "trace": "low-fixed-2-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-2-periodic-17",
+      "ok": true,
+      "trace": "low-fixed-2-periodic-17-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-2-periodic-27",
+      "ok": true,
+      "trace": "low-fixed-2-periodic-27-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-2-poisson-7",
+      "ok": true,
+      "trace": "low-fixed-2-poisson-7-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-2-poisson-17",
+      "ok": true,
+      "trace": "low-fixed-2-poisson-17-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-2-poisson-27",
+      "ok": true,
+      "trace": "low-fixed-2-poisson-27-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-4-periodic-7",
+      "ok": true,
+      "trace": "low-fixed-4-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-4-periodic-17",
+      "ok": true,
+      "trace": "low-fixed-4-periodic-17-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-4-periodic-27",
+      "ok": true,
+      "trace": "low-fixed-4-periodic-27-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-4-poisson-7",
+      "ok": true,
+      "trace": "low-fixed-4-poisson-7-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-4-poisson-17",
+      "ok": true,
+      "trace": "low-fixed-4-poisson-17-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-4-poisson-27",
+      "ok": true,
+      "trace": "low-fixed-4-poisson-27-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-6-periodic-7",
+      "ok": true,
+      "trace": "low-fixed-6-periodic-7-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-6-periodic-17",
+      "ok": true,
+      "trace": "low-fixed-6-periodic-17-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-6-periodic-27",
+      "ok": true,
+      "trace": "low-fixed-6-periodic-27-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-6-poisson-7",
+      "ok": true,
+      "trace": "low-fixed-6-poisson-7-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-6-poisson-17",
+      "ok": true,
+      "trace": "low-fixed-6-poisson-17-enabled.jsonl"
+    },
+    {
+      "id": "low-fixed-6-poisson-27",
+      "ok": true,
+      "trace": "low-fixed-6-poisson-27-enabled.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "platform": "ns-3.43 PacketSocket AdhocWifiMac",
+  "protocol": "fixed",
+  "scenario": "chain",
+  "hops": 4,
+  "flows": 1,
+  "packets_per_flow": 10,
+  "seed": 17,
+  "created": 10,
+  "delivered": 10,
+  "unknown_loss": 0,
+  "active_reservations_after_run": 0,
+  "frozen_parameters": {"K": 2, "CWmin": 15, "CWmax": 1023, "retry_limit": 7, "slot_us": 20, "SIFS_us": 10, "DIFS_us": 50, "data_rate": "DsssRate2Mbps", "control_rate": "DsssRate1Mbps", "payload_bytes": 1024},
+  "topology": {"spacing_m": 20, "tx_power_dbm": 22, "rx_sensitivity_dbm": -85, "cca_ed_threshold_dbm": -93, "path_loss_exponent": 4},
+  "boundary_counters": {"mac_tx": 200, "mac_tx_drop": 0, "mac_rx": 200, "mac_rx_drop": 0, "phy_tx_begin": 300, "phy_tx_end": 300, "phy_rx_begin": 403, "phy_rx_end": 403, "phy_rx_drop": 98},
+  "medium_effect": {"reserved_access_events": 252, "local_block_events": 70},
+  "terminal_counts": {
+    "DELIVERED": 10,
+    "QUEUE_OVERFLOW": 0,
+    "APP_SEND_REJECTED": 0,
+    "MAC_QUEUE_DROP": 0,
+    "MAC_RETRY_EXHAUSTED": 0,
+    "PHY_RX_DROP": 0,
+    "CONTROL_TIMEOUT": 0,
+    "RESERVATION_RETRY_EXHAUSTED": 0,
+    "SEGMENT_DATA_TIMEOUT": 0,
+    "SIMULATION_STOP_TIMEOUT": 0,
+    "DUPLICATE_SUPPRESSED": 0,
+    "UNKNOWN_LOSS": 0
+  },
+  "packets_detail": [
+    {"flow_id": 0, "packet_id": 0, "terminal": "DELIVERED", "last_node": 4, "segments_completed": 2},
+    {"flow_id": 0, "packet_id": 1, "terminal": "DELIVERED", "last_node": 4, "segments_completed": 2},
+    {"flow_id": 0, "packet_id": 2, "terminal": "DELIVERED", "last_node": 4, "segments_completed": 2},
+    {"flow_id": 0, "packet_id": 3, "terminal": "DELIVERED", "last_node": 4, "segments_completed": 2},
+    {"flow_id": 0, "packet_id": 4, "terminal": "DELIVERED", "last_node": 4, "segments_completed": 2},
+    {"flow_id": 0, "packet_id": 5, "terminal": "DELIVERED", "last_node": 4, "segments_completed": 2},
+    {"flow_id": 0, "packet_id": 6, "terminal": "DELIVERED", "last_node": 4, "segments_completed": 2},
+    {"flow_id": 0, "packet_id": 7, "terminal": "DELIVERED", "last_node": 4, "segments_completed": 2},
+    {"flow_id": 0, "packet_id": 8, "terminal": "DELIVERED", "last_node": 4, "segments_completed": 2},
+    {"flow_id": 0, "packet_id": 9, "terminal": "DELIVERED", "last_node": 4, "segments_completed": 2}
+  ]
+}

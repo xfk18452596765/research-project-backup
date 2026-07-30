@@ -1,0 +1,71 @@
+diff --git "a/C:\\research-project-backup\\daily\\PreDay18_语义正确基线止损复验\\ns3\\source\\preday18-stop-loss-retest.cc" "b/C:\\research-project-backup\\daily\\PreDay18_Fixed-PRMAC归因Trace补全\\ns3\\overlay\\scratch\\preday18-fixed-prmac-trace.cc"
+index 87150e6..170f545 100644
+--- "a/C:\\research-project-backup\\daily\\PreDay18_语义正确基线止损复验\\ns3\\source\\preday18-stop-loss-retest.cc"
++++ "b/C:\\research-project-backup\\daily\\PreDay18_Fixed-PRMAC归因Trace补全\\ns3\\overlay\\scratch\\preday18-fixed-prmac-trace.cc"
+@@ -251,6 +251,7 @@ struct State
+     double ccaThreshold{-93.0};
+     double pathLossExponent{4.0};
+     std::ofstream trace;
++    bool traceEnabled{false};
+     NodeContainer nodes;
+     NetDeviceContainer devices;
+     std::vector<Ptr<Socket>> receivers;
+@@ -295,6 +296,8 @@ std::string Escape(const std::string& value)
+     return out.str();
+ }
+ 
++uint64_t AirNs(uint32_t bytes) { return uint64_t(bytes) * 8 * 1000; }
++
+ void
+ Trace(uint32_t node,
+       const SemanticHeader& h,
+@@ -303,14 +306,20 @@ Trace(uint32_t node,
+       uint32_t queueLength = 0,
+       uint32_t actualSize = 0)
+ {
+-    g.trace << "{\"time_us\":" << Simulator::Now().GetMicroSeconds() << ",\"node_id\":" << node
++    if (!g.traceEnabled) { return; }
++    const uint64_t timeNs = Simulator::Now().GetNanoSeconds();
++    const uint32_t bytes = actualSize;
++    const uint32_t cw = (reason.find("CW=") == std::string::npos) ? CW_MIN : static_cast<uint32_t>(std::stoul(reason.substr(reason.find("CW=") + 3)));
++    g.trace << "{\"schema_version\":\"2.0\",\"time_ns\":" << timeNs << ",\"time_us\":" << Simulator::Now().GetMicroSeconds() << ",\"node_id\":" << node
+             << ",\"flow_id\":" << +h.Flow() << ",\"packet_id\":" << h.PacketId()
+             << ",\"segment_id\":" << h.Segment() << ",\"attempt\":" << +h.Attempt()
+             << ",\"hop_index\":" << h.Hop() << ",\"frame_type\":\""
+             << FrameName(h.Type()) << "\",\"event\":\"" << event << "\",\"reason\":\""
+             << Escape(reason) << "\",\"queue_length\":" << queueLength
+             << ",\"reservation_id\":\"" << +h.Flow() << "-" << h.PacketId() << "-"
+-            << h.Segment() << "\",\"logical_size\":" << actualSize << "}\n";
++            << h.Segment() << "\",\"logical_size\":" << actualSize
++            << ",\"sender\":" << node << ",\"receiver\":" << node
++            << ",\"cw\":" << cw << ",\"backoff_slots\":0,\"channel_state\":\"UNKNOWN\",\"reservation_state\":\"SNAPSHOT\",\"frame_bytes\":" << bytes << ",\"logical_control_bytes\":" << ((h.Type() == DATA) ? 0 : bytes) << ",\"phy_airtime_ns\":" << AirNs(bytes) << ",\"random_stream_id\":0}\n";
+ }
+ 
+ SemanticHeader HeaderFromTag(const SemanticTag& tag)
+@@ -871,6 +880,7 @@ int main(int argc, char** argv)
+     cmd.AddValue("trace", "JSONL trace path", g.tracePath);
+     cmd.AddValue("output", "JSON result path", g.outputPath);
+     cmd.AddValue("controlLoss", "logical Fixed control-frame loss probability", g.controlLoss);
++    cmd.AddValue("traceEnabled", "enable instrumentation serialization", g.traceEnabled);
+     cmd.Parse(argc, argv);
+ 
+     NS_ABORT_MSG_IF(g.protocol != "dcf" && g.protocol != "fixed", "invalid protocol");
+@@ -882,8 +892,7 @@ int main(int argc, char** argv)
+                     "invalid load");
+     NS_ABORT_MSG_IF(g.controlLoss < 0.0 || g.controlLoss > 1.0, "invalid control loss");
+ 
+-    g.trace.open(g.tracePath);
+-    NS_ABORT_MSG_IF(!g.trace, "cannot open trace output");
++    if (g.traceEnabled) { g.trace.open(g.tracePath); NS_ABORT_MSG_IF(!g.trace, "cannot open trace output"); }
+     RngSeedManager::SetSeed(g.seed);
+     RngSeedManager::SetRun(1);
+     Config::SetDefault("ns3::WifiRemoteStationManager::NonUnicastMode", StringValue("DsssRate1Mbps"));
+@@ -1047,7 +1056,7 @@ int main(int argc, char** argv)
+     Simulator::Run();
+     for (auto& txop : g.txops) { txop->SetFixedPrmacReservedAccess(false, Seconds(0)); }
+     Simulator::Destroy();
+-    g.trace.close();
+     WriteResult();
++    if (g.traceEnabled) { g.trace.close(); }
+     return 0;
+ }

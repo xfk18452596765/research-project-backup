@@ -1,0 +1,41 @@
+{
+  "historical": [
+    {
+      "directory": "daily/PreDay18_最小止损路线",
+      "files": 931,
+      "sha256": "8b6d9ffbdf80a90c024e8a4d5d8c2cdd4a8e8288273531df1b8531b423ca6f52"
+    },
+    {
+      "directory": "daily/PreDay18_Fixed-PRMAC机制诊断",
+      "files": 406,
+      "sha256": "4f3a7e22e8eb90cbbea9c4a91edf6d54452bbd8ac7b19a4a6d64604bb661c6f9"
+    },
+    {
+      "directory": "daily/PreDay18_ns3语义正确基线重建",
+      "files": 321,
+      "sha256": "aad84af9977f38f80db48d8ef9f17e9a84abde05022cfcf776c50bef8d5d4416"
+    },
+    {
+      "directory": "daily/PreDay18_语义正确基线止损复验",
+      "files": 2802,
+      "sha256": "ca81f76c42a58dfa154f9c068900cdc639cb2e29c14d5483fac488b4fdf3e566"
+    },
+    {
+      "directory": "daily/PreDay18_Fixed-PRMAC机制重设计",
+      "files": 27,
+      "sha256": "fb2f3a0da8302161928f19f07ff7c99fb61cd8610a3da3567cd67155068e749d"
+    },
+    {
+      "directory": "daily/PreDay18_Fixed-PRMAC失败归因补强",
+      "files": 341,
+      "sha256": "3c49212d42c294ebc90b20fe6650f779850ed847d55350ffb2b45add96253b74"
+    }
+  ],
+  "historical_unchanged": true,
+  "semantic_decision": "BASELINE_READY",
+  "attribution_decision": "ATTRIBUTION_HOLD",
+  "clean_source_sha256": "4514d5ba6b6cf63021b98d8848ff03f9cdbbcfc20e39132192ba3ab9715b7c02",
+  "trace_completion_patch_sha256": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+  "final_patched_source_sha256": "37c6118720d68e8782a4c4d84fac48ccfd5b3a53141640634116a8f6bf46b717",
+  "scope": "only trace serialization gate, timestamps and read-only field snapshots"
+}
