@@ -1,0 +1,37 @@
+{
+  "platform": "ns3-3.43-adhoc-wifi-udp-diagnostic",
+  "purpose": "root-cause diagnosis only; not performance re-judgment",
+  "mode": "original",
+  "protocol": "fixed",
+  "hops": 6,
+  "packets": 1,
+  "load": "single",
+  "traffic": "periodic",
+  "seed": 7,
+  "causal_forwarding": false,
+  "positioned_chain": false,
+  "k2_segment": false,
+  "reservation_window": false,
+  "created": 1,
+  "delivered": 1,
+  "delivery_ratio": 1,
+  "unknown_loss": 0,
+  "boundary_counters": {"mac_enqueue": 18, "mac_drop": 0, "phy_tx": 19, "phy_rx": 108, "phy_drop": 6},
+  "terminal_counts": {
+    "DELIVERED": 1,
+    "APP_SEND_REJECTED": 0,
+    "SOCKET_BUFFER_DROP": 0,
+    "MAC_QUEUE_DROP": 0,
+    "MAC_RETRY_EXHAUSTED": 0,
+    "PHY_RX_DROP": 0,
+    "PROTOCOL_CONTROL_TIMEOUT": 0,
+    "PROTOCOL_RETRY_EXHAUSTED": 0,
+    "SIMULATION_STOP_TIMEOUT": 0,
+    "DUPLICATE_SUPPRESSED": 0,
+    "UNKNOWN_LOSS": 0
+  },
+  "frozen_parameters": {"K": 2, "CWmin": 15, "CWmax": 1023, "retry_limit": 7, "payload_bytes": 1024, "data_rate_mbps": 2, "control_rate_mbps": 1, "slot_us": 20},
+  "packets_detail": [
+    {"seq": 0, "terminal": "DELIVERED", "terminal_hop": 6, "reservation_segments": 6, "max_segment_hops": 1}
+  ]
+}

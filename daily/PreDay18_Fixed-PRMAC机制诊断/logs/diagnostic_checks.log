@@ -1,0 +1,15 @@
+Reusing complete immutable diagnostic matrix: 188 summaries and 188 traces.
+$ C:\Program Files\Python312\python.exe C:\research-project-backup\daily\PreDay18_Fixed-PRMAC机制诊断\code\analysis\analyze_results.py
+{
+  "root_cause_classification": "MIXED_ROOT_CAUSE",
+  "diagnostic_runs": {
+    "tier1": 8,
+    "tier2": 108,
+    "tier3": 72,
+    "total": 188
+  },
+  "day18_status": "LOCKED"
+}
+
+$ C:\Program Files\Python312\python.exe C:\research-project-backup\daily\PreDay18_Fixed-PRMAC机制诊断\code\tests\test_diagnostic.py
+Diagnostic tests passed: immutable evidence, causal chain, K=2, unique terminals, UNKNOWN_LOSS=0, reproducibility, UTF-8 JSON

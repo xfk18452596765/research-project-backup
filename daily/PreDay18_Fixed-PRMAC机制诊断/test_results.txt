@@ -1,0 +1,18 @@
+PreDay18 Fixed-PRMAC mechanism diagnosis
+==========================================
+Static audit: PASS (11 high-risk checks completed; 11 implementation failures identified)
+ns-3 diagnostic program compile: PASS
+Diagnostic matrix: PASS (188 runs: tier1=8, tier2=108, tier3=72)
+Causal forwarding trace: PASS
+K=2 segment bound: PASS
+Unique packet terminal state: PASS
+UNKNOWN_LOSS=0: PASS
+Same-seed reproducibility: PASS
+JSON UTF-8 parsing: PASS
+Original evidence SHA256 unchanged: PASS
+Changes confined to diagnostic directory: PASS
+Day03-Day17 regression: PASS
+Root cause classification: MIXED_ROOT_CAUSE
+PreDay18 decision: FAIL (unchanged)
+Day18: LOCKED
+RL training: NOT_RUN
