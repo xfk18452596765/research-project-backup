@@ -1,0 +1,39 @@
+{
+  "ns3_version": "3.43",
+  "base_source": {
+    "commit_or_tag": "ns-3.43",
+    "tree_sha256": "1dc33d94d89f345c6009b2c538917cb51edf90ac8ac0126b74b97e9b361947ca"
+  },
+  "patches": [
+    {
+      "order": 1,
+      "id": "semantic_baseline",
+      "canonical_path": "daily/PreDay18_ns3补丁链溯源与一致性修复/results/recovered/semantic_baseline.patch",
+      "source_commit": "7560ac7b06e8f272ff378e97f9b420f0c50ff98d",
+      "source_blob": "06bd7033f8c130238aa5eb380d5a7195dcb2ef50",
+      "raw_sha256": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+      "line_ending": "LF",
+      "historical_sha_status": "ERRATUM"
+    },
+    {
+      "order": 2,
+      "id": "attribution_trace",
+      "canonical_path": "daily/PreDay18_ns3补丁链溯源与一致性修复/results/recovered/attribution_trace.patch",
+      "source_commit": "aacc7093bc5c0a822106e891e436985def405cc5",
+      "source_blob": "c0c94be16a2115a3672c77e598ac19e1e7e9388d",
+      "raw_sha256": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+      "line_ending": "LF",
+      "historical_sha_status": "ERRATUM"
+    },
+    {
+      "order": 3,
+      "id": "lifecycle_trace",
+      "canonical_path": "daily/PreDay18_ns3补丁链溯源与一致性修复/results/recovered/lifecycle_trace.patch",
+      "source_commit": "5b5ef9110895457137321de2e36212a4b04ed120",
+      "source_blob": "cb21f39f5b539e5edd9f0913e150e5855a3d0e22",
+      "raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "line_ending": "LF",
+      "historical_sha_status": "ERRATUM"
+    }
+  ]
+}

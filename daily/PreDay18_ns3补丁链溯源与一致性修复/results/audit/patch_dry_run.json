@@ -1,0 +1,28 @@
+{
+  "source": ".ns3-43-provenance-source",
+  "source_tree_sha256": "1dc33d94d89f345c6009b2c538917cb51edf90ac8ac0126b74b97e9b361947ca",
+  "steps": [],
+  "audit-A": {
+    "success": false,
+    "steps": [
+      {
+        "id": "semantic_baseline",
+        "check_exit_code": 128,
+        "check_stderr": "error: corrupt patch at C:/research-project-backup/daily/PreDay18_ns3补丁链溯源与一致性修复/results/recovered/semantic_baseline.patch:100"
+      }
+    ],
+    "final_tree_sha256": null
+  },
+  "audit-B": {
+    "success": false,
+    "steps": [
+      {
+        "id": "semantic_baseline",
+        "check_exit_code": 128,
+        "check_stderr": "error: corrupt patch at C:/research-project-backup/daily/PreDay18_ns3补丁链溯源与一致性修复/results/recovered/semantic_baseline.patch:100"
+      }
+    ],
+    "final_tree_sha256": null
+  },
+  "match": false
+}

@@ -1,0 +1,117 @@
+{
+  "append_only": true,
+  "errata": [
+    {
+      "historical_file": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/docs/07_生命周期Trace就绪结论.md",
+      "historical_field": "patch SHA (context recorded)",
+      "historical_value": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "actual_hashed_object": "lifecycle patch field hashes the CRLF checkout bytes, not the canonical Git blob",
+      "canonical_patch_path": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch",
+      "canonical_raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "normalized_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "reason": "HASH_OBJECT_LABEL_ERROR",
+      "evidence_commits": [
+        "5b5ef9110895457137321de2e36212a4b04ed120"
+      ],
+      "impact": "use canonical patch chain, not this historical value"
+    },
+    {
+      "historical_file": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/results/audit/lifecycle_patch_scope.json",
+      "historical_field": "patch SHA (context recorded)",
+      "historical_value": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "actual_hashed_object": "lifecycle patch field hashes the CRLF checkout bytes, not the canonical Git blob",
+      "canonical_patch_path": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch",
+      "canonical_raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "normalized_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "reason": "HASH_OBJECT_LABEL_ERROR",
+      "evidence_commits": [
+        "5b5ef9110895457137321de2e36212a4b04ed120"
+      ],
+      "impact": "use canonical patch chain, not this historical value"
+    },
+    {
+      "historical_file": "daily/PreDay18_ns3补丁链溯源与一致性修复/results/audit/historical_sha_references.json",
+      "historical_field": "patch SHA (context recorded)",
+      "historical_value": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "actual_hashed_object": "lifecycle patch field hashes the CRLF checkout bytes, not the canonical Git blob",
+      "canonical_patch_path": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch",
+      "canonical_raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "normalized_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "reason": "HASH_OBJECT_LABEL_ERROR",
+      "evidence_commits": [
+        "5b5ef9110895457137321de2e36212a4b04ed120"
+      ],
+      "impact": "use canonical patch chain, not this historical value"
+    },
+    {
+      "historical_file": "daily/PreDay18_ns3补丁链溯源与一致性修复/results/audit/historical_sha_references.json",
+      "historical_field": "patch SHA (context recorded)",
+      "historical_value": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "actual_hashed_object": "lifecycle patch field hashes the CRLF checkout bytes, not the canonical Git blob",
+      "canonical_patch_path": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch",
+      "canonical_raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "normalized_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "reason": "HASH_OBJECT_LABEL_ERROR",
+      "evidence_commits": [
+        "5b5ef9110895457137321de2e36212a4b04ed120"
+      ],
+      "impact": "use canonical patch chain, not this historical value"
+    },
+    {
+      "historical_file": "daily/PreDay18_ns3补丁链溯源与一致性修复/results/audit/historical_sha_references.json",
+      "historical_field": "patch SHA (context recorded)",
+      "historical_value": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "actual_hashed_object": "lifecycle patch field hashes the CRLF checkout bytes, not the canonical Git blob",
+      "canonical_patch_path": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch",
+      "canonical_raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "normalized_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "reason": "HASH_OBJECT_LABEL_ERROR",
+      "evidence_commits": [
+        "5b5ef9110895457137321de2e36212a4b04ed120"
+      ],
+      "impact": "use canonical patch chain, not this historical value"
+    },
+    {
+      "historical_file": "daily/PreDay18_ns3补丁链溯源与一致性修复/results/audit/historical_sha_references.json",
+      "historical_field": "patch SHA (context recorded)",
+      "historical_value": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "actual_hashed_object": "lifecycle patch field hashes the CRLF checkout bytes, not the canonical Git blob",
+      "canonical_patch_path": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch",
+      "canonical_raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "normalized_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "reason": "HASH_OBJECT_LABEL_ERROR",
+      "evidence_commits": [
+        "5b5ef9110895457137321de2e36212a4b04ed120"
+      ],
+      "impact": "use canonical patch chain, not this historical value"
+    },
+    {
+      "historical_file": "daily/PreDay18_ns3补丁链溯源与一致性修复/results/audit/historical_sha_references.json",
+      "historical_field": "patch SHA (context recorded)",
+      "historical_value": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "actual_hashed_object": "lifecycle patch field hashes the CRLF checkout bytes, not the canonical Git blob",
+      "canonical_patch_path": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch",
+      "canonical_raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "normalized_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "reason": "HASH_OBJECT_LABEL_ERROR",
+      "evidence_commits": [
+        "5b5ef9110895457137321de2e36212a4b04ed120"
+      ],
+      "impact": "use canonical patch chain, not this historical value"
+    },
+    {
+      "historical_file": "daily/PreDay18_ns3补丁链溯源与一致性修复/results/audit/historical_sha_references.json",
+      "historical_field": "patch SHA (context recorded)",
+      "historical_value": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "actual_hashed_object": "lifecycle patch field hashes the CRLF checkout bytes, not the canonical Git blob",
+      "canonical_patch_path": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch",
+      "canonical_raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "normalized_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "reason": "HASH_OBJECT_LABEL_ERROR",
+      "evidence_commits": [
+        "5b5ef9110895457137321de2e36212a4b04ed120"
+      ],
+      "impact": "use canonical patch chain, not this historical value"
+    }
+  ]
+}
