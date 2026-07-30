@@ -1,0 +1,8 @@
+{
+  "order": ["semantic", "attribution", "lifecycle"],
+  "expected_sha256": {
+    "semantic": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+    "attribution": "9405e0e83684725e92bcd0bf99c8f567f6d17a1f8501468b0c4ca1bd91ca43d1",
+    "lifecycle": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46"
+  }
+}
