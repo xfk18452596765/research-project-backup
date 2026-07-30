@@ -1,0 +1,3 @@
+Closure audit: NS3_WORKSPACE_HOLD
+Reason: PATCH_SHA_MISMATCH
+No ns-3 source recovery, patch application, build, official test, lifecycle program, smoke, or rebuild verification was executed.

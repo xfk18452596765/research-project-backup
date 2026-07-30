@@ -1,0 +1,38 @@
+{
+  "decision": "NS3_WORKSPACE_HOLD",
+  "reason": "PATCH_SHA_MISMATCH",
+  "blocked_before": [
+    "clean-source recovery",
+    "patch dry-run/apply",
+    "configure",
+    "build",
+    "official tests",
+    "lifecycle binary",
+    "smoke",
+    "rebuild verification"
+  ],
+  "formal_lifecycle_runs_executed": false,
+  "day18_status": "LOCKED",
+  "rl_started": false,
+  "workspace_path": "~/workspace/ns-3.43-lifecycle-trace-clean (not created; fail-closed)",
+  "patches": {
+    "semantic": {
+      "path": "daily\\PreDay18_ns3\u8bed\u4e49\u6b63\u786e\u57fa\u7ebf\u91cd\u5efa\\ns3\\patches\\ns3-3.43-fixed-prmac-access.patch",
+      "expected_sha256": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+      "actual_sha256": "ecd2c1065cebb3230bc4b757213ff82c74b4afc9ab14fb1d6c200edfac470924",
+      "match": false
+    },
+    "attribution": {
+      "path": "daily\\PreDay18_Fixed-PRMAC\u5f52\u56e0Trace\u8865\u5168\\ns3\\patches\\attribution-trace-completion.patch",
+      "expected_sha256": "9405e0e83684725e92bcd0bf99c8f567f6d17a1f8501468b0c4ca1bd91ca43d1",
+      "actual_sha256": "3962113239245fdbdb754f6ead378b77133a03e9a57390647eeffad0ef21efbc",
+      "match": false
+    },
+    "lifecycle": {
+      "path": "daily\\PreDay18_Fixed-PRMAC\u751f\u547d\u5468\u671fTrace\u95ed\u5408\\ns3\\patches\\lifecycle-trace-completion.patch",
+      "expected_sha256": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+      "actual_sha256": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "match": false
+    }
+  }
+}
