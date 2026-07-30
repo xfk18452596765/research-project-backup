@@ -1,0 +1,135 @@
+diff --git a/src/wifi/model/txop.h b/src/wifi/model/txop.h
+index db3ea438d..4ec1973bb 100644
+--- a/src/wifi/model/txop.h
++++ b/src/wifi/model/txop.h
+@@ -111,6 +111,33 @@ class Txop : public Object
+      */
+     Ptr<WifiMacQueue> GetWifiMacQueue() const;
+
++    /**
++     * Enable or disable the local Fixed-PRMAC reserved-access path.
++     *
++     * While enabled and before expires, queued MPDUs still request access from
++     * ChannelAccessManager and are still transmitted through the normal PHY,
++     * but they start with zero random backoff.  This models the local grant
++     * installed after PR_ACK without forcing successful reception.
++     *
++     * \param enabled whether reserved access is enabled
++     * \param expires absolute simulation time at which the grant expires
++     */
++    void SetFixedPrmacReservedAccess(bool enabled, Time expires);
++
++    /**
++     * Defer ordinary local access until an absolute simulation time.  This is
++     * installed only on nodes whose local transmissions conflict with an
++     * active reservation; it is not a global channel lock.
++     *
++     * \param until absolute simulation time through which access is blocked
++     */
++    void SetFixedPrmacBlockedUntil(Time until);
++
++    /**
++     * \return true if a non-expired reserved-access grant is installed
++     */
++    bool HasFixedPrmacReservedAccess() const;
++
+     /**
+      * Set the minimum contention window size. For 11be multi-link devices,
+      * set the minimum contention window size on the first link.
+@@ -567,6 +594,13 @@ class Txop : public Object
+
+     BackoffValueTracedCallback m_backoffTrace; //!< backoff trace value
+     CwValueTracedCallback m_cwTrace;           //!< CW trace value
++    /// mode: 0 released, 1 reserved path, 2 locally blocked
++    typedef TracedCallback<uint8_t /* mode */, Time /* boundary */>
++        FixedPrmacAccessTracedCallback;
++    FixedPrmacAccessTracedCallback m_fixedPrmacAccessTrace;
++    bool m_fixedPrmacReserved{false};
++    Time m_fixedPrmacGrantExpires{0};
++    Time m_fixedPrmacBlockedUntil{0};
+
+   private:
+     /**
+diff --git a/src/wifi/model/txop.cc b/src/wifi/model/txop.cc
+index 18f7caaaf..d067ea7ab 100644
+--- a/src/wifi/model/txop.cc
++++ b/src/wifi/model/txop.cc
+@@ -163,7 +163,11 @@ Txop::GetTypeId()
+             .AddTraceSource("CwTrace",
+                             "Trace source for contention window values",
+                             MakeTraceSourceAccessor(&Txop::m_cwTrace),
+-                            "ns3::Txop::CwValueTracedCallback");
++                            "ns3::Txop::CwValueTracedCallback")
++            .AddTraceSource("FixedPrmacAccess",
++                            "Local Fixed-PRMAC access mode: 0 released, 1 reserved, 2 blocked",
++                            MakeTraceSourceAccessor(&Txop::m_fixedPrmacAccessTrace),
++                            "ns3::Txop::FixedPrmacAccessTracedCallback");
+     return tid;
+ }
+
+@@ -267,6 +271,28 @@ Txop::GetWifiMacQueue() const
+     return m_queue;
+ }
+
++void
++Txop::SetFixedPrmacReservedAccess(bool enabled, Time expires)
++{
++    NS_LOG_FUNCTION(this << enabled << expires);
++    m_fixedPrmacReserved = enabled;
++    m_fixedPrmacGrantExpires = enabled ? expires : Seconds(0);
++    m_fixedPrmacAccessTrace(enabled ? 1 : 0, m_fixedPrmacGrantExpires);
++}
++
++void
++Txop::SetFixedPrmacBlockedUntil(Time until)
++{
++    NS_LOG_FUNCTION(this << until);
++    m_fixedPrmacBlockedUntil = std::max(m_fixedPrmacBlockedUntil, until);
++    m_fixedPrmacAccessTrace(2, m_fixedPrmacBlockedUntil);
++}
++
++bool
++Txop::HasFixedPrmacReservedAccess() const
++{
++    return m_fixedPrmacReserved && Simulator::Now() < m_fixedPrmacGrantExpires;
++}
++
+ void
+ Txop::SetMinCw(uint32_t minCw)
+ {
+@@ -692,10 +718,31 @@ Txop::StartAccessAfterEvent(uint8_t linkId, bool hadFramesToTransmit, bool check
+         return;
+     }
+
+-    if (m_mac->GetChannelAccessManager(linkId)->NeedBackoffUponAccess(this,
+-                                                                      hadFramesToTransmit,
+-                                                                      checkMediumBusy))
++    if (!HasFixedPrmacReservedAccess() && Simulator::Now() < m_fixedPrmacBlockedUntil)
+     {
+-        GenerateBackoff(linkId);
++        Simulator::Schedule(m_fixedPrmacBlockedUntil - Simulator::Now(),
++                            &Txop::StartAccessAfterEvent,
++                            this,
++                            linkId,
++                            hadFramesToTransmit,
++                            CHECK_MEDIUM_BUSY);
++        return;
++    }
++
++    if (m_fixedPrmacReserved && Simulator::Now() >= m_fixedPrmacGrantExpires)
++    {
++        SetFixedPrmacReservedAccess(false, Seconds(0));
++    }
++
++    if (HasFixedPrmacReservedAccess())
++    {
++        StartBackoffNow(0, linkId);
++        m_fixedPrmacAccessTrace(1, m_fixedPrmacGrantExpires);
++    }
++    else if (m_mac->GetChannelAccessManager(linkId)->NeedBackoffUponAccess(
++                 this, hadFramesToTransmit, checkMediumBusy))
++    {
++        GenerateBackoff(linkId);
+     }
+
+     m_mac->GetChannelAccessManager(linkId)->RequestAccess(this);

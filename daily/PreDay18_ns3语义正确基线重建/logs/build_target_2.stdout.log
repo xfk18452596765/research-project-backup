@@ -1,0 +1,96 @@
+[0/2] Re-checking globbed directories...
+[1/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-mac-trailer.cc.o
+[2/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-mac-queue-elem.cc.o
+[3/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-information-element.cc.o
+[4/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-mac-header.cc.o
+[5/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-mac-queue-scheduler.cc.o
+[6/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-mac-queue-container.cc.o
+[7/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-mode.cc.o
+[8/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-phy-common.cc.o
+[9/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-mpdu.cc.o
+[10/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-phy-operating-channel.cc.o
+[11/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-default-protection-manager.cc.o
+[12/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-protection-manager.cc.o
+[13/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-psdu.cc.o
+[14/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-protection.cc.o
+[15/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-ppdu.cc.o
+[16/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-remote-station-info.cc.o
+[17/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-mac-queue.cc.o
+[18/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-standards.cc.o
+[19/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/txop.cc.o
+[20/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-tx-current-model.cc.o
+[21/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-net-device.cc.o
+[22/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-spectrum-signal-parameters.cc.o
+[23/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-phy-state-helper.cc.o
+[24/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-radio-energy-model.cc.o
+[25/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-spectrum-phy-interface.cc.o
+[26/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-utils.cc.o
+[27/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/yans-error-rate-model.cc.o
+[28/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-tx-parameters.cc.o
+[29/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-tx-timer.cc.o
+[30/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/cid.cc.o
+[31/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-tx-vector.cc.o
+[32/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/cid-factory.cc.o
+[33/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/yans-wifi-phy.cc.o
+[34/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/yans-wifi-channel.cc.o
+[35/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/wimax-channel.cc.o
+[36/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/wimax-mac-header.cc.o
+[37/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/wimax-phy.cc.o
+[38/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-spectrum-value-helper.cc.o
+[39/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ofdm-downlink-frame-prefix.cc.o
+[40/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ss-record.cc.o
+[41/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-remote-station-manager.cc.o
+[42/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/wimax-connection.cc.o
+[43/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/helper/wimax-helper.cc.o
+[44/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/wimax-net-device.cc.o
+[45/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bs-net-device.cc.o
+[46/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/mac-messages.cc.o
+[47/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/send-params.cc.o
+[48/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ul-mac-messages.cc.o
+[49/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/dl-mac-messages.cc.o
+[50/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ss-manager.cc.o
+[51/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/simple-ofdm-wimax-channel.cc.o
+[52/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/connection-manager.cc.o
+[53/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bs-uplink-scheduler.cc.o
+[54/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bs-scheduler.cc.o
+[55/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bs-uplink-scheduler-simple.cc.o
+[56/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ss-net-device.cc.o
+[57/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bs-scheduler-simple.cc.o
+[58/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-phy.cc.o
+[59/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/burst-profile-manager.cc.o
+[60/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bs-uplink-scheduler-rtps.cc.o
+[61/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bs-uplink-scheduler-mbqos.cc.o
+[62/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bs-scheduler-rtps.cc.o
+[63/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/simple-ofdm-wimax-phy.cc.o
+[64/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/wimax-mac-queue.cc.o
+[65/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/crc8.cc.o
+[66/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/service-flow-manager.cc.o
+[67/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ss-scheduler.cc.o
+[68/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/service-flow-record.cc.o
+[69/93] Building CXX object src/wifi/CMakeFiles/wifi.dir/model/wifi-mac.cc.o
+[70/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/service-flow.cc.o
+[71/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/snr-to-block-error-rate-record.cc.o
+[72/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ul-job.cc.o
+[73/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/snr-to-block-error-rate-manager.cc.o
+[74/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/simple-ofdm-send-param.cc.o
+[75/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bandwidth-manager.cc.o
+[76/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bs-link-manager.cc.o
+[77/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ss-link-manager.cc.o
+[78/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ss-service-flow-manager.cc.o
+[79/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/cs-parameters.cc.o
+[80/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/wimax-mac-to-mac-header.cc.o
+[81/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ipcs-classifier.cc.o
+[82/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/wimax-tlv.cc.o
+[83/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/ipcs-classifier-record.cc.o
+[84/93] Building CXX object src/wimax/CMakeFiles/wimax.dir/model/bs-service-flow-manager.cc.o
+[85/93] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-wimax-default.so
+[86/93] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-wifi-default.so
+[87/93] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-aodv-default.so
+[88/93] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-mesh-default.so
+[89/93] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-netanim-default.so
+[90/93] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-dsdv-default.so
+[91/93] Linking CXX shared library /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/lib/libns3.43-dsr-default.so
+[92/93] Building CXX object scratch/CMakeFiles/scratch_preday18-semantic-baseline.dir/preday18-semantic-baseline.cc.o
+[93/93] Linking CXX executable /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/build/scratch/ns3.43-preday18-semantic-baseline-default
+Finished executing the following commands:
+/usr/bin/cmake --build /home/xfk/workspace/ns-3.43-fixed-prmac-baseline/cmake-cache -j 11 --target scratch_preday18-semantic-baseline

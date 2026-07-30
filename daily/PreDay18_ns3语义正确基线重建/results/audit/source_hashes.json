@@ -1,0 +1,8 @@
+{
+  "ns3_version": "3.43",
+  "clean_commit": "753817468d611239b1e3c2e272b2bed8ef1f580c",
+  "clean_source_archive_sha256": "da33eb5f3abb5e304ac8664f66ff117974be9811daa7cd340753e080902673fc",
+  "patch_sha256": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+  "overlay_sha256": "728e96947078437923f716293e10186371d775fc826215e0f3e22bea9348fcd3",
+  "patched_source_sha256": "feb05e33d6d3a34fa3016e7ceb02ea3bb9ad0c5d8e037c39df652b23e9690067"
+}

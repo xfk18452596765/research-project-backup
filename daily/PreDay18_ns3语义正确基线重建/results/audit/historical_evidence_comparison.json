@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "comparison": [
+    {
+      "directory": "daily/PreDay18_最小止损路线",
+      "start_sha256": "f0a528b7ea66c61c95179359b9501ac2817e940baac22e8fe5f36fd7b75996ad",
+      "end_sha256": "f0a528b7ea66c61c95179359b9501ac2817e940baac22e8fe5f36fd7b75996ad",
+      "file_count_start": 931,
+      "file_count_end": 931,
+      "immutable": true
+    },
+    {
+      "directory": "daily/PreDay18_Fixed-PRMAC机制诊断",
+      "start_sha256": "dd7ec15eae850a367d853390306bd9db811ecd5383800c86cee9adb17833cc1b",
+      "end_sha256": "dd7ec15eae850a367d853390306bd9db811ecd5383800c86cee9adb17833cc1b",
+      "file_count_start": 406,
+      "file_count_end": 406,
+      "immutable": true
+    }
+  ]
+}

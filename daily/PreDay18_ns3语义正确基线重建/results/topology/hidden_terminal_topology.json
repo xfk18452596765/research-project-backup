@@ -1,0 +1,57 @@
+{
+  "positions_m": {
+    "A": [
+      0,
+      0,
+      0
+    ],
+    "B": [
+      30,
+      0,
+      0
+    ],
+    "C": [
+      60,
+      0,
+      0
+    ]
+  },
+  "rss_dbm": [
+    [
+      null,
+      -83.76255,
+      -95.80375
+    ],
+    [
+      -83.76255,
+      null,
+      -83.76255
+    ],
+    [
+      -95.80375,
+      -83.76255,
+      null
+    ]
+  ],
+  "carrier_sense": [
+    [
+      true,
+      true,
+      false
+    ],
+    [
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      true,
+      true
+    ]
+  ],
+  "A_C_mutual_carrier_sense": false,
+  "A_to_B_decodable_by_threshold": true,
+  "C_to_B_decodable_by_threshold": true,
+  "collision_or_drop_events": 70
+}

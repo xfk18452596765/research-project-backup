@@ -1,0 +1,12 @@
+{
+  "decision_values": ["BASELINE_READY", "BASELINE_HOLD"],
+  "ready_requires": ["Gate 0", "Gate 1", "Gate 2", "Gate 3", "Gate 4", "Gate 5", "Gate 6"],
+  "gate_0": ["clean patch apply", "build", "official tests no new failure", "scratch target build"],
+  "gate_1": ["adjacent decode", "two-hop direct decode rejected", "position and RSS auditable"],
+  "gate_2": ["receive-before-forward", "no non-adjacent send", "single packet delivered", "unknown_loss=0"],
+  "gate_3": ["ceil(hops/2) segments", "effective_hops<=2", "PR_ACK before DATA", "RELEASE before next segment"],
+  "gate_4": ["reserved Txop path observed", "local conflict block observed", "no global lock", "release restores access"],
+  "gate_5": ["created equals delivered plus final losses", "unknown_loss=0", "no active reservation"],
+  "gate_6": ["all smoke runs terminate and parse", "losses are terminally classified"],
+  "explicitly_out_of_scope": ["stop-loss PASS/FAIL", "Day18", "RL", "720/520 performance matrix"]
+}

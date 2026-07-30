@@ -1,0 +1,45 @@
+{
+  "single_packet_dcf": {
+    "hops": [1, 2, 4, 6],
+    "packets": 1,
+    "seed": 7
+  },
+  "single_packet_fixed": {
+    "hops": [2, 4, 6],
+    "packets": 1,
+    "seed": 7
+  },
+  "fixed_retry_semantics": {
+    "scenario": "reservation-conflict",
+    "hops": 2,
+    "packets": 1,
+    "seed": 7,
+    "expected_first_retry_cw": 31
+  },
+  "low_load": {
+    "protocols": ["dcf", "fixed"],
+    "hops": [2, 4, 6],
+    "traffic": ["periodic", "poisson"],
+    "packets": 10,
+    "seeds": [7, 17, 27]
+  },
+  "high_load_termination": {
+    "protocols": ["dcf", "fixed"],
+    "hops": [6],
+    "traffic": ["periodic", "poisson"],
+    "packets": 100,
+    "seeds": [7, 17, 27]
+  },
+  "multiflow": {
+    "scenarios": ["multiflow-m1", "multiflow-m2"],
+    "packets_per_flow": 5,
+    "flows": 2,
+    "seed": 7
+  },
+  "hidden_terminal": {
+    "scenario": "hidden",
+    "packets_per_flow": 5,
+    "flows": 2,
+    "seed": 7
+  }
+}
