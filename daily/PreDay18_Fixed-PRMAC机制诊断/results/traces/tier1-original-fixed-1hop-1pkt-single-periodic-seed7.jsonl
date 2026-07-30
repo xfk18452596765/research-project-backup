@@ -1,0 +1,17 @@
+{"time_us":1000000,"seq":0,"hop":0,"event":"APP_CREATE","detail":"periodic"}
+{"time_us":1000000,"seq":0,"hop":0,"event":"PR_REQ_SOCKET_SEND","detail":"Socket::Send=36"}
+{"time_us":1000320,"seq":0,"hop":0,"event":"PR_ACK_SOCKET_SEND","detail":"Socket::Send=24"}
+{"time_us":1000540,"seq":0,"hop":0,"event":"APP_SEND_ATTEMPT"}
+{"time_us":1000540,"seq":0,"hop":0,"event":"SOCKET_SEND_ACCEPTED","detail":"bytes=1024"}
+{"time_us":1002252,"seq":0,"hop":0,"event":"MAC_ENQUEUE"}
+{"time_us":1002252,"seq":0,"hop":0,"event":"MAC_ENQUEUE"}
+{"time_us":1002252,"seq":0,"hop":0,"event":"MAC_ENQUEUE"}
+{"time_us":1002980,"seq":0,"hop":0,"event":"PHY_TX"}
+{"time_us":1003573,"seq":0,"hop":0,"event":"PHY_RX"}
+{"time_us":1003573,"seq":0,"hop":0,"event":"CONTROL_UDP_RX"}
+{"time_us":1004441,"seq":0,"hop":0,"event":"PHY_TX"}
+{"time_us":1004985,"seq":0,"hop":0,"event":"PHY_RX"}
+{"time_us":1004985,"seq":0,"hop":0,"event":"CONTROL_UDP_RX"}
+{"time_us":1005354,"seq":0,"hop":0,"event":"PHY_TX"}
+{"time_us":1009898,"seq":0,"hop":0,"event":"PHY_RX"}
+{"time_us":1009898,"seq":0,"hop":0,"event":"UDP_RX"}

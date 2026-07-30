@@ -1,0 +1,15 @@
+{"time_us":1000000,"seq":0,"hop":0,"event":"APP_CREATE","detail":"periodic"}
+{"time_us":1000000,"seq":0,"hop":0,"event":"APP_SEND_ATTEMPT"}
+{"time_us":1000000,"seq":0,"hop":0,"event":"SOCKET_SEND_ACCEPTED","detail":"bytes=1024"}
+{"time_us":1000120,"seq":0,"hop":1,"event":"APP_SEND_ATTEMPT"}
+{"time_us":1000120,"seq":0,"hop":1,"event":"SOCKET_SEND_ACCEPTED","detail":"bytes=1024"}
+{"time_us":1005372,"seq":0,"hop":1,"event":"MAC_ENQUEUE"}
+{"time_us":1007004,"seq":0,"hop":1,"event":"PHY_TX"}
+{"time_us":1011548,"seq":0,"hop":1,"event":"PHY_RX"}
+{"time_us":1011548,"seq":0,"hop":1,"event":"PHY_RX"}
+{"time_us":1011548,"seq":0,"hop":1,"event":"UDP_RX"}
+{"time_us":1012605,"seq":0,"hop":0,"event":"MAC_ENQUEUE"}
+{"time_us":1012913,"seq":0,"hop":0,"event":"PHY_TX"}
+{"time_us":1017457,"seq":0,"hop":0,"event":"PHY_RX"}
+{"time_us":1017457,"seq":0,"hop":0,"event":"UDP_RX"}
+{"time_us":1017458,"seq":0,"hop":0,"event":"PHY_RX"}

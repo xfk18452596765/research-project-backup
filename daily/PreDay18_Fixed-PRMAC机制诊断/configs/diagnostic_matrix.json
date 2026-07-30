@@ -1,0 +1,21 @@
+{
+  "frozen_parameters": {
+    "K": 2,
+    "CWmin": 15,
+    "CWmax": 1023,
+    "retry_limit": 7,
+    "payload_bytes": 1024,
+    "data_rate_mbps": 2,
+    "control_rate_mbps": 1,
+    "slot_us": 20
+  },
+  "modes": [
+    "original",
+    "causal-forwarding",
+    "positioned-chain",
+    "k2-segment",
+    "reservation-window",
+    "combined-reference"
+  ],
+  "seeds": [7, 17, 27]
+}

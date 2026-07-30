@@ -1,0 +1,581 @@
+{
+  "purpose": "root-cause diagnosis only; PreDay18 FAIL is immutable and is not re-judged",
+  "diagnostic_runs": {
+    "tier1": 8,
+    "tier2": 108,
+    "tier3": 72,
+    "total": 188
+  },
+  "gates": {
+    "single_packet_all_delivered": true,
+    "low_load_all_delivered": true,
+    "unknown_loss_zero": true
+  },
+  "root_cause_classification": "MIXED_ROOT_CAUSE",
+  "high_load_fixed_original_delivery_ratio": 0.18333333333333332,
+  "high_load_fixed_combined_delivery_ratio": 0.23666666666666666,
+  "diagnostic_loss_explained_fraction": 0.06530612244897961,
+  "primary_causes": [
+    "non-causal pre-scheduling in both DCF and Fixed paths",
+    "FixedRssLossModel makes the intended chain effectively all-connected",
+    "K=2 reservation segment is absent; full control exchange repeats per hop",
+    "reservation does not alter underlying DCF medium access",
+    "original loss accounting lacks socket/MAC/PHY boundaries"
+  ],
+  "remaining_protocol_risks": [
+    "a native MAC implementation may still suffer reservation conflicts and fairness loss",
+    "real hidden-terminal and multi-flow behavior remain unvalidated",
+    "combined reference is diagnostic semantics, not a performance qualification"
+  ],
+  "preday18_decision": "FAIL (unchanged)",
+  "day18_status": "LOCKED",
+  "rl_training": "NOT_RUN",
+  "summary": [
+    {
+      "tier": "tier1",
+      "mode": "original",
+      "protocol": "dcf",
+      "runs": 4,
+      "created": 4,
+      "delivered": 4,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier1",
+      "mode": "original",
+      "protocol": "fixed",
+      "runs": 4,
+      "created": 4,
+      "delivered": 4,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "causal-forwarding",
+      "protocol": "dcf",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "causal-forwarding",
+      "protocol": "fixed",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "combined-reference",
+      "protocol": "dcf",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "combined-reference",
+      "protocol": "fixed",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "k2-segment",
+      "protocol": "dcf",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "k2-segment",
+      "protocol": "fixed",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "original",
+      "protocol": "dcf",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "original",
+      "protocol": "fixed",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "positioned-chain",
+      "protocol": "dcf",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "positioned-chain",
+      "protocol": "fixed",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "reservation-window",
+      "protocol": "dcf",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier2",
+      "mode": "reservation-window",
+      "protocol": "fixed",
+      "runs": 9,
+      "created": 90,
+      "delivered": 90,
+      "delivery_ratio": 1.0,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 0,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 0,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "causal-forwarding",
+      "protocol": "dcf",
+      "runs": 6,
+      "created": 600,
+      "delivered": 18,
+      "delivery_ratio": 0.03,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 66,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 516,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "causal-forwarding",
+      "protocol": "fixed",
+      "runs": 6,
+      "created": 600,
+      "delivered": 101,
+      "delivery_ratio": 0.16833333333333333,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 33,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 466,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "combined-reference",
+      "protocol": "dcf",
+      "runs": 6,
+      "created": 600,
+      "delivered": 214,
+      "delivery_ratio": 0.3566666666666667,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 21,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 365,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "combined-reference",
+      "protocol": "fixed",
+      "runs": 6,
+      "created": 600,
+      "delivered": 142,
+      "delivery_ratio": 0.23666666666666666,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 37,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 421,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "k2-segment",
+      "protocol": "dcf",
+      "runs": 6,
+      "created": 600,
+      "delivered": 164,
+      "delivery_ratio": 0.2733333333333333,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 29,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 407,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "k2-segment",
+      "protocol": "fixed",
+      "runs": 6,
+      "created": 600,
+      "delivered": 235,
+      "delivery_ratio": 0.39166666666666666,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 50,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 315,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "original",
+      "protocol": "dcf",
+      "runs": 6,
+      "created": 600,
+      "delivered": 164,
+      "delivery_ratio": 0.2733333333333333,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 29,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 407,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "original",
+      "protocol": "fixed",
+      "runs": 6,
+      "created": 600,
+      "delivered": 110,
+      "delivery_ratio": 0.18333333333333332,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 86,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 404,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "positioned-chain",
+      "protocol": "dcf",
+      "runs": 6,
+      "created": 600,
+      "delivered": 475,
+      "delivery_ratio": 0.7916666666666666,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 32,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 93,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "positioned-chain",
+      "protocol": "fixed",
+      "runs": 6,
+      "created": 600,
+      "delivered": 391,
+      "delivery_ratio": 0.6516666666666666,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 80,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 129,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "reservation-window",
+      "protocol": "dcf",
+      "runs": 6,
+      "created": 600,
+      "delivered": 164,
+      "delivery_ratio": 0.2733333333333333,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 29,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 407,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    },
+    {
+      "tier": "tier3",
+      "mode": "reservation-window",
+      "protocol": "fixed",
+      "runs": 6,
+      "created": 600,
+      "delivered": 105,
+      "delivery_ratio": 0.175,
+      "losses": {
+        "APP_SEND_REJECTED": 0,
+        "DUPLICATE_SUPPRESSED": 0,
+        "MAC_QUEUE_DROP": 0,
+        "MAC_RETRY_EXHAUSTED": 0,
+        "PHY_RX_DROP": 78,
+        "PROTOCOL_CONTROL_TIMEOUT": 0,
+        "PROTOCOL_RETRY_EXHAUSTED": 0,
+        "SIMULATION_STOP_TIMEOUT": 417,
+        "SOCKET_BUFFER_DROP": 0,
+        "UNKNOWN_LOSS": 0
+      }
+    }
+  ]
+}

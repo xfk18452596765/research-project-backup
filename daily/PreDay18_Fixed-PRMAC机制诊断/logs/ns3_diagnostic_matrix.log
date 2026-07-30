@@ -1,0 +1,9 @@
+[0/2] Re-checking globbed directories...
+[1/2] Building CXX object scratch/CMakeFiles/scratch_preday18-diagnostic-reference.dir/preday18-diagnostic-reference.cc.o
+[2/2] Linking CXX executable /home/xfk/workspace/ns-allinone-3.43/ns-3.43/build/scratch/ns3.43-preday18-diagnostic-reference-default
+Finished executing the following commands:
+/usr/bin/cmake --build /home/xfk/workspace/ns-allinone-3.43/ns-3.43/cmake-cache -j 11 --target scratch_preday18-diagnostic-reference
+tier1_runs=8
+tier2_runs=108
+tier3_runs=72
+total_runs=188
