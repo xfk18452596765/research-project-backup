@@ -1,0 +1,32 @@
+﻿[
+    {
+        "file":  "dcf-6-poisson-high-7-enabled.jsonl.zip",
+        "size":  56090,
+        "sha256":  "65BBF22D40FB090260ACF382F8D152D3BEA35B2200CF754C076420C15F5CFC35"
+    },
+    {
+        "file":  "fixed-6-poisson-high-7-enabled.jsonl.zip",
+        "size":  217288,
+        "sha256":  "A744ED8ADFDCE96BCDBBF38E2CBA2763F8DB70F90433CC57129655DCAA865CE2"
+    },
+    {
+        "file":  "low-dcf-6-poisson-7-enabled.jsonl.zip",
+        "size":  11046,
+        "sha256":  "E908F1F66B986580F142EE1C91B77F0B5EEB21182030CBC1C601F6EEDEC5563D"
+    },
+    {
+        "file":  "low-fixed-6-poisson-7-enabled.jsonl.zip",
+        "size":  61636,
+        "sha256":  "E9D7088EC1A9E8DB67673150582A56EDFB0EA970F47D24E4B490071361614DC0"
+    },
+    {
+        "file":  "single-dcf-6-periodic-7-enabled.jsonl.zip",
+        "size":  1711,
+        "sha256":  "4D9F3FC1D5FF81594BE59CD89146C50D67BD885CABE3DC5482213EB3D193C78B"
+    },
+    {
+        "file":  "single-fixed-6-periodic-7-enabled.jsonl.zip",
+        "size":  6746,
+        "sha256":  "4C30BDFEEF1427459D48156C3DCB002B67D7EDB84846A63AABF62AEEE2B73C24"
+    }
+]

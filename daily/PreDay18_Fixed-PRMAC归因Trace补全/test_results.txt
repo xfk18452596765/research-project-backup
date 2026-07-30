@@ -1,0 +1,16 @@
+historical evidence audit: PASS
+semantic baseline: BASELINE_READY
+previous attribution decision: ATTRIBUTION_HOLD
+non-empty trace patch: PASS
+patch scope: instrumentation-only audit PASS
+trace-disabled/enabled equivalence: PASS (144/144)
+random-stream equivalence: PASS
+single-packet calibration: 6/6 completed
+low-load calibration: 36/36 completed
+core trace: NOT RUN (low-load lifecycle closure gate not satisfied)
+schema fields: PASS
+packet/scenario time closure: NOT AVAILABLE (segment lifecycle incomplete)
+delivery loss closure: NOT AVAILABLE (terminal lifecycle incomplete)
+decision: TRACE_HOLD
+Day18: LOCKED
+RL started: NO

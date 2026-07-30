@@ -1,0 +1,11 @@
+{
+  "decision": "TRACE_HOLD",
+  "trace_behavior_equivalence": true,
+  "random_stream_equivalence": true,
+  "equivalence_runs": 144,
+  "trace_rows": 655234,
+  "missing_schema_fields": [],
+  "reason": "EVENT_LIFECYCLE_COMPLETION_REMAINS_REQUIRED",
+  "Day18_status": "LOCKED",
+  "RL_started": false
+}

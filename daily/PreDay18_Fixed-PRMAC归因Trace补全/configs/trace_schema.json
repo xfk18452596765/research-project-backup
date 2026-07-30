@@ -1,0 +1,1 @@
+{"schema_version":"2.0","required":["schema_version","time_ns","node_id","flow_id","packet_id","segment_id","reservation_id","attempt","hop_index","frame_type","event","reason","sender","receiver","queue_length","cw","backoff_slots","channel_state","reservation_state","frame_bytes","logical_control_bytes","phy_airtime_ns","random_stream_id"]}

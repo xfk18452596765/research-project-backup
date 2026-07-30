@@ -1,0 +1,1 @@
+{"runs":144,"packets":50,"simulation_time_tolerance_ns":1,"require_exact":["created","delivered","terminal_counts","packets_detail","active_reservations_after_run"]}
