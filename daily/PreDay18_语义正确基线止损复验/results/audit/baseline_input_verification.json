@@ -1,0 +1,28 @@
+{
+  "created_at_utc": "2026-07-30T09:51:43.659364+00:00",
+  "base_commit": "38cd5b7aa05556f00aaa6169aa34d805bccc1a3a",
+  "branch": "main",
+  "baseline_verified": true,
+  "baseline_decision": "BASELINE_READY",
+  "gates": {
+    "Gate 0": true,
+    "Gate 1": true,
+    "Gate 2": true,
+    "Gate 3": true,
+    "Gate 4": true,
+    "Gate 5": true,
+    "Gate 6": true
+  },
+  "source_hashes": {
+    "ns3_version": "3.43",
+    "clean_commit": "753817468d611239b1e3c2e272b2bed8ef1f580c",
+    "clean_source_archive_sha256": "da33eb5f3abb5e304ac8664f66ff117974be9811daa7cd340753e080902673fc",
+    "patch_sha256": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+    "overlay_sha256": "728e96947078437923f716293e10186371d775fc826215e0f3e22bea9348fcd3",
+    "patched_source_sha256": "feb05e33d6d3a34fa3016e7ceb02ea3bb9ad0c5d8e037c39df652b23e9690067"
+  },
+  "hashing_note": "Tracked source artifacts are verified from canonical Git blobs; Windows checkout CRLF conversion changes raw worktree byte hashes.",
+  "configuration_sha256": "e861aa44be491a7135d5ec4b10755499eeaa1912c114ea47a6b092f4f1c4b417",
+  "semantic_baseline_source_sha256": "feb05e33d6d3a34fa3016e7ceb02ea3bb9ad0c5d8e037c39df652b23e9690067",
+  "failures": []
+}

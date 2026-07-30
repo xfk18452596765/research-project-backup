@@ -1,0 +1,7 @@
+{
+  "python_source_sha256": "f7f3beacd7d645a85886210e4e28e06f202e0897f99402bddb0a0c7e4014f031",
+  "cells": 8,
+  "consistent_delay_directions": 1,
+  "forbidden_opposite_conflicts": 7,
+  "passed": false
+}
