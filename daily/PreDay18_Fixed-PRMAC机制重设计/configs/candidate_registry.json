@@ -1,0 +1,10 @@
+{
+  "registry_version": 1,
+  "frozen_before_execution": true,
+  "candidates": [
+    {"id": "C1", "name": "SCOPED_LOCAL_GRANT", "single_factor": "reservation_scope", "definition": "Block only the reserved transmitter, receiver, and one-hop local interference neighbours; non-conflicting remote links remain eligible.", "constraints": ["local-neighbour-interference-only", "no-global-lock", "fixed-lease-timeout", "release-timeout-cleanup", "K=2", "CWmin=15"]},
+    {"id": "C2", "name": "FINAL_HACK_RELEASE_PIGGYBACK", "single_factor": "release_signalling", "definition": "The final H_ACK carries a release flag; explicit RELEASE and lease timeout remain fallbacks when the acknowledgement is absent or incomplete.", "constraints": ["auditable-frame-size", "fallback-release", "fixed-lease-timeout", "K=2", "CWmin=15"]},
+    {"id": "C3", "name": "BOUNDED_RESERVATION_REUSE_2", "single_factor": "reservation_reuse", "definition": "A successful grant can serve at most two FIFO packets of the same flow and segment, subject to an unexpired grant, no conflict/NACK, and no higher-priority waiter.", "constraints": ["reuse_budget=2", "same-flow", "same-segment", "FIFO-next-packet", "release-after-second", "K=2", "CWmin=15"]}
+  ],
+  "prohibited": ["dynamic_K", "dynamic_CW", "RL", "central_control", "global_schedule", "new_candidates", "seed_selection"]
+}

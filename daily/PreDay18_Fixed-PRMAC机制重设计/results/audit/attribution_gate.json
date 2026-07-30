@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "required_fraction": 0.7,
+  "observed_fraction": 0.06530612244897961,
+  "decision_if_failed": "REDESIGN_HOLD",
+  "reason": "Top-two permitted redesign targets cannot explain at least 70% of excess cost."
+}

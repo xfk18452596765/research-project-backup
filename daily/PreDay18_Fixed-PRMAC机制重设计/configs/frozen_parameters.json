@@ -1,0 +1,13 @@
+{
+  "K": 2,
+  "CWmin": 15,
+  "CWmax": 1023,
+  "retry_limit": 7,
+  "slot_time_us": 20,
+  "SIFS_us": 10,
+  "data_rate_mbps": 2,
+  "control_rate_mbps": 1,
+  "payload_bytes": 1024,
+  "queue_limit_packets": 200,
+  "analysis_seed": 20260730
+}

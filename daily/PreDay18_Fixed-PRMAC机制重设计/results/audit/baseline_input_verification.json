@@ -1,0 +1,10 @@
+{
+  "time_utc": "2026-07-30T12:50:35.577683+00:00",
+  "base_commit": "1782431497d4710e02fd8c97fd9de24ae30372a0",
+  "branch": "main",
+  "semantic_baseline_decision": "BASELINE_READY",
+  "semantic_source_sha256": "feb05e33d6d3a34fa3016e7ceb02ea3bb9ad0c5d8e037c39df652b23e9690067",
+  "candidate_registry_sha256": "1991a77968aaa3dfa4e44f374b173d347d5bc07b562d8de01e38e4b83da063fe",
+  "policy_sha256": "82fb476ee348d0d3d08aa017e10fc97e73580a4f0daac712fee318a02ba48168",
+  "failures": []
+}

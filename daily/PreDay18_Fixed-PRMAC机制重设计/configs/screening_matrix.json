@@ -1,0 +1,5 @@
+{
+  "variants": ["DCF", "F0", "C1", "C2", "C3"],
+  "scenarios": [{"hops": 4, "load": "medium"}, {"hops": 4, "load": "high"}, {"hops": 6, "load": "medium"}, {"hops": 6, "load": "high"}],
+  "traffic": ["periodic", "poisson"], "seeds": [7, 17, 27, 37, 47], "packets_per_run": 100, "expected_runs": 200
+}
