@@ -1,0 +1,36 @@
+[
+  {
+    "historical_file": "daily/PreDay18_ns3独立干净源码工作区恢复/results/manifests/patch_chain_manifest.json",
+    "historical_field": "expected_sha256",
+    "historical_value": "9405e0e83684725e92bcd0bf99c8f567f6d17a1f8501468b0c4ca1bd91ca43d1",
+    "actual_hashed_object": "Git blob raw bytes",
+    "canonical_patch_path": "results/recovered/P1_semantic_baseline.patch",
+    "canonical_raw_sha256": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+    "normalized_sha256": {
+      "LF": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+      "CRLF": "3962113239245fdbdb754f6ead378b77133a03e9a57390647eeffad0ef21efbc"
+    },
+    "reason": "Neither raw Git blob nor LF/CRLF-normalized bytes match the historical value; field is an unverified patch-SHA label, not canonical raw bytes.",
+    "evidence_commits": [
+      "aacc7093bc5c0a822106e891e436985def405cc5"
+    ],
+    "impact": "Use canonical raw SHA and recovered Git blob; historical evidence remains unchanged."
+  },
+  {
+    "historical_file": "daily/PreDay18_ns3独立干净源码工作区恢复/results/manifests/patch_chain_manifest.json",
+    "historical_field": "expected_sha256",
+    "historical_value": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+    "actual_hashed_object": "Git blob raw bytes",
+    "canonical_patch_path": "results/recovered/P2_attribution_trace.patch",
+    "canonical_raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+    "normalized_sha256": {
+      "LF": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "CRLF": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd"
+    },
+    "reason": "Neither raw Git blob nor LF/CRLF-normalized bytes match the historical value; field is an unverified patch-SHA label, not canonical raw bytes.",
+    "evidence_commits": [
+      "5b5ef9110895457137321de2e36212a4b04ed120"
+    ],
+    "impact": "Use canonical raw SHA and recovered Git blob; historical evidence remains unchanged."
+  }
+]

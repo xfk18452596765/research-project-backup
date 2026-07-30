@@ -1,0 +1,59 @@
+{
+  "decision": "PATCH_CHAIN_HOLD",
+  "replay": {
+    "attempted": true,
+    "copies": [
+      {
+        "copy": "audit-A",
+        "ok": false,
+        "steps": [
+          {
+            "patch": "semantic_baseline",
+            "check_exit": 128,
+            "apply_exit": 128,
+            "stderr": "error: corrupt patch at C:/research-project-backup/daily/PreDay18_ns3补丁链溯源与一致性修复/results/recovered/P1_semantic_baseline.patch:100\nerror: corrupt patch at C:/research-project-backup/daily/PreDay18_ns3补丁链溯源与一致性修复/results/recovered/P1_semantic_baseline.patch:100"
+          },
+          {
+            "patch": "attribution_trace",
+            "check_exit": 128,
+            "apply_exit": 128,
+            "stderr": "error: invalid path 'C:\\research-project-backup\\daily\\PreDay18_语义正确基线止损复验\\ns3\\source\\preday18-stop-loss-retest.cc'\nerror: invalid path 'C:\\research-project-backup\\daily\\PreDay18_语义正确基线止损复验\\ns3\\source\\preday18-stop-loss-retest.cc'"
+          },
+          {
+            "patch": "lifecycle_trace",
+            "check_exit": 1,
+            "apply_exit": 1,
+            "stderr": "error: lifecycle-trace.cc: No such file or directory\nerror: lifecycle-trace.cc: No such file or directory"
+          }
+        ],
+        "final_tree_sha256": null
+      },
+      {
+        "copy": "audit-B",
+        "ok": false,
+        "steps": [
+          {
+            "patch": "semantic_baseline",
+            "check_exit": 128,
+            "apply_exit": 128,
+            "stderr": "error: corrupt patch at C:/research-project-backup/daily/PreDay18_ns3补丁链溯源与一致性修复/results/recovered/P1_semantic_baseline.patch:100\nerror: corrupt patch at C:/research-project-backup/daily/PreDay18_ns3补丁链溯源与一致性修复/results/recovered/P1_semantic_baseline.patch:100"
+          },
+          {
+            "patch": "attribution_trace",
+            "check_exit": 128,
+            "apply_exit": 128,
+            "stderr": "error: invalid path 'C:\\research-project-backup\\daily\\PreDay18_语义正确基线止损复验\\ns3\\source\\preday18-stop-loss-retest.cc'\nerror: invalid path 'C:\\research-project-backup\\daily\\PreDay18_语义正确基线止损复验\\ns3\\source\\preday18-stop-loss-retest.cc'"
+          },
+          {
+            "patch": "lifecycle_trace",
+            "check_exit": 1,
+            "apply_exit": 1,
+            "stderr": "error: lifecycle-trace.cc: No such file or directory\nerror: lifecycle-trace.cc: No such file or directory"
+          }
+        ],
+        "final_tree_sha256": null
+      }
+    ],
+    "match": false
+  }
+}

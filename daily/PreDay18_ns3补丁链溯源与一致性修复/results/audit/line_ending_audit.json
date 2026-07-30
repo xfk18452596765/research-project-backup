@@ -1,0 +1,10 @@
+{
+  "core.autocrlf": "file:D:/develop/Git/etc/gitconfig\ttrue",
+  "core.eol": "",
+  "gitattributes_present": false,
+  "ls_files_eol": [
+    "i/lf    w/crlf  attr/                 \tdaily/PreDay18_ns3语义正确基线重建/ns3/patches/ns3-3.43-fixed-prmac-access.patch",
+    "i/lf    w/crlf  attr/                 \tdaily/PreDay18_Fixed-PRMAC归因Trace补全/ns3/patches/attribution-trace-completion.patch",
+    "i/lf    w/crlf  attr/                 \tdaily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch"
+  ]
+}

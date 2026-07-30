@@ -1,0 +1,104 @@
+[
+  {
+    "id": "semantic_baseline",
+    "label": "P1",
+    "path": "daily/PreDay18_ns3语义正确基线重建/ns3/patches/ns3-3.43-fixed-prmac-access.patch",
+    "source_commit": "7560ac7b06e8f272ff378e97f9b420f0c50ff98d",
+    "parent_commit": "30b55a8af5b307feabc94b7e419e27879a511908",
+    "source_blob": "06bd7033f8c130238aa5eb380d5a7195dcb2ef50",
+    "git_blob_oid": "06bd7033f8c130238aa5eb380d5a7195dcb2ef50",
+    "raw_git_blob_sha256": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+    "checkout_raw_sha256": "ecd2c1065cebb3230bc4b757213ff82c74b4afc9ab14fb1d6c200edfac470924",
+    "git_blob": {
+      "raw_sha256": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+      "LF_normalized_sha256": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+      "CRLF_normalized_sha256": "ecd2c1065cebb3230bc4b757213ff82c74b4afc9ab14fb1d6c200edfac470924",
+      "UTF8_BOM_removed_sha256": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+      "has_utf8_bom": false,
+      "ends_with_newline": true,
+      "line_ending": "LF"
+    },
+    "checkout": {
+      "raw_sha256": "ecd2c1065cebb3230bc4b757213ff82c74b4afc9ab14fb1d6c200edfac470924",
+      "LF_normalized_sha256": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+      "CRLF_normalized_sha256": "ecd2c1065cebb3230bc4b757213ff82c74b4afc9ab14fb1d6c200edfac470924",
+      "UTF8_BOM_removed_sha256": "ecd2c1065cebb3230bc4b757213ff82c74b4afc9ab14fb1d6c200edfac470924",
+      "has_utf8_bom": false,
+      "ends_with_newline": true,
+      "line_ending": "CRLF"
+    },
+    "historical_manifest_sha256": "90823ff0d2bc380ad838007293b87c87f3631c73b313b38b92d4da46907184db",
+    "historical_sha_status": "MATCH",
+    "introduced_by": "7560ac7b06e8f272ff378e97f9b420f0c50ff98d",
+    "superseded_by": null,
+    "size": 5122
+  },
+  {
+    "id": "attribution_trace",
+    "label": "P2",
+    "path": "daily/PreDay18_Fixed-PRMAC归因Trace补全/ns3/patches/attribution-trace-completion.patch",
+    "source_commit": "aacc7093bc5c0a822106e891e436985def405cc5",
+    "parent_commit": "206469977570b0af59485c32df0fa3dbe93fc4b0",
+    "source_blob": "c0c94be16a2115a3672c77e598ac19e1e7e9388d",
+    "git_blob_oid": "c0c94be16a2115a3672c77e598ac19e1e7e9388d",
+    "raw_git_blob_sha256": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+    "checkout_raw_sha256": "3962113239245fdbdb754f6ead378b77133a03e9a57390647eeffad0ef21efbc",
+    "git_blob": {
+      "raw_sha256": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+      "LF_normalized_sha256": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+      "CRLF_normalized_sha256": "3962113239245fdbdb754f6ead378b77133a03e9a57390647eeffad0ef21efbc",
+      "UTF8_BOM_removed_sha256": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+      "has_utf8_bom": false,
+      "ends_with_newline": true,
+      "line_ending": "LF"
+    },
+    "checkout": {
+      "raw_sha256": "3962113239245fdbdb754f6ead378b77133a03e9a57390647eeffad0ef21efbc",
+      "LF_normalized_sha256": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+      "CRLF_normalized_sha256": "3962113239245fdbdb754f6ead378b77133a03e9a57390647eeffad0ef21efbc",
+      "UTF8_BOM_removed_sha256": "3962113239245fdbdb754f6ead378b77133a03e9a57390647eeffad0ef21efbc",
+      "has_utf8_bom": false,
+      "ends_with_newline": true,
+      "line_ending": "CRLF"
+    },
+    "historical_manifest_sha256": "9405e0e83684725e92bcd0bf99c8f567f6d17a1f8501468b0c4ca1bd91ca43d1",
+    "historical_sha_status": "ERRATUM",
+    "introduced_by": "aacc7093bc5c0a822106e891e436985def405cc5",
+    "superseded_by": null,
+    "size": 4085
+  },
+  {
+    "id": "lifecycle_trace",
+    "label": "P3",
+    "path": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch",
+    "source_commit": "5b5ef9110895457137321de2e36212a4b04ed120",
+    "parent_commit": "e86cb56ee7e26f98bd94f3da71ec91d1887af2bc",
+    "source_blob": "cb21f39f5b539e5edd9f0913e150e5855a3d0e22",
+    "git_blob_oid": "cb21f39f5b539e5edd9f0913e150e5855a3d0e22",
+    "raw_git_blob_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+    "checkout_raw_sha256": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+    "git_blob": {
+      "raw_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "LF_normalized_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "CRLF_normalized_sha256": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "UTF8_BOM_removed_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "has_utf8_bom": false,
+      "ends_with_newline": true,
+      "line_ending": "LF"
+    },
+    "checkout": {
+      "raw_sha256": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "LF_normalized_sha256": "3c0b444539d29ec5142c7293de23470fc9b54dc13d36d9f02d0752aedfcb0e84",
+      "CRLF_normalized_sha256": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "UTF8_BOM_removed_sha256": "b8f27455f40b4a4c946bb7ee2a32d2432d1b5cbf2ed48721d3665f375ab89ccd",
+      "has_utf8_bom": false,
+      "ends_with_newline": true,
+      "line_ending": "CRLF"
+    },
+    "historical_manifest_sha256": "8c55571e688502973dfbde0eb0a3dd0289354a55c8550efbd3995f9c6195ab46",
+    "historical_sha_status": "ERRATUM",
+    "introduced_by": "5b5ef9110895457137321de2e36212a4b04ed120",
+    "superseded_by": null,
+    "size": 3178
+  }
+]
