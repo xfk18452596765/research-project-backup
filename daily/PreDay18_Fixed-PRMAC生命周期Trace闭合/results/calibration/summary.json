@@ -1,0 +1,9 @@
+{
+  "single_expected": 6,
+  "single_completed": 0,
+  "low_expected": 36,
+  "low_completed": 0,
+  "executed": false,
+  "gate": "HOLD",
+  "reason": "lifecycle overlay has not been applied to an independently clean ns-3 source tree"
+}

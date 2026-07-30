@@ -1,0 +1,7 @@
+{
+  "packet_time_closure_minimum": 0.999,
+  "scenario_time_closure_minimum": 0.999,
+  "delivery_loss_closure_required": 1.0,
+  "unknown_loss_required": 0,
+  "gates": ["144 equivalence", "6 single-packet", "36 low-load", "120 core"]
+}
