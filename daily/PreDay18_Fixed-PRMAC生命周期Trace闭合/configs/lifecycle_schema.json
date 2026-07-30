@@ -1,0 +1,10 @@
+{
+  "schema_version": "3.0",
+  "stable_ids": {
+    "packet_id": "allocated once at business-packet creation; never ns-3 Packet UID",
+    "segment_id": "packet_id plus route segment start index",
+    "reservation_id": "segment_id plus attempt number",
+    "flow_id": "configured flow identity, invariant over the path"
+  },
+  "required_events": ["PACKET_CREATED", "SOURCE_QUEUE_ENQUEUE", "SOURCE_QUEUE_HEAD", "SOURCE_SERVICE_START", "SOURCE_QUEUE_DEQUEUE", "RELAY_QUEUE_ENQUEUE", "RELAY_QUEUE_HEAD", "RELAY_SERVICE_START", "RELAY_QUEUE_DEQUEUE", "SEGMENT_CREATED", "SEGMENT_START", "RESERVATION_ATTEMPT_START", "RESERVATION_ATTEMPT_FAILED", "RESERVATION_ACTIVE", "RESERVATION_RELEASED", "SEGMENT_COMPLETED", "SEGMENT_FAILED", "DESTINATION_DELIVER", "SIMULATION_END_UNFINISHED", "PACKET_FINAL_LOSS"]
+}

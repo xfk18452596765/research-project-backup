@@ -1,0 +1,20 @@
+{
+  "decision": "LIFECYCLE_TRACE_HOLD",
+  "patch_scope_audit": "PASS",
+  "trace_behavior_equivalence": "NOT_RUN",
+  "random_stream_equivalence": "NOT_RUN",
+  "equivalence_runs": 0,
+  "single_packet_runs": 0,
+  "low_load_runs": 0,
+  "core_trace_runs": 0,
+  "missing_runs": 306,
+  "failed_runs": 0,
+  "packet_time_closure": "NOT_COMPUTABLE",
+  "scenario_time_closure": "NOT_COMPUTABLE",
+  "delivery_loss_closure": "NOT_COMPUTABLE",
+  "unknown_losses": "NOT_COMPUTABLE",
+  "active_reservations_after_run": "NOT_COMPUTABLE",
+  "Day18_status": "LOCKED",
+  "RL_started": false,
+  "reason": "No lifecycle matrix result is claimed until the instrumentation overlay is clean-applied, built, and executed."
+}

@@ -1,0 +1,6 @@
+stage tests: PASS
+patch scope audit: PASS
+ns-3 official tests: NOT_RUN (no independently clean ns-3 source tree available)
+semantic baseline tests: NOT_RUN
+Day03-Day17 regression: NOT_RUN
+decision: LIFECYCLE_TRACE_HOLD
