@@ -1,0 +1,69 @@
+--- previous-trace.cc
++++ lifecycle-trace.cc
+@@ -635,6 +635,7 @@
+     }
+     state.terminal = "DELIVERED";
+     state.lastNode = node;
++    Trace(node, h, "DESTINATION_DELIVER");
+     Trace(node, h, "PACKET_DELIVERED");
+ }
+ 
+@@ -676,7 +677,7 @@
+                 else
+                 {
+                     g.localFifos[node].push_back(Key(h.Flow(), h.PacketId()));
+-                    Trace(node, h, "HOP_FORWARD_ENQUEUE", "", g.localFifos[node].size());
++                    Trace(node, h, "RELAY_QUEUE_ENQUEUE", "", g.localFifos[node].size());
+                     Simulator::Schedule(MicroSeconds(1), &SendDcfData, h.Flow(), h.PacketId(), node);
+                 }
+             }
+@@ -716,6 +717,7 @@
+             Time expires = Simulator::Now() + MilliSeconds(25);
+             g.localReservationExpiry[node] = expires;
+             g.txops[node]->SetFixedPrmacReservedAccess(true, expires);
++            Trace(node, h, "RESERVATION_ATTEMPT_START", "ACKNOWLEDGED");
+             Trace(node, h, "RESERVATION_ACTIVE", "local-grant-installed");
+             if (RouteIndex(h.Flow(), node) > h.Start())
+             {
+@@ -737,6 +739,7 @@
+             }
+             else
+             {
++                Trace(node, h, "RESERVATION_ATTEMPT_FAILED", "PR_NACK");
+                 Trace(node, h, "RESERVATION_ATTEMPT_REJECTED", "PR_NACK received");
+                 RetryFixedSegment(h.Flow(), h.PacketId(), h.Segment(), h.Start(),
+                                   h.End(), static_cast<uint8_t>(h.Attempt() + 1));
+@@ -761,6 +764,7 @@
+             else
+             {
+                 state.segmentsCompleted++;
++                Trace(node, h, "RESERVATION_RELEASED", "release-complete");
+                 Trace(node, h, "SEGMENT_COMPLETED");
+                 if (h.End() == FlowHops(h.Flow())) { Deliver(g.flows[h.Flow()].destination, h); }
+                 else
+@@ -787,8 +791,8 @@
+         return;
+     }
+     g.localFifos[source].push_back(key);
+-    Trace(source, h, "QUEUE_ENQUEUE", "", g.localFifos[source].size());
+-    Trace(source, h, "QUEUE_SERVICE_START", "", g.localFifos[source].size());
++    Trace(source, h, "SOURCE_QUEUE_ENQUEUE", "", g.localFifos[source].size());
++    Trace(source, h, "SOURCE_SERVICE_START", "", g.localFifos[source].size());
+     if (g.protocol == "dcf") { SendDcfData(flow, packet, source); }
+     else { StartFixedSegment(flow, packet, 0); }
+ }
+@@ -1055,6 +1059,14 @@
+     Simulator::Stop(Seconds(time + (g.load == "high" ? 30.0 : 10.0)));
+     Simulator::Run();
+     for (auto& txop : g.txops) { txop->SetFixedPrmacReservedAccess(false, Seconds(0)); }
++    // Read-only terminal scan: emitted after Run and before Destroy.
++    for (const auto& [key, state] : g.packetStates) {
++        if (state.terminal.empty()) {
++            SemanticHeader end(DATA, static_cast<uint8_t>(key >> 32), 0, 0, static_cast<uint32_t>(key), 0, 0, 0, 0);
++            Trace(state.lastNode, end, "SIMULATION_END_UNFINISHED", "SIMULATION_END_SOURCE_QUEUE");
++            Trace(state.lastNode, end, "PACKET_FINAL_LOSS", "SIMULATION_END_SOURCE_QUEUE");
++        }
++    }
+     Simulator::Destroy();
+     WriteResult();
+     if (g.traceEnabled) { g.trace.close(); }

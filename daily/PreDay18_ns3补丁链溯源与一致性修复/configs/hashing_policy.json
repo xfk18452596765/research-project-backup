@@ -1,0 +1,5 @@
+{
+  "canonical_precedence": ["Git raw blob", "historical archived raw bytes", "checkout bytes", "normalized bytes"],
+  "sha256_views": ["raw_git_blob_sha256", "checkout_raw_sha256", "LF_normalized_sha256", "CRLF_normalized_sha256", "UTF8_BOM_removed_sha256"],
+  "normalization_is_diagnostic_only": true
+}

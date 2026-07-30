@@ -1,0 +1,24 @@
+{
+  "git_config": {
+    "core.autocrlf": "file:D:/develop/Git/etc/gitconfig\ttrue",
+    "core.eol": ""
+  },
+  "gitattributes_exists": false,
+  "patches": [
+    {
+      "path": "daily/PreDay18_ns3语义正确基线重建/ns3/patches/ns3-3.43-fixed-prmac-access.patch",
+      "check_attr": "",
+      "ls_files_eol": "i/lf    w/crlf  attr/                 \tdaily/PreDay18_ns3语义正确基线重建/ns3/patches/ns3-3.43-fixed-prmac-access.patch"
+    },
+    {
+      "path": "daily/PreDay18_Fixed-PRMAC归因Trace补全/ns3/patches/attribution-trace-completion.patch",
+      "check_attr": "",
+      "ls_files_eol": "i/lf    w/crlf  attr/                 \tdaily/PreDay18_Fixed-PRMAC归因Trace补全/ns3/patches/attribution-trace-completion.patch"
+    },
+    {
+      "path": "daily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch",
+      "check_attr": "",
+      "ls_files_eol": "i/lf    w/crlf  attr/                 \tdaily/PreDay18_Fixed-PRMAC生命周期Trace闭合/ns3/patches/lifecycle-trace-completion.patch"
+    }
+  ]
+}
