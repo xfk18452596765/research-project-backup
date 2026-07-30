@@ -1,0 +1,21 @@
+{
+  "source": "PreDay18_Fixed-PRMAC机制诊断/results/decision/root_cause_classification.json",
+  "source_sha256": "bbae4d7d2c0f61fcf06899fe5af95ac9e7696d43e56b2bc7fa4b85b1af634659",
+  "classification": "MIXED_ROOT_CAUSE",
+  "quantified_explained_fraction": 0.06530612244897961,
+  "threshold": 0.7,
+  "ranking": [
+    {
+      "rank": 1,
+      "category": "OTHER",
+      "share_of_excess_delay_or_throughput_loss": 0.06530612244897961,
+      "evidence": "Historical diagnostic only quantifies 6.53%; root causes are mixed and include base MAC/link-model semantics."
+    },
+    {
+      "rank": 2,
+      "category": "OVERBROAD_RESERVATION_SCOPE",
+      "share_of_excess_delay_or_throughput_loss": null,
+      "evidence": "Not separately quantified; cannot be claimed as a preregistered candidate target."
+    }
+  ]
+}

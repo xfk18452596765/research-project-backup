@@ -1,0 +1,19 @@
+{
+  "decision": "REDESIGN_HOLD",
+  "base_commit": "1782431497d4710e02fd8c97fd9de24ae30372a0",
+  "candidate_registry_sha256": "1991a77968aaa3dfa4e44f374b173d347d5bc07b562d8de01e38e4b83da063fe",
+  "redesign_patch_sha256": null,
+  "attribution_fraction": 0.06530612244897961,
+  "single_factor_runs": 0,
+  "combination_runs": 0,
+  "sensitivity_runs": 0,
+  "missing_runs": 200,
+  "failed_runs": 0,
+  "failed_gates": [
+    "ATTRIBUTION_TOP_TWO_EXPLAIN_70_PERCENT"
+  ],
+  "Day18_status": "LOCKED",
+  "RL_started": false,
+  "selected_candidate": null,
+  "next_step": "Only a separately authorised minimal attribution-validation task; no candidate implementation is allowed in this stage."
+}
