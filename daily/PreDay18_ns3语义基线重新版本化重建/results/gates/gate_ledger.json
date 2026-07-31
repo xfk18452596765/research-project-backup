@@ -1,0 +1,34 @@
+{
+  "Gate0": {
+    "status": "PASS",
+    "reason": "V2 scope and historical evidence guard established"
+  },
+  "Gate1": {
+    "status": "HOLD",
+    "reason": "No real ns-3.43 A/B execution evidence recorded"
+  },
+  "Gate2": {
+    "status": "HOLD",
+    "reason": "No real ns-3.43 A/B execution evidence recorded"
+  },
+  "Gate3": {
+    "status": "HOLD",
+    "reason": "No real ns-3.43 A/B execution evidence recorded"
+  },
+  "Gate4": {
+    "status": "HOLD",
+    "reason": "No real ns-3.43 A/B execution evidence recorded"
+  },
+  "Gate5": {
+    "status": "HOLD",
+    "reason": "No real ns-3.43 A/B execution evidence recorded"
+  },
+  "Gate6": {
+    "status": "HOLD",
+    "reason": "No real ns-3.43 A/B execution evidence recorded"
+  },
+  "Gate7": {
+    "status": "HOLD",
+    "reason": "No real ns-3.43 A/B execution evidence recorded"
+  }
+}\n
