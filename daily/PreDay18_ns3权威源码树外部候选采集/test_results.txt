@@ -1,0 +1,4 @@
+WSL distro enumeration: ACCESS_DENIED
+WSL root read-only inspection: ACCESS_DENIED
+second-computer import: NOT_SUPPLIED
+decision: EXTERNAL_CANDIDATES_HOLD

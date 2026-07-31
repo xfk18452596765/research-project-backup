@@ -1,0 +1,10 @@
+{
+  "decision": "EXTERNAL_CANDIDATES_HOLD",
+  "reason": "Current-computer WSL cannot be enumerated and no second-computer export has been supplied; exhaustion requirements are incomplete.",
+  "p1_generated": false,
+  "p2_p3_processed": false,
+  "configure_build_tests_executed": false,
+  "formal_lifecycle_runs_executed": false,
+  "day18_status": "LOCKED",
+  "rl_started": false
+}
