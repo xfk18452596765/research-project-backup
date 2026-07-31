@@ -1,0 +1,14 @@
+{
+  "second_computer_status": "NOT_APPLICABLE",
+  "wsl_distros": [
+    {
+      "name": "Ubuntu-24.04",
+      "state": "Stopped",
+      "version": 2
+    }
+  ],
+  "normal_user_audit": "root escalation required for readable historical workspace",
+  "root_audit": "PASS, read-only",
+  "local_backup_audit": "PASS; only trace archives and historical patches found, no semantic source-tree archive",
+  "forbidden_commands_executed": false
+}

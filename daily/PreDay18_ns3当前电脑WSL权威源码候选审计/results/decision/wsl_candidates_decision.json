@@ -1,0 +1,10 @@
+{
+  "decision": "WSL_CANDIDATES_EXHAUSTED",
+  "reason": "All current-computer WSL distros and accessible local backup/archive sources were audited; the only semantic worktree candidate is grade D and no A/B/C candidate exists. Second computer is NOT_APPLICABLE.",
+  "p1_generated": false,
+  "p2_p3_processed": false,
+  "configure_build_tests_executed": false,
+  "formal_lifecycle_runs_executed": false,
+  "day18_status": "LOCKED",
+  "rl_started": false
+}
