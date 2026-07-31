@@ -1,0 +1,5 @@
+required sources: PASS
+A/B/C candidate count: 0
+contradictions: 0
+remaining_required_sources: 0
+decision: AUTHORITATIVE_TREE_LOST

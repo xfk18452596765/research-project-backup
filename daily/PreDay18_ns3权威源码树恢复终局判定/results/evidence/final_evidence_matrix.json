@@ -1,0 +1,24 @@
+{
+  "pr18_refs_audited": true,
+  "pr18_merge_parents_audited": true,
+  "p1_source_commit_blob_verified": true,
+  "local_git_objects_audited": true,
+  "local_reflog_lost_found_audited": true,
+  "current_wsl_audited": true,
+  "local_backups_audited": true,
+  "second_computer_status": "NOT_APPLICABLE",
+  "all_candidates_manifested": true,
+  "a_grade_candidates": 0,
+  "b_grade_candidates": 0,
+  "c_grade_candidates": 0,
+  "d_grade_candidates": 1,
+  "e_grade_candidates": 0,
+  "best_candidate_matches_history": false,
+  "remaining_required_sources": 0,
+  "sources": {
+    "patch_chain": "PATCH_CHAIN_HOLD",
+    "p1_recovery": "P1_RECOVERY_HOLD",
+    "tree_recovery": "AUTHORITATIVE_TREE_HOLD",
+    "wsl": "WSL_CANDIDATES_EXHAUSTED"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "decision": "AUTHORITATIVE_TREE_LOST",
+  "contradictions": [],
+  "historical_results_retained": true,
+  "historical_patch_chain_reproducibility": "LIMITED: old authoritative patched source tree and old P1 cannot be completely reproduced without manual inference.",
+  "p1_generated": false,
+  "p2_p3_processed": false,
+  "configure_build_tests_executed": false,
+  "formal_lifecycle_runs_executed": false,
+  "day18_status": "LOCKED",
+  "rl_started": false
+}
