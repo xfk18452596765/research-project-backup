@@ -1,0 +1,19 @@
+{
+  "pr18": {
+    "head": "7560ac7b06e8f272ff378e97f9b420f0c50ff98d",
+    "merge": "38cd5b7aa05556f00aaa6169aa34d805bccc1a3a",
+    "parents": [
+      "30b55a8af5b307feabc94b7e419e27879a511908",
+      "7560ac7b06e8f272ff378e97f9b420f0c50ff98d"
+    ]
+  },
+  "p1": {
+    "source_blob": "06bd7033f8c130238aa5eb380d5a7195dcb2ef50",
+    "target_blobs": "not recoverable as complete objects"
+  },
+  "local_objects": "fsck completed; dangling objects examined; no A/B candidate tied to P1 target tree",
+  "wsl": "access denied by Wsl/Service/CreateInstance",
+  "second_computer": "manifest not supplied",
+  "backups": "no accessible ns-3 archive/worktree candidate found",
+  "gc_or_prune_executed": false
+}
