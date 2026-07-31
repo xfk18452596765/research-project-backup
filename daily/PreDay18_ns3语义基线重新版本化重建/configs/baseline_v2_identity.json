@@ -1,0 +1,12 @@
+{
+  "baseline_id": "preday18-semantic-baseline-v2",
+  "version": "2.0.0",
+  "creation_base_commit": "704aa47",
+  "ns3_version": "3.43",
+  "protocols": ["DCF", "Fixed-PRMAC-V2"],
+  "K": 2,
+  "initial_CW": 15,
+  "historical_predecessor": "AUTHORITATIVE_TREE_LOST",
+  "historical_reproducibility_limit": "incomplete",
+  "decision_policy_version": "1.0"
+}

@@ -1,0 +1,26 @@
+{
+  "historical_results_retained": true,
+  "historical_patch_chain_reproducibility": "incomplete",
+  "historical_P1_authority": "unavailable",
+  "v2_identity": {
+    "baseline_id": "preday18-semantic-baseline-v2",
+    "version": "2.0.0",
+    "creation_base_commit": "704aa47",
+    "ns3_version": "3.43",
+    "protocols": [
+      "DCF",
+      "Fixed-PRMAC-V2"
+    ],
+    "K": 2,
+    "initial_CW": 15,
+    "historical_predecessor": "AUTHORITATIVE_TREE_LOST",
+    "historical_reproducibility_limit": "incomplete",
+    "decision_policy_version": "1.0"
+  },
+  "stage_tree_sha256": "04e187781586916bbc4cb332f57807c112ab92737364d5a59e94954a6fa04380",
+  "historical_directories_present": 55,
+  "out_of_scope_changes": [],
+  "decision": "SEMANTIC_BASELINE_V2_HOLD",
+  "hold_reason": "IMPLEMENTATION_AND_EMPIRICAL_EVIDENCE_NOT_YET_COMPLETE",
+  "ready_guard": "A READY decision requires real official-source A/B execution and Gates 0-7 evidence."
+}\n
