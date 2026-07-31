@@ -1,0 +1,6 @@
+source commit/blob verification: PASS
+original P1 immutable corruption audit: PASS
+authoritative tree reconstruction: HOLD
+P2/P3 processed: NO
+configure/build/tests executed: NO
+decision: P1_RECOVERY_HOLD
