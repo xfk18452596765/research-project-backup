@@ -1,0 +1,1 @@
+{"K":2,"initial_CW":15,"CWmax":1023,"retry_limit":7,"slot_time_us":20,"SIFS_us":10,"DIFS_us":50,"data_rate_mbps":2,"control_rate_mbps":1,"payload_bytes":1024,"queue_limit":200,"frames":{"PR_REQ":36,"PR_ACK":24,"PR_NACK":24,"H_ACK":14,"RELEASE":20}}

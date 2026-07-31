@@ -1,0 +1,9 @@
+[
+  {
+    "relative_path": "scratch/preday18-semantic-baseline-v2.cc",
+    "change_type": "add",
+    "raw_sha256": "ab349bf81bfe450f3a36249ceb253f19364495673d9a18c59515f7aeee7e1a44",
+    "mode": "0644",
+    "purpose": "real ns-3 Wi-Fi DCF chain smoke executable"
+  }
+]\n
