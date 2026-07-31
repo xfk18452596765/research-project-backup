@@ -1,0 +1,10 @@
+{
+  "decision": "AUTHORITATIVE_TREE_HOLD",
+  "reason": "No A/B/C-grade complete semantic patched tree is available; WSL and second-computer evidence remain unavailable.",
+  "p1_generated": false,
+  "p2_p3_processed": false,
+  "configure_build_tests_executed": false,
+  "formal_lifecycle_runs_executed": false,
+  "day18_status": "LOCKED",
+  "rl_started": false
+}

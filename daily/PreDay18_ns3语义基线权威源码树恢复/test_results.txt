@@ -1,0 +1,5 @@
+PR #18 and commit/tree audit: PASS
+local object/reflog/lost-found audit: PASS
+WSL audit: ACCESS_DENIED
+second-computer manifest: NOT_SUPPLIED
+decision: AUTHORITATIVE_TREE_HOLD
