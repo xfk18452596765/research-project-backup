@@ -1,0 +1,5 @@
+second computer: NOT_APPLICABLE
+WSL enumeration/root read-only audit: PASS
+local backup audit: PASS
+A/B/C candidates: 0
+decision: WSL_CANDIDATES_EXHAUSTED

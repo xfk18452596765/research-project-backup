@@ -1,0 +1,26 @@
+{
+  "candidate_id": "wsl-fixed-prmac-baseline",
+  "computer_id": "current",
+  "distro": "Ubuntu-24.04",
+  "absolute_path": "/home/xfk/workspace/ns-3.43-fixed-prmac-baseline",
+  "source_type": "WSL git worktree",
+  "ns3_version": "3.43",
+  "git_commit": "753817468d611239b1e3c2e272b2bed8ef1f580c",
+  "git_tree": "05b6a1d7a7d34993f5e7c3420ef926fab229ad80",
+  "git_status": "M src/wifi/model/txop.cc; M src/wifi/model/txop.h",
+  "changed_files": [
+    {
+      "path": "src/wifi/model/txop.h",
+      "mode": "0644",
+      "git_blob": "a8d29bd22ad53e8bc5f54c73ae28c5efb9153a64"
+    },
+    {
+      "path": "src/wifi/model/txop.cc",
+      "mode": "0644",
+      "git_blob": "60459ae739b87c798558fe14ae4d57d97b0d98c0"
+    }
+  ],
+  "historical_manifest_matches": false,
+  "evidence_grade": "D",
+  "reason": "complete worktree candidate but target blobs do not match historical P1 index targets"
+}
