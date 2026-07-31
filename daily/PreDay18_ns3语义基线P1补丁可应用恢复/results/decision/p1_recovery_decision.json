@@ -1,0 +1,10 @@
+{
+  "decision": "P1_RECOVERY_HOLD",
+  "reason": "AUTHORITATIVE_SEMANTIC_PATCHED_TREE_UNAVAILABLE",
+  "evidence": "P1 target blob prefixes from the damaged patch cannot be resolved to complete Git objects in this repository; no historical complete semantic patched tree or overlay is available as an authoritative source. Reconstructing from the damaged hunk would require forbidden guessing or --recount.",
+  "p2_p3_processed": false,
+  "configure_build_tests_executed": false,
+  "formal_lifecycle_runs_executed": false,
+  "day18_status": "LOCKED",
+  "rl_started": false
+}
